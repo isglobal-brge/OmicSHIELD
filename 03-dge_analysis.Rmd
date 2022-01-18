@@ -1,0 +1,9 @@
+# Differential gene expression (DGE) analysis
+
+
+```{r include = FALSE}
+download.file("https://github.com/isglobal-brge/dsOmicsClient/raw/master/vignettes/rmd/single_study_analysis_example.Rmd", "rmd_omic/single_study_analysis_example.Rmd")
+```
+
+```{r child='rmd_omic/single_study_analysis_example.Rmd', include=TRUE}
+```

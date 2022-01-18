@@ -1,0 +1,40 @@
+# Epigenome-wide association analysis (EWAS)
+
+```{r include = FALSE}
+download.file("https://github.com/isglobal-brge/dsOmicsClient/raw/master/vignettes/rmd/multiple_study_analysis_example.Rmd", "rmd_omic/multiple_study_analysis_example.Rmd")
+```
+
+```{r child='rmd_omic/multiple_study_analysis_example.Rmd', include=TRUE}
+```
+
+
+
+## Single CpG analysis
+
+
+```{r include = FALSE}
+download.file("https://github.com/isglobal-brge/dsOmicsClient/raw/master/vignettes/rmd/single_cpg_analysis.Rmd", "rmd_omic/single_cpg_analysis.Rmd")
+```
+
+```{r child='rmd_omic/single_cpg_analysis.Rmd', include=TRUE}
+```
+
+## Multiple CpG analysis
+
+```{r include = FALSE}
+download.file("https://github.com/isglobal-brge/dsOmicsClient/raw/master/vignettes/rmd/multiple_cpg_analysis.Rmd", "rmd_omic/multiple_cpg_analysis.Rmd")
+```
+
+```{r child='rmd_omic/multiple_cpg_analysis.Rmd', include=TRUE}
+```
+
+
+
+## Adjusting for Surrogate Variables
+
+```{r include = FALSE}
+download.file("https://github.com/isglobal-brge/dsOmicsClient/raw/master/vignettes/rmd/surrogate_variables.Rmd", "rmd_omic/surrogate_variables.Rmd")
+```
+
+```{r child='rmd_omic/surrogate_variables.Rmd', include=TRUE}
+```

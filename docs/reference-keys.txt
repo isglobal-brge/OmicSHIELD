@@ -1,0 +1,10 @@
+fig:opalOmic
+fig:omicAnal1
+fig:omicAnal2
+overview
+Omic
+differential-gene-expression-dge-analysis
+epigenome-wide-association-analysis-ewas
+single-cpg-analysis
+multiple-cpg-analysis
+adjusting-for-surrogate-variables
