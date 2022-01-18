@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.3) (preloaded format=xelatex 2021.7.19)  17 JAN 2022 16:47
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.3) (preloaded format=xelatex 2021.7.19)  18 JAN 2022 12:08
 entering extended mode
 **./OmicSHIELD_bookdown.tex
 (OmicSHIELD_bookdown.tex
@@ -537,7 +537,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip64
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count314
-) (OmicSHIELD_bookdown.aux)
+)
+No file OmicSHIELD_bookdown.aux.
 \openout1 = `OmicSHIELD_bookdown.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -857,6 +858,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 122.
 LaTeX Info: Redefining \pageref on input line 122.
 LaTeX Info: Redefining \nameref on input line 122.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 124.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -900,24 +904,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [2
 
-] (OmicSHIELD_bookdown.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 5.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 5.
-)
+]
 \tf@toc=\write4
 \openout4 = `OmicSHIELD_bookdown.toc'.
 
@@ -937,646 +924,321 @@ red by
 
 ]
 Chapter 2.
-File: fig/dsOmics_A.jpg Graphic file (type bmp)
-<fig/dsOmics_A.jpg>
-
-Overfull \hbox (371.9385pt too wide) in paragraph at lines 157--158
- [][] 
- []
-
-[7]
-Overfull \hbox (28.01454pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 8 \TU/lmr/m/sl/10 CHAPTER 2.  OMIC DATA ANALYSIS: TYPES OF IMPLE
-MENTED ANALYSES
- []
-
-[8]
-File: fig/dsOmics_B.jpg Graphic file (type bmp)
-<fig/dsOmics_B.jpg>
-
-Overfull \hbox (251.47603pt too wide) in paragraph at lines 180--181
- [][] 
- []
-
-File: fig/dsOmics_C.jpg Graphic file (type bmp)
-<fig/dsOmics_C.jpg>
-
-Overfull \hbox (162.35736pt too wide) in paragraph at lines 195--196
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 42.42651pt on input line 200.
-
-[9]
-Overfull \hbox (33.01454pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 10 \TU/lmr/m/sl/10 CHAPTER 2.  OMIC DATA ANALYSIS: TYPES OF IMPL
-EMENTED ANALYSES
- []
-
-[10] [11]
-Overfull \hbox (33.01454pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 12 \TU/lmr/m/sl/10 CHAPTER 2.  OMIC DATA ANALYSIS: TYPES OF IMPL
-EMENTED ANALYSES
- []
-
-[12
+[7] [8
 
 ]
 Chapter 3.
 
-Underfull \hbox (badness 1253) in paragraph at lines 205--206
-\TU/lmr/m/n/10 contains the \TU/lmtt/m/n/10 RangeSummarizedExperiment \TU/lmr/m
-/n/10 with the RNAseq profiling of
- []
+LaTeX Warning: Reference `fig:opalOmic' on page 9 undefined on input line 156.
 
-[13]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 279--279
-[]\TU/lmtt/m/n/10 ## [1] "ENSG00000000003.14" "ENSG00000000005.5"  "ENSG0000000
-0419.12"[] 
- []
+File: fig/dsOmics_A.jpg Graphic file (type bmp)
+<fig/dsOmics_A.jpg>
 
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 279--279
-[]\TU/lmtt/m/n/10 ## [4] "ENSG00000000457.13" "ENSG00000000460.16" "ENSG0000000
-0938.12"[] 
- []
-
-[14] [15]
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##    id                     n   beta     SE     t   P.Value 
-adj.P.Val[] 
+Overfull \hbox (371.9385pt too wide) in paragraph at lines 160--161
+ [][] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##    <chr>              <int>  <dbl>  <dbl> <dbl>     <dbl> 
-    <dbl>[] 
+LaTeX Warning: Reference `fig:omicAnal1' on page 9 undefined on input line 169.
+
+
+
+LaTeX Warning: Reference `fig:omicAnal2' on page 9 undefined on input line 171.
+
+
+[9]
+Overfull \hbox (33.01454pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 10 \TU/lmr/m/sl/10 CHAPTER 3.  OMIC DATA ANALYSIS: TYPES OF IMPL
+EMENTED ANALYSES
+ []
+
+[10]
+
+LaTeX Warning: Reference `fig:omicAnal1' on page 11 undefined on input line 178
+.
+
+File: fig/dsOmics_B.jpg Graphic file (type bmp)
+<fig/dsOmics_B.jpg>
+
+Overfull \hbox (251.47603pt too wide) in paragraph at lines 183--184
+ [][] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  1 ENSG00000274655.1    424 -12.4  0.0761 -52.1 2.74e-187 
-1.11e-182[] 
+LaTeX Warning: Reference `fig:omicAnal2' on page 11 undefined on input line 193
+.
+
+File: fig/dsOmics_C.jpg Graphic file (type bmp)
+<fig/dsOmics_C.jpg>
+
+Overfull \hbox (162.35736pt too wide) in paragraph at lines 198--199
+ [][] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  2 ENSG00000270641.1    424 -10.2  0.461  -43.8 5.21e-160 
-1.05e-155[] 
+LaTeX Warning: Float too large for page by 42.42651pt on input line 203.
+
+[11]
+Overfull \hbox (33.01454pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 12 \TU/lmr/m/sl/10 CHAPTER 3.  OMIC DATA ANALYSIS: TYPES OF IMPL
+EMENTED ANALYSES
+ []
+
+[12] [13]
+Overfull \hbox (33.01454pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 14 \TU/lmr/m/sl/10 CHAPTER 3.  OMIC DATA ANALYSIS: TYPES OF IMPL
+EMENTED ANALYSES
+ []
+
+[14
+
+]
+Chapter 4.
+
+LaTeX Warning: Reference `tab:tab1' on page 15 undefined on input line 222.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.1 on input line 237.
+
+File: fig/single_cohort.png Graphic file (type bmp)
+<fig/single_cohort.png>
+
+Overfull \hbox (556.08311pt too wide) in paragraph at lines 246--247
+ [][] 
+ []
+
+[15]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 253.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 253.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 253.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 253.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 253.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 253.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 253.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 253.
+
+Underfull \hbox (badness 1237) in paragraph at lines 253--254
+[]\TU/lmr/m/n/10 The data analyst corresponds to the “RStudio” session, which t
+hrough
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  3 ENSG00000229807.10   424 -11.0  0.0603 -39.5 1.08e-144 
-1.45e-140[] 
+Overfull \hbox (10.22453pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 16 \TU/lmr/m/sl/10 CHAPTER 4.  GENOME WIDE ASSOCIATION STUDY (GW
+AS) ANALYSIS
+ []
+
+[16] [17]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 296.
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 314--314
+[]\TU/lmtt/m/n/10 ## [1] "GDSFileResourceClient" "FileResourceClient"    "Resou
+rceClient"[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  4 ENSG00000277577.1    424 -11.3  0.0651 -36.0 2.27e-131 
-2.29e-127[] 
+Overfull \hbox (10.22453pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 18 \TU/lmr/m/sl/10 CHAPTER 4.  GENOME WIDE ASSOCIATION STUDY (GW
+AS) ANALYSIS
  []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  5 ENSG00000233070.1    424  10.9  0.0885  35.5 1.85e-129 
-1.49e-125[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  6 ENSG00000260197.1    424  10.2  0.118   32.9 3.72e-119 
-2.50e-115[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  7 ENSG00000213318.4    424  11.4  0.128   31.9 5.57e-115 
-3.21e-111[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  8 ENSG00000278039.1    424  -7.78 0.0812 -28.8 3.85e-102 
-1.94e- 98[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ##  9 ENSG00000067048.16   424   9.62 0.0894  27.4 4.72e- 96 
-2.12e- 92[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 437--437
-[]\TU/lmtt/m/n/10 ## 10 ENSG00000131002.11   424  11.4  0.0924  27.3 9.63e- 96 
-3.89e- 92[] 
- []
-
-[16]
-File: OmicSHIELD_bookdown_files/figure-latex/plot_hist-1.pdf Graphic file (type
- pdf)
-<use OmicSHIELD_bookdown_files/figure-latex/plot_hist-1.pdf>
-File: OmicSHIELD_bookdown_files/figure-latex/plotInfl-1.pdf Graphic file (type 
-pdf)
-<use OmicSHIELD_bookdown_files/figure-latex/plotInfl-1.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[17]
-File: OmicSHIELD_bookdown_files/figure-latex/plotInfl2-1.pdf Graphic file (type
- pdf)
-<use OmicSHIELD_bookdown_files/figure-latex/plotInfl2-1.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [18]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 495--495
-[]\TU/lmtt/m/n/10 ## [1] "chromosome" "start"      "end"        "width"      "s
-trand"[] 
+Overfull \hbox (17.25pt too wide) in paragraph at lines 416--416
+[]\TU/lmtt/m/n/10 ## [11] "birth_country"                       "actual_tobacco
+_smoker"[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##    id                     n   beta     SE     t   P.Value 
-adj.P.Val chromosome[] 
+Overfull \hbox (38.25pt too wide) in paragraph at lines 416--416
+[]\TU/lmtt/m/n/10 ## [13] "date_diagnosis"                      "diabetes_diagn
+osed_doctor"[] 
  []
 
 
-Overfull \hbox (54.0pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##    <chr>              <int>  <dbl>  <dbl> <dbl>     <dbl> 
-    <dbl> <chr>[] 
+Overfull \hbox (43.5pt too wide) in paragraph at lines 416--416
+[]\TU/lmtt/m/n/10 ## [15] "diastolic_blood_pressure"            "duration_moder
+ate_activity"[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  1 ENSG00000274655.1    424 -12.4  0.0761 -52.1 2.74e-187 
-1.11e-182 chrX[] 
+Overfull \hbox (90.75pt too wide) in paragraph at lines 416--416
+[]\TU/lmtt/m/n/10 ## [37] "neutrophill_count"                   "n_accidental_d
+eath_close_gen_family"[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  2 ENSG00000270641.1    424 -10.2  0.461  -43.8 5.21e-160 
-1.05e-155 chrX[] 
- []
-
-
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  3 ENSG00000229807.10   424 -11.0  0.0603 -39.5 1.08e-144 
-1.45e-140 chrX[] 
+Overfull \hbox (12.0pt too wide) in paragraph at lines 416--416
+[]\TU/lmtt/m/n/10 ## [41] "operations_count"                    "operative_proc
+edures"[] 
  []
 
 [19]
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  4 ENSG00000277577.1    424 -11.3  0.0651 -36.0 2.27e-131 
-2.29e-127 chrX[] 
+Overfull \hbox (6.75pt too wide) in paragraph at lines 416--416
+[]\TU/lmtt/m/n/10 ## [47] "cancer_occurrences"                  "reticulocuyte_
+count"[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  5 ENSG00000233070.1    424  10.9  0.0885  35.5 1.85e-129 
-1.49e-125 chrY[] 
+Overfull \hbox (22.5pt too wide) in paragraph at lines 416--416
+[]\TU/lmtt/m/n/10 ## [59] "age_death"                           "age_diagnosis_
+diabetes"[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  6 ENSG00000260197.1    424  10.2  0.118   32.9 3.72e-119 
-2.50e-115 chrY[] 
+Overfull \hbox (6.75pt too wide) in paragraph at lines 416--416
+[]\TU/lmtt/m/n/10 ## [71] "circulatory_disorders"               "digestive_diso
+rders"[] 
  []
 
 
-Overfull \hbox (54.0pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  7 ENSG00000213318.4    424  11.4  0.128   31.9 5.57e-115 
-3.21e-111 chr16[] 
+LaTeX Warning: Reference `tab:tab2' on page 20 undefined on input line 421.
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 440--440
+\TU/lmr/m/n/8 umn that are not the case or control, will be turned into missing
+s. As an ex-
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  8 ENSG00000278039.1    424  -7.78 0.0812 -28.8 3.85e-102 
-1.94e- 98 chrX[] 
+Underfull \hbox (badness 1946) in paragraph at lines 440--440
+\TU/lmr/m/n/8 can specifcy \TU/lmtt/m/n/8 case="cancer"\TU/lmr/m/n/8 , \TU/lmtt
+/m/n/8 control="no cancer" \TU/lmr/m/n/8 and all the individuals with \TU/lmtt/
+m/n/8 "no
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ##  9 ENSG00000067048.16   424   9.62 0.0894  27.4 4.72e- 96 
-2.12e- 92 chrY[] 
- []
-
-
-Overfull \hbox (48.75pt too wide) in paragraph at lines 534--534
-[]\TU/lmtt/m/n/10 ## 10 ENSG00000131002.11   424  11.4  0.0924  27.3 9.63e- 96 
-3.89e- 92 chrY[] 
+Overfull \hbox (10.22453pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 20 \TU/lmr/m/sl/10 CHAPTER 4.  GENOME WIDE ASSOCIATION STUDY (GW
+AS) ANALYSIS
  []
 
 [20]
-Chapter 4.
 
-LaTeX Warning: Reference `fig:testResources' on page 21 undefined on input line
- 575.
+LaTeX Warning: Reference `tab:tab3' on page 21 undefined on input line 473.
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 577--578
-[]\TU/lmr/m/n/10 In order to perform omic data analyses, we need first to login
- and
+Overfull \hbox (28.0308pt too wide) in paragraph at lines 490--491
+[]|\TU/lmr/m/n/10 “diabetes_diagnosed_doctor”|  
+ []
+
+[21]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##    rs        chr        pos n.obs  freq   p.value    Est E
+st.SE reference_allele[] 
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 577--578
-\TU/lmr/m/n/10 assign resources to DataSHIELD. This can be performed using the
+Overfull \hbox (33.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  * <chr>     <chr>    <int> <dbl> <dbl>     <dbl>  <dbl>  
+<dbl> <chr>[] 
  []
 
 
-Underfull \vbox (badness 1655) has occurred while \output is active []
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  1 rs4648446 1       2.89e6  1292 0.512   7.42e-6 -0.323 0
+.0721 C[] 
+ []
 
-[21
 
-]
-Overfull \hbox (27.75pt too wide) in paragraph at lines 651--651
-[]\TU/lmtt/m/n/10 ## [1] "cg00000029" "cg00000108" "cg00000109" "cg00000165" "c
-g00000236"[] 
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  2 rs4659014 1       1.20e8  1296 0.587   8.74e-6  0.321 0
+.0723 T[] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  3 rs127465~ 1       2.90e6  1294 0.548   9.69e-6 -0.321 0
+.0725 C[] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  4 rs313728  1       8.62e7  1293 0.277   1.08e-5 -0.375 0
+.0852 C[] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  5 rs113272~ 1       1.17e8  1292 0.859   1.08e-5 -0.459 0
+.104  T[] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  6 rs173625~ 1       2.82e7  1293 0.864   2.26e-5 -0.466 0
+.110  C[] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  7 rs292001  1       2.30e7  1293 0.343   2.64e-5  0.327 0
+.0779 G[] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  8 rs741198~ 1       1.47e8  1294 0.932   3.16e-5  0.608 0
+.146  A[] 
+ []
+
+
+Overfull \hbox (10.22453pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 22 \TU/lmr/m/sl/10 CHAPTER 4.  GENOME WIDE ASSOCIATION STUDY (GW
+AS) ANALYSIS
  []
 
 [22]
-Overfull \hbox (27.75pt too wide) in paragraph at lines 651--651
-[]\TU/lmtt/m/n/10 ## [1] "cg00000029" "cg00000108" "cg00000109" "cg00000165" "c
-g00000236"[] 
- []
-
-[23] [24] [25]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ##   id             n    beta      SE     t       P.Value adj
-.P.Val[] 
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ##  9 rs580006~ 1       5.30e7  1293 0.929   3.69e-5  0.590 0
+.143  C[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ##   <chr>      <int>   <dbl>   <dbl> <dbl>         <dbl>    
- <dbl>[] 
+Overfull \hbox (12.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ## 10 rs729056~ 1       5.30e7  1294 0.929   4.18e-5  0.586 0
+.143  G[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 1 cg13138089   100 -0.147  0.0122  -6.62 0.00000000190  0.
-000466[] 
+Overfull \hbox (54.0pt too wide) in paragraph at lines 552--552
+[]\TU/lmtt/m/n/10 ## # ... with 865,230 more rows, and 1 more variable: alterna
+te_allele <chr>[] 
+ []
+
+File: OmicSHIELD_bookdown_files/figure-latex/singleCohortManhattan_plot-1.pdf G
+raphic file (type pdf)
+<use OmicSHIELD_bookdown_files/figure-latex/singleCohortManhattan_plot-1.pdf>
+
+Overfull \hbox (2.997pt too wide) in paragraph at lines 564--565
+ []\TU/lmr/m/n/10 {[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 2 cg23859635   100 -0.0569 0.00520 -6.58 0.00000000232  0.
-000466[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 3 cg13772815   100 -0.0820 0.0135  -6.50 0.00000000327  0.
-000466[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 4 cg12706938   100 -0.0519 0.00872 -6.45 0.00000000425  0.
-000466[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 5 cg24724506   100 -0.0452 0.00775 -6.39 0.00000000547  0.
-000466[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 6 cg02812891   100 -0.125  0.0163  -6.33 0.00000000731  0.
-000466[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ##   id             n    beta      SE     t      P.Value adj.
-P.Val[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ##   <chr>      <int>   <dbl>   <dbl> <dbl>        <dbl>     
-<dbl>[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 1 cg04046629    90 -0.101  0.0128  -5.91 0.0000000621    0
-.0172[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 2 cg07664323    90 -0.0431 0.00390 -5.85 0.0000000822    0
-.0172[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 3 cg27098804    90 -0.0688 0.0147  -5.79 0.000000107     0
-.0172[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 4 cg08933615    90 -0.0461 0.00791 -5.55 0.000000298     0
-.0360[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 5 cg18349298    90 -0.0491 0.00848 -5.42 0.000000507     0
-.0489[] 
- []
-
-
-Overfull \hbox (1.5pt too wide) in paragraph at lines 871--871
-[]\TU/lmtt/m/n/10 ## 6 cg02182795    90 -0.0199 0.0155  -5.36 0.000000670     0
-.0538[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 926--926
-[]\TU/lmtt/m/n/10 ## [25] "UCSC_CpG_Islands_Name"       "Relation_to_UCSC_CpG_I
-sland"[] 
- []
-
-[26]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 926--926
-[]\TU/lmtt/m/n/10 ## [25] "UCSC_CpG_Islands_Name"       "Relation_to_UCSC_CpG_I
-sland"[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ##   id          n    beta      SE     t   P.Value adj.P.Val 
-CHR   UCSC_RefGene_Na~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ##   <chr>   <int>   <dbl>   <dbl> <dbl>     <dbl>     <dbl> 
-<chr> <chr>[] 
- []
-
-
-Overfull \hbox (54.0pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 1 cg1313~   100 -0.147  0.0122  -6.62   1.90e-9  0.000466 
-2     "ECEL1P2"[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 2 cg2385~   100 -0.0569 0.00520 -6.58   2.32e-9  0.000466 
-2     "MTA3"[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 3 cg1377~   100 -0.0820 0.0135  -6.50   3.27e-9  0.000466 
-17    ""[] 
- []
-
-[27]
-Overfull \hbox (43.5pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 4 cg1270~   100 -0.0519 0.00872 -6.45   4.25e-9  0.000466 
-19    "MEX3D"[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 5 cg2472~   100 -0.0452 0.00775 -6.39   5.47e-9  0.000466 
-19    "ISOC2;ISOC2;IS~[] 
- []
-
-
-Overfull \hbox (54.0pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 6 cg0281~   100 -0.125  0.0163  -6.33   7.31e-9  0.000466 
-2     "ECEL1P2"[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ##   id          n    beta      SE     t   P.Value adj.P.Val 
-CHR   UCSC_RefGene_Na~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ##   <chr>   <int>   <dbl>   <dbl> <dbl>     <dbl>     <dbl> 
-<chr> <chr>[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 1 cg0404~    90 -0.101  0.0128  -5.91   6.21e-8    0.0172 
-11    "CD6"[] 
- []
-
-
-Overfull \hbox (43.5pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 2 cg0766~    90 -0.0431 0.00390 -5.85   8.22e-8    0.0172 
-6     "MUC21"[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 3 cg2709~    90 -0.0688 0.0147  -5.79   1.07e-7    0.0172 
-11    "CD6"[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 4 cg0893~    90 -0.0461 0.00791 -5.55   2.98e-7    0.0360 
-1     ""[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 5 cg1834~    90 -0.0491 0.00848 -5.42   5.07e-7    0.0489 
-3     "RARRES1;RARRES~[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 967--967
-[]\TU/lmtt/m/n/10 ## 6 cg0218~    90 -0.0199 0.0155  -5.36   6.70e-7    0.0538 
-8     ""[] 
- []
-
-[28] [29]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 1137--1137
-[]\TU/lmtt/m/n/10 ## beta: 0.471427788697297 -0.0678613723066762 -0.00640757953
-624292[] 
- []
-
-File: OmicSHIELD_bookdown_files/figure-latex/qqplot-1.pdf Graphic file (type pd
-f)
-<use OmicSHIELD_bookdown_files/figure-latex/qqplot-1.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[30] [31]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##    id          n    beta      SE     t  P.Value adj.P.Val 
-CHR   UCSC_RefGene_Na~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##    <chr>   <int>   <dbl>   <dbl> <dbl>    <dbl>     <dbl> 
-<chr> <chr>[] 
- []
-
-
-Overfull \hbox (54.0pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  1 cg1313~   100 -0.147  0.0122  -6.62  1.90e-9  0.000466 
-2     "ECEL1P2"[] 
- []
-
-
-Overfull \hbox (38.25pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  2 cg2385~   100 -0.0569 0.00520 -6.58  2.32e-9  0.000466 
-2     "MTA3"[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  3 cg1377~   100 -0.0820 0.0135  -6.50  3.27e-9  0.000466 
-17    ""[] 
- []
-
-
-Overfull \hbox (43.5pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  4 cg1270~   100 -0.0519 0.00872 -6.45  4.25e-9  0.000466 
-19    "MEX3D"[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  5 cg2472~   100 -0.0452 0.00775 -6.39  5.47e-9  0.000466 
-19    "ISOC2;ISOC2;IS~[] 
- []
-
-
-Overfull \hbox (54.0pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  6 cg0281~   100 -0.125  0.0163  -6.33  7.31e-9  0.000466 
-2     "ECEL1P2"[] 
- []
-
-
-Overfull \hbox (54.0pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  7 cg2766~   100 -0.0588 0.0198  -6.33  7.48e-9  0.000466 
-16    "ANKRD11"[] 
- []
-
-
-Overfull \hbox (43.5pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  8 cg1537~   100 -0.0709 0.0115  -6.32  7.83e-9  0.000466 
-2     "LPIN1"[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  9 cg1552~   100 -0.0446 0.00750 -6.29  8.69e-9  0.000466 
-10    ""[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ## 10 cg1269~   100 -0.0497 0.00155 -6.27  9.85e-9  0.000475 
-6     "GCNT2;GCNT2;GC~[] 
- []
-
-
-Overfull \hbox (85.5pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##    id         n    beta      SE     t P.Value adj.P.Val CH
-R   UCSC_RefGene_Name[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##    <chr>  <int>   <dbl>   <dbl> <dbl>   <dbl>     <dbl> <c
-hr> <chr>[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  1 cg040~    90 -0.101  0.0128  -5.91 6.21e-8    0.0172 11
-    "CD6"[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  2 cg076~    90 -0.0431 0.00390 -5.85 8.22e-8    0.0172 6 
-    "MUC21"[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  3 cg270~    90 -0.0688 0.0147  -5.79 1.07e-7    0.0172 11
-    "CD6"[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  4 cg089~    90 -0.0461 0.00791 -5.55 2.98e-7    0.0360 1 
-    ""[] 
- []
-
-
-Overfull \hbox (85.5pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  5 cg183~    90 -0.0491 0.00848 -5.42 5.07e-7    0.0489 3 
-    "RARRES1;RARRES1"[] 
- []
-
-
-Overfull \hbox (6.75pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  6 cg021~    90 -0.0199 0.0155  -5.36 6.70e-7    0.0538 8 
-    ""[] 
- []
-
-
-Overfull \hbox (43.5pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  7 cg160~    90 -0.0531 0.0196  -5.31 7.97e-7    0.0548 17
-    "MEIS3P1"[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  8 cg012~    90 -0.0537 0.00971 -5.18 1.39e-6    0.0582 7 
-    "HOXA2"[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ##  9 cg251~    90 -0.0224 0.00736 -5.15 1.57e-6    0.0582 3 
-    "ZBTB20;ZBTB20;ZB~[] 
- []
-
-
-Overfull \hbox (48.75pt too wide) in paragraph at lines 1254--1254
-[]\TU/lmtt/m/n/10 ## 10 cg074~    90 -0.0475 0.00166 -5.13 1.67e-6    0.0582 22
-    "C22orf27"[] 
- []
-
-[32]
-No file OmicSHIELD_bookdown.bbl.
-[33] (OmicSHIELD_bookdown.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.568 \caption
+              {Manhattan plot of the single-cohort results.} 
 Here is how much of TeX's memory you used:
- 18343 strings out of 411722
- 320385 string characters out of 2836107
- 817637 words of memory out of 3000000
- 38058 multiletter control sequences out of 15000+600000
- 409905 words of font info for 83 fonts, out of 8000000 for 9000
+ 18336 strings out of 411722
+ 319902 string characters out of 2836107
+ 813887 words of memory out of 3000000
+ 38054 multiletter control sequences out of 15000+600000
+ 409929 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,6n,122p,985b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,11n,122p,971b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on OmicSHIELD_bookdown.pdf (33 pages).
+Output written on OmicSHIELD_bookdown.pdf (22 pages).

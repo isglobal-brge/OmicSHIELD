@@ -18,6 +18,7 @@ library(dsBaseClient)
 library(DSLite)
 library(dsOmicsClient)
 # knitr::opts_chunk$set(eval = FALSE)
+knitr::opts_chunk$set(cache = TRUE)
 # knitr::opts_chunk$set(fig.width = 6)
 ```
 
