@@ -49,10 +49,7 @@ conns <- DSI::datashield.login(logins = logindata)
 
 ### Assign the VCF resources
 
-Now that we have created a connection object to the Opal, we have started a new R session on the server, our analysis will take place in this remote session, so we have to load the data into it. This is done via a two step process:
-
-1.  Load the resources to the R session. The resources can be imagined as a data structure that contains the information about were to find a data set and the access credentials to it; we as users are not able to look at this information (it is privately stored on the Opal server), but we can load it into our remote R session to make use of it. Following that, the second step comes naturally.
-2.  Resolve the resources. Once we have the information on how to access the data, we have to actually retrieve it on the remote R session to analyze it.
+Now that we have created a connection object to the Opal, we have started a new R session on the server, our analysis will take place in this remote session, so we have to load the data into it.
 
 In this use case we will use 21 different resources from the `GWAS` project hosted on the [demo Opal server](https://opal-demo.obiba.org/). This resources correspond to VCF files with information on individual chromosomes. The names of the resources are `chrXXA` (where XX is the chromosome number). Following the Opal syntax, we will refer to them using the string `GWAS.chrXXA`.
 
@@ -107,7 +104,7 @@ ds.class("pheno_object")
 
 We can also check the column names to see which information is present on the table.
 
-```{r}
+```{r single_cohort_check_table_cols}
 ds.colnames("pheno_object")[[1]]
 ```
 

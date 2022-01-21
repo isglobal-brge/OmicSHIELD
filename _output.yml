@@ -6,7 +6,7 @@ bookdown::gitbook:
     sharing: null
     toc:
       before: |
-        <li><a href="" target="blank">ShinyDataSHIELD User Guide</a></li>
+        <li><a href="" target="blank">OmicSHIELD</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     download: ["pdf", "epub"]

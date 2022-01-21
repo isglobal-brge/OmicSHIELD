@@ -31,3 +31,5 @@ knitr::include_graphics("fig/dsOmics_B.jpg")
 ```{r omicAnal2, echo=FALSE, fig.cap="Non-disclosive omic data analysis with DataSHIELD and Bioconductor. The figure illustrates how to perform anlyses at genome-wide level from one or multiple sources. It runs standard Bioconductor functions at each server independently to speed up the analyses and in the case of having multiple sources, results can be meta-analyzed uning standar R functions.", fig.align='center'}
 knitr::include_graphics("fig/dsOmics_C.jpg")
 ```
+
+# (PART) Workflows {.unnumbered}
