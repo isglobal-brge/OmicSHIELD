@@ -51,7 +51,7 @@ conns <- DSI::datashield.login(logins = logindata)
 
 Now that we have created a connection object to the Opal, we have started a new R session on the server, our analysis will take place in this remote session, so we have to load the data into it.
 
-In this use case we will use 21 different resources from the `GWAS` project hosted on the [demo Opal server](https://opal-demo.obiba.org/). This resources correspond to VCF files with information on individual chromosomes. The names of the resources are `chrXXA` (where XX is the chromosome number). Following the Opal syntax, we will refer to them using the string `GWAS.chrXXA`.
+In this use case we will use 21 different resources from the `GWAS` project hosted on the [demo Opal server](https://opal-demo.obiba.org/). This resources correspond to VCF files with information on individual chromosomes. The names of the resources are `chrXX` (where XX is the chromosome number). Following the Opal syntax, we will refer to them using the string `GWAS.chrXX`.
 
 To load the resources we will use the `DSI::datashield.assign.resource()` function. Note that along the use case we use the `lapply` function to simplify our code since we have to perform repetitive operations. `lapply` is a way of creating loops in R, for more information visit [the documentation](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/lapply).
 
@@ -61,7 +61,7 @@ lapply(1:21, function(x){
   })
 ```
 
-Now we have assigned all the resources named `GWAS.chrXXA` into our remote R session. We have assigned them to the variables called `chrXX`. To verify this step has been performed correctly, we could use the `ds.class` function to check for their class and that they exist on the remote session.
+Now we have assigned all the resources named `GWAS.chrXX` into our remote R session. We have assigned them to the variables called `chrXX`. To verify this step has been performed correctly, we could use the `ds.class` function to check for their class and that they exist on the remote session.
 
 ```{r single_cohort_check_class_resource}
 ds.class("chr1")
