@@ -1,6 +1,5 @@
 --- 
 title: "Privacy protected federated omic data analysis in multi-center studies with DataSHIELD"
-author: "Escribà Montagut, Xavier; González, Juan R."
 date: "`r Sys.Date()`"
 output: bookdown::html_document2
 site: bookdown::bookdown_site
