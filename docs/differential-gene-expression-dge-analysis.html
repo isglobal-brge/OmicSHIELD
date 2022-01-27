@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-01-26" />
+<meta name="date" content="2022-01-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -212,9 +212,9 @@ div.csl-indent {
 <li class="chapter" data-level="3.2.6" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#gwas-plots"><i class="fa fa-check"></i><b>3.2.6</b> GWAS Plots</a></li>
 <li class="chapter" data-level="3.2.7" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#meta-level-quality-control"><i class="fa fa-check"></i><b>3.2.7</b> Meta-level quality control</a></li>
 <li class="chapter" data-level="3.2.8" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#meta-analysis"><i class="fa fa-check"></i><b>3.2.8</b> Meta-analysis</a></li>
-<li class="chapter" data-level="3.2.9" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#fast-gwas-analysis"><i class="fa fa-check"></i><b>3.2.9</b> Fast GWAS analysis</a></li>
+<li class="chapter" data-level="3.2.9" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#ultra-fast-gwas"><i class="fa fa-check"></i><b>3.2.9</b> Ultra fast pooled GWAS analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#post-omic-analysis"><i class="fa fa-check"></i><b>3.3</b> Post omic analysis</a>
+<li class="chapter" data-level="3.3" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#post-omics"><i class="fa fa-check"></i><b>3.3</b> Post-omic analysis</a>
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#enrichment-analysis"><i class="fa fa-check"></i><b>3.3.1</b> Enrichment analysis</a></li>
 </ul></li>
@@ -291,7 +291,75 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="differential-gene-expression-dge-analysis" class="section level1" number="5">
 <h1><span class="header-section-number">5</span> Differential gene expression (DGE) analysis</h1>
-<p>In this section we will illustrate how to perform transcriptomic data analysis using data from <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">TCGA project</a>. We have uploaded to the demo Opal server a resource called <code>tcga_liver</code> whose URL is <a href="http://duffel.rail.bio/recount/TCGA/rse_gene_liver.Rdata" class="uri">http://duffel.rail.bio/recount/TCGA/rse_gene_liver.Rdata</a> which is available through the <a href="https://jhubiostatistics.shinyapps.io/recount/">recount project</a>. This resource contains the <code>RangeSummarizedExperiment</code>(RSE) with the RNAseq profiling of liver cancer data from TCGA. The resource is located inside the <code>OMICS</code> project. Some summaries of the dataset are the following:</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">
+<p>
+⚠️ RESOURCES USED ALONG THIS SECTION
+</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">
+<p>
+From <a href="https://opal-demo.obiba.org/">https://opal-demo.obiba.org/</a> :
+</p>
+</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">
+<table>
+<thead>
+<tr class="header">
+<th>
+<p>
+STUDY
+</p>
+</th>
+<th>
+<p>
+TABLE
+</p>
+</th>
+<th>
+<p>
+PROFILE
+</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p>
+cohort1
+</p>
+</td>
+<td>
+<p>
+OMICS.tcga_liver
+</p>
+</td>
+<td>
+<p>
+omics
+</p>
+</td>
+</tr>
+<tr 
+</tbody></table></td></tr>
+</tbody>
+</table>
+<p>In this section we will illustrate how to perform transcriptomic data analysis using data from <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">TCGA project</a>. We have uploaded to the demo Opal server a resource called <code>tcga_liver</code> whose URL is <a href="http://duffel.rail.bio/recount/TCGA/rse_gene_liver.Rdata" class="uri">http://duffel.rail.bio/recount/TCGA/rse_gene_liver.Rdata</a> which is available through the <a href="https://jhubiostatistics.shinyapps.io/recount/">recount project</a>.</p>
+<p>The <code>RangedSummarizedExperiment</code> (RSE) objects are part of the <a href="https://www.bioconductor.org/">BioConductor project</a>, as a brief summary, this types of objects are designed to contain different multi omic data, they can also contain the individuals phenotypes and additional metadata associated with a particular experiment. For further information about what are <code>RangedSummarizedExperiment</code> please take a look at the <a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/SummarizedExperiment/inst/doc/SummarizedExperiment.html">official documentation</a></p>
+<p>The resource used on this section contains a <code>RangedSummarizedExperiment</code>with the RNAseq profiling of liver cancer data from TCGA.</p>
+<p>The resource is located inside the <code>OMICS</code> project. Some summaries of the dataset are the following:</p>
 <table>
 <thead>
 <tr class="header">
@@ -331,34 +399,34 @@ Figure 5.1: Proposed infrastructure to perform DGE studies.
 <div id="connection-to-the-opal-server-3" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Connection to the Opal server</h2>
 <p>We have to create an Opal connection object to the cohort server. We do that using the following functions.</p>
-<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="differential-gene-expression-dge-analysis.html#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSI&#39;</span>)</span>
-<span id="cb94-2"><a href="differential-gene-expression-dge-analysis.html#cb94-2" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSOpal&#39;</span>)</span>
-<span id="cb94-3"><a href="differential-gene-expression-dge-analysis.html#cb94-3" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;dsBaseClient&#39;</span>)</span>
-<span id="cb94-4"><a href="differential-gene-expression-dge-analysis.html#cb94-4" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;dsOmicsClient&#39;</span>)</span>
-<span id="cb94-5"><a href="differential-gene-expression-dge-analysis.html#cb94-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb94-6"><a href="differential-gene-expression-dge-analysis.html#cb94-6" aria-hidden="true" tabindex="-1"></a>builder <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">newDSLoginBuilder</span>()</span>
-<span id="cb94-7"><a href="differential-gene-expression-dge-analysis.html#cb94-7" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;cohort1&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://opal-demo.obiba.org/&quot;</span>,</span>
-<span id="cb94-8"><a href="differential-gene-expression-dge-analysis.html#cb94-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">user =</span>  <span class="st">&quot;dsuser&quot;</span>, <span class="at">password =</span> <span class="st">&quot;P@ssw0rd&quot;</span>,</span>
-<span id="cb94-9"><a href="differential-gene-expression-dge-analysis.html#cb94-9" aria-hidden="true" tabindex="-1"></a>               <span class="at">driver =</span> <span class="st">&quot;OpalDriver&quot;</span>, <span class="at">profile =</span> <span class="st">&quot;omics&quot;</span>)</span>
-<span id="cb94-10"><a href="differential-gene-expression-dge-analysis.html#cb94-10" aria-hidden="true" tabindex="-1"></a>logindata <span class="ot">&lt;-</span> builder<span class="sc">$</span><span class="fu">build</span>()</span>
-<span id="cb94-11"><a href="differential-gene-expression-dge-analysis.html#cb94-11" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata)</span></code></pre></div>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="differential-gene-expression-dge-analysis.html#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSI&#39;</span>)</span>
+<span id="cb93-2"><a href="differential-gene-expression-dge-analysis.html#cb93-2" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSOpal&#39;</span>)</span>
+<span id="cb93-3"><a href="differential-gene-expression-dge-analysis.html#cb93-3" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;dsBaseClient&#39;</span>)</span>
+<span id="cb93-4"><a href="differential-gene-expression-dge-analysis.html#cb93-4" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;dsOmicsClient&#39;</span>)</span>
+<span id="cb93-5"><a href="differential-gene-expression-dge-analysis.html#cb93-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb93-6"><a href="differential-gene-expression-dge-analysis.html#cb93-6" aria-hidden="true" tabindex="-1"></a>builder <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">newDSLoginBuilder</span>()</span>
+<span id="cb93-7"><a href="differential-gene-expression-dge-analysis.html#cb93-7" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;cohort1&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://opal-demo.obiba.org/&quot;</span>,</span>
+<span id="cb93-8"><a href="differential-gene-expression-dge-analysis.html#cb93-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">user =</span>  <span class="st">&quot;dsuser&quot;</span>, <span class="at">password =</span> <span class="st">&quot;P@ssw0rd&quot;</span>,</span>
+<span id="cb93-9"><a href="differential-gene-expression-dge-analysis.html#cb93-9" aria-hidden="true" tabindex="-1"></a>               <span class="at">driver =</span> <span class="st">&quot;OpalDriver&quot;</span>, <span class="at">profile =</span> <span class="st">&quot;omics&quot;</span>)</span>
+<span id="cb93-10"><a href="differential-gene-expression-dge-analysis.html#cb93-10" aria-hidden="true" tabindex="-1"></a>logindata <span class="ot">&lt;-</span> builder<span class="sc">$</span><span class="fu">build</span>()</span>
+<span id="cb93-11"><a href="differential-gene-expression-dge-analysis.html#cb93-11" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata)</span></code></pre></div>
 </div>
 <div id="assign-the-rse-resource" class="section level2" number="5.2">
 <h2><span class="header-section-number">5.2</span> Assign the RSE resource</h2>
 <p>Now that we have created a connection object to the Opal, we have started a new R session on the server, our analysis will take place in this remote session, so we have to load the data into it.</p>
 <p>In this use case we will use one resource from the OMICS project hosted on the demo Opal server. This resources correspond to RangedsummarizedExperiment dataset. The names of the resource is <code>tcga_liver</code>, we will refer to it using the string <code>OMICS.tcga_liver</code>.</p>
-<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="differential-gene-expression-dge-analysis.html#cb95-1" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns, <span class="st">&quot;rse_resource&quot;</span>, <span class="st">&quot;OMICS.tcga_liver&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="differential-gene-expression-dge-analysis.html#cb94-1" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns, <span class="st">&quot;rse_resource&quot;</span>, <span class="st">&quot;OMICS.tcga_liver&quot;</span>)</span></code></pre></div>
 <p>Now we have assigned the resource named <code>OMICS.tcga_liver</code> into our remote R session. We have assigned it to a variable called <code>rse_resource</code>. To verify this step has been performed correctly, we could use the <code>ds.class</code> function to check for their class and that they exist on the remote sessions.</p>
-<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="differential-gene-expression-dge-analysis.html#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="st">&quot;rse_resource&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="differential-gene-expression-dge-analysis.html#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="st">&quot;rse_resource&quot;</span>)</span></code></pre></div>
 <pre><code>$cohort1
 [1] &quot;RDataFileResourceClient&quot; &quot;FileResourceClient&quot;     
 [3] &quot;ResourceClient&quot;          &quot;R6&quot;                     </code></pre>
 <p>We can see that the object <code>rse_resource</code> exists in the server.</p>
 <p>Finally the resource is resolved to retrieve the data in the remote session.</p>
-<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="differential-gene-expression-dge-analysis.html#cb98-1" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.expr</span>(<span class="at">conns =</span> conns, <span class="at">symbol =</span> <span class="st">&quot;rse&quot;</span>,</span>
-<span id="cb98-2"><a href="differential-gene-expression-dge-analysis.html#cb98-2" aria-hidden="true" tabindex="-1"></a>                            <span class="at">expr =</span> <span class="fu">as.symbol</span>(<span class="st">&quot;as.resource.object(rse_resource)&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="differential-gene-expression-dge-analysis.html#cb97-1" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.expr</span>(<span class="at">conns =</span> conns, <span class="at">symbol =</span> <span class="st">&quot;rse&quot;</span>,</span>
+<span id="cb97-2"><a href="differential-gene-expression-dge-analysis.html#cb97-2" aria-hidden="true" tabindex="-1"></a>                            <span class="at">expr =</span> <span class="fu">as.symbol</span>(<span class="st">&quot;as.resource.object(rse_resource)&quot;</span>))</span></code></pre></div>
 <p>Now we have resolved the resource named <code>rse_resource</code> into our remote R session. The object retrieved has been assigned into the variable named <code>rse</code>. We can check the process was successful as we did before.</p>
-<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="differential-gene-expression-dge-analysis.html#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="st">&quot;rse&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="differential-gene-expression-dge-analysis.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="st">&quot;rse&quot;</span>)</span></code></pre></div>
 <pre><code>$cohort1
 [1] &quot;RangedSummarizedExperiment&quot;
 attr(,&quot;package&quot;)
@@ -367,21 +435,21 @@ attr(,&quot;package&quot;)
 <div id="inspect-the-rse" class="section level2" number="5.3">
 <h2><span class="header-section-number">5.3</span> Inspect the RSE</h2>
 <p>The number of features and samples can be inspected with:</p>
-<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="differential-gene-expression-dge-analysis.html#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="st">&quot;rse&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="differential-gene-expression-dge-analysis.html#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="st">&quot;rse&quot;</span>)</span></code></pre></div>
 <pre><code>$`dimensions of rse in cohort1`
 [1] 58037   424
 
 $`dimensions of rse in combined studies`
 [1] 58037   424</code></pre>
 <p>And the names of the features using the same function used in the case of analyzing an <code>ExpressionSet</code>:</p>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="differential-gene-expression-dge-analysis.html#cb103-1" aria-hidden="true" tabindex="-1"></a>name.features <span class="ot">&lt;-</span> <span class="fu">ds.featureNames</span>(<span class="st">&quot;rse&quot;</span>)</span>
-<span id="cb103-2"><a href="differential-gene-expression-dge-analysis.html#cb103-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(name.features, head)</span></code></pre></div>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="differential-gene-expression-dge-analysis.html#cb102-1" aria-hidden="true" tabindex="-1"></a>name.features <span class="ot">&lt;-</span> <span class="fu">ds.featureNames</span>(<span class="st">&quot;rse&quot;</span>)</span>
+<span id="cb102-2"><a href="differential-gene-expression-dge-analysis.html#cb102-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(name.features, head)</span></code></pre></div>
 <pre><code>$cohort1
 [1] &quot;ENSG00000000003.14&quot; &quot;ENSG00000000005.5&quot;  &quot;ENSG00000000419.12&quot;
 [4] &quot;ENSG00000000457.13&quot; &quot;ENSG00000000460.16&quot; &quot;ENSG00000000938.12&quot;</code></pre>
 <p>Also the covariate names can be inspected by:</p>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="differential-gene-expression-dge-analysis.html#cb105-1" aria-hidden="true" tabindex="-1"></a>name.vars <span class="ot">&lt;-</span> <span class="fu">ds.featureData</span>(<span class="st">&quot;rse&quot;</span>)</span>
-<span id="cb105-2"><a href="differential-gene-expression-dge-analysis.html#cb105-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(name.vars, head, <span class="at">n=</span><span class="dv">15</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="differential-gene-expression-dge-analysis.html#cb104-1" aria-hidden="true" tabindex="-1"></a>name.vars <span class="ot">&lt;-</span> <span class="fu">ds.featureData</span>(<span class="st">&quot;rse&quot;</span>)</span>
+<span id="cb104-2"><a href="differential-gene-expression-dge-analysis.html#cb104-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(name.vars, head, <span class="at">n=</span><span class="dv">15</span>)</span></code></pre></div>
 <pre><code>$cohort1
  [1] &quot;project&quot;                                       
  [2] &quot;sample&quot;                                        
@@ -399,7 +467,7 @@ $`dimensions of rse in combined studies`
 [14] &quot;biosample_submission_date&quot;                     
 [15] &quot;biosample_publication_date&quot;                    </code></pre>
 <p>We can visualize the levels of the variable having gender information that will be our condition (i.e., we are interested in obtaining genes that are differentially expressed between males and females).</p>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="differential-gene-expression-dge-analysis.html#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.table1D</span>(<span class="st">&quot;rse$gdc_cases.demographic.gender&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="differential-gene-expression-dge-analysis.html#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.table1D</span>(<span class="st">&quot;rse$gdc_cases.demographic.gender&quot;</span>)</span></code></pre></div>
 <pre><code>$counts
        rse$gdc_cases.demographic.gender
 female                              143
@@ -423,16 +491,16 @@ $validity
 <li>Filtering lowly-expressed genes</li>
 <li>Data normalization</li>
 </ul>
-<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="differential-gene-expression-dge-analysis.html#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.RNAseqPreproc</span>(<span class="st">&#39;rse&#39;</span>, <span class="at">group =</span> <span class="st">&#39;gdc_cases.demographic.gender&#39;</span>, </span>
-<span id="cb109-2"><a href="differential-gene-expression-dge-analysis.html#cb109-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">newobj.name =</span> <span class="st">&#39;rse.pre&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="differential-gene-expression-dge-analysis.html#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.RNAseqPreproc</span>(<span class="st">&#39;rse&#39;</span>, <span class="at">group =</span> <span class="st">&#39;gdc_cases.demographic.gender&#39;</span>, </span>
+<span id="cb108-2"><a href="differential-gene-expression-dge-analysis.html#cb108-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">newobj.name =</span> <span class="st">&#39;rse.pre&#39;</span>)</span></code></pre></div>
 <p>Note that it is recommended to indicate the grouping variable (i.e., condition). Once data has been pre-processed, we can perform differential expression analysis. Notice how dimensions have changed given the fact that we have removed genes with low expression which are expected to do not be differentially expressed.</p>
-<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="differential-gene-expression-dge-analysis.html#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="st">&#39;rse&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="differential-gene-expression-dge-analysis.html#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="st">&#39;rse&#39;</span>)</span></code></pre></div>
 <pre><code>$`dimensions of rse in cohort1`
 [1] 58037   424
 
 $`dimensions of rse in combined studies`
 [1] 58037   424</code></pre>
-<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="differential-gene-expression-dge-analysis.html#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="st">&#39;rse.pre&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="differential-gene-expression-dge-analysis.html#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="st">&#39;rse.pre&#39;</span>)</span></code></pre></div>
 <pre><code>$`dimensions of rse.pre in cohort1`
 [1] 40363   424
 
@@ -448,10 +516,10 @@ $`dimensions of rse.pre in combined studies`
 <li>edgeR</li>
 </ul>
 <p>We recommend to use the <code>voom + limma</code> pipeline proposed <a href="https://f1000research.com/articles/5-1438/v2">here</a> given its versatility and that <code>limma</code> is much faster than <code>DESeq2</code> and <code>edgeR</code>. By default, the function considers that data is obtained from a microarray experiment (<code>type.data = "microarray"</code>). Therefore, as we are analyzing RNAseq data, we must indicate that <code>type.data = "RNAse"</code>.</p>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="differential-gene-expression-dge-analysis.html#cb114-1" aria-hidden="true" tabindex="-1"></a>ans.gender <span class="ot">&lt;-</span> <span class="fu">ds.limma</span>(<span class="at">model =</span>  <span class="sc">~</span> gdc_cases.demographic.gender, </span>
-<span id="cb114-2"><a href="differential-gene-expression-dge-analysis.html#cb114-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">Set =</span> <span class="st">&quot;rse.pre&quot;</span>, <span class="at">type.data =</span> <span class="st">&quot;RNAseq&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="differential-gene-expression-dge-analysis.html#cb113-1" aria-hidden="true" tabindex="-1"></a>ans.gender <span class="ot">&lt;-</span> <span class="fu">ds.limma</span>(<span class="at">model =</span>  <span class="sc">~</span> gdc_cases.demographic.gender, </span>
+<span id="cb113-2"><a href="differential-gene-expression-dge-analysis.html#cb113-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">Set =</span> <span class="st">&quot;rse.pre&quot;</span>, <span class="at">type.data =</span> <span class="st">&quot;RNAseq&quot;</span>)</span></code></pre></div>
 <p>The top differentially expressed genes can be visualized by:</p>
-<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="differential-gene-expression-dge-analysis.html#cb115-1" aria-hidden="true" tabindex="-1"></a>ans.gender</span></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="differential-gene-expression-dge-analysis.html#cb114-1" aria-hidden="true" tabindex="-1"></a>ans.gender</span></code></pre></div>
 <pre><code>$cohort1
 # A tibble: 40,363 x 7
    id                     n   beta     SE     t   P.Value adj.P.Val
@@ -471,24 +539,24 @@ $`dimensions of rse.pre in combined studies`
 attr(,&quot;class&quot;)
 [1] &quot;dsLimma&quot; &quot;list&quot;   </code></pre>
 <p>We can verify whether the distribution of the observed p-values are the ones we expect in this type of analyses:</p>
-<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="differential-gene-expression-dge-analysis.html#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(ans.gender<span class="sc">$</span>cohort1<span class="sc">$</span>P.Value, <span class="at">xlab=</span><span class="st">&quot;Raw p-value gender effect&quot;</span>,</span>
-<span id="cb117-2"><a href="differential-gene-expression-dge-analysis.html#cb117-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">&quot;&quot;</span>, <span class="at">las=</span><span class="dv">1</span>, <span class="at">cex.lab=</span><span class="fl">1.5</span>, <span class="at">cex.axis=</span><span class="fl">1.2</span>, <span class="at">col=</span><span class="st">&quot;gray&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="differential-gene-expression-dge-analysis.html#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(ans.gender<span class="sc">$</span>cohort1<span class="sc">$</span>P.Value, <span class="at">xlab=</span><span class="st">&quot;Raw p-value gender effect&quot;</span>,</span>
+<span id="cb116-2"><a href="differential-gene-expression-dge-analysis.html#cb116-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">&quot;&quot;</span>, <span class="at">las=</span><span class="dv">1</span>, <span class="at">cex.lab=</span><span class="fl">1.5</span>, <span class="at">cex.axis=</span><span class="fl">1.2</span>, <span class="at">col=</span><span class="st">&quot;gray&quot;</span>)</span></code></pre></div>
 <p><img src="OmicSHIELD_bookdown_files/figure-html/dge_verify_results-1.png" width="672" /></p>
 </div>
 <div id="surrogate-variable-analysis" class="section level2" number="5.6">
 <h2><span class="header-section-number">5.6</span> Surrogate variable analysis</h2>
 <p>We can also check whether there is inflation just executing</p>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="differential-gene-expression-dge-analysis.html#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ans.gender<span class="sc">$</span>cohort1<span class="sc">$</span>P.Value)</span></code></pre></div>
+<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="differential-gene-expression-dge-analysis.html#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ans.gender<span class="sc">$</span>cohort1<span class="sc">$</span>P.Value)</span></code></pre></div>
 <p><img src="OmicSHIELD_bookdown_files/figure-html/dge_inflation-1.png" width="672" /></p>
 <p>So, in that case, the model needs to remove unwanted variability (<span class="math inline">\(\lambda &gt; 2\)</span>). If so, we can use surrogate variable analysis just changing the argument <code>sva=TRUE</code>.</p>
-<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="differential-gene-expression-dge-analysis.html#cb119-1" aria-hidden="true" tabindex="-1"></a>ans.gender.sva <span class="ot">&lt;-</span> <span class="fu">ds.limma</span>(<span class="at">model =</span>  <span class="sc">~</span> gdc_cases.demographic.gender, </span>
-<span id="cb119-2"><a href="differential-gene-expression-dge-analysis.html#cb119-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">Set =</span> <span class="st">&quot;rse.pre&quot;</span>, <span class="at">type.data =</span> <span class="st">&quot;RNAseq&quot;</span>,</span>
-<span id="cb119-3"><a href="differential-gene-expression-dge-analysis.html#cb119-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sva =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="differential-gene-expression-dge-analysis.html#cb118-1" aria-hidden="true" tabindex="-1"></a>ans.gender.sva <span class="ot">&lt;-</span> <span class="fu">ds.limma</span>(<span class="at">model =</span>  <span class="sc">~</span> gdc_cases.demographic.gender, </span>
+<span id="cb118-2"><a href="differential-gene-expression-dge-analysis.html#cb118-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">Set =</span> <span class="st">&quot;rse.pre&quot;</span>, <span class="at">type.data =</span> <span class="st">&quot;RNAseq&quot;</span>,</span>
+<span id="cb118-3"><a href="differential-gene-expression-dge-analysis.html#cb118-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sva =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <p>Now the inflation has dramatically been reduced (<span class="math inline">\(\lambda &gt; 1.12\)</span>).</p>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="differential-gene-expression-dge-analysis.html#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ans.gender.sva<span class="sc">$</span>cohort1<span class="sc">$</span>P.Value)</span></code></pre></div>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="differential-gene-expression-dge-analysis.html#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ans.gender.sva<span class="sc">$</span>cohort1<span class="sc">$</span>P.Value)</span></code></pre></div>
 <p><img src="OmicSHIELD_bookdown_files/figure-html/dge_new_lambda-1.png" width="672" /></p>
 <p>We can add annotation to the output that is available in our RSE object. We can have access to this information by:</p>
-<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="differential-gene-expression-dge-analysis.html#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.fvarLabels</span>(<span class="st">&#39;rse.pre&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="differential-gene-expression-dge-analysis.html#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.fvarLabels</span>(<span class="st">&#39;rse.pre&#39;</span>)</span></code></pre></div>
 <pre><code>$cohort1
 [1] &quot;chromosome&quot; &quot;start&quot;      &quot;end&quot;        &quot;width&quot;      &quot;strand&quot;    
 [6] &quot;gene_id&quot;    &quot;bp_length&quot;  &quot;symbol&quot;    
@@ -496,11 +564,11 @@ attr(,&quot;class&quot;)
 attr(,&quot;class&quot;)
 [1] &quot;dsfvarLabels&quot; &quot;list&quot;        </code></pre>
 <p>So, we can run:</p>
-<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="differential-gene-expression-dge-analysis.html#cb123-1" aria-hidden="true" tabindex="-1"></a>ans.gender.sva <span class="ot">&lt;-</span> <span class="fu">ds.limma</span>(<span class="at">model =</span>  <span class="sc">~</span> gdc_cases.demographic.gender, </span>
-<span id="cb123-2"><a href="differential-gene-expression-dge-analysis.html#cb123-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">Set =</span> <span class="st">&quot;rse.pre&quot;</span>, <span class="at">type.data =</span> <span class="st">&quot;RNAseq&quot;</span>,</span>
-<span id="cb123-3"><a href="differential-gene-expression-dge-analysis.html#cb123-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sva =</span> <span class="cn">TRUE</span>, <span class="at">annotCols =</span> <span class="fu">c</span>(<span class="st">&quot;chromosome&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="differential-gene-expression-dge-analysis.html#cb122-1" aria-hidden="true" tabindex="-1"></a>ans.gender.sva <span class="ot">&lt;-</span> <span class="fu">ds.limma</span>(<span class="at">model =</span>  <span class="sc">~</span> gdc_cases.demographic.gender, </span>
+<span id="cb122-2"><a href="differential-gene-expression-dge-analysis.html#cb122-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">Set =</span> <span class="st">&quot;rse.pre&quot;</span>, <span class="at">type.data =</span> <span class="st">&quot;RNAseq&quot;</span>,</span>
+<span id="cb122-3"><a href="differential-gene-expression-dge-analysis.html#cb122-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sva =</span> <span class="cn">TRUE</span>, <span class="at">annotCols =</span> <span class="fu">c</span>(<span class="st">&quot;chromosome&quot;</span>))</span></code></pre></div>
 <p>The results are:</p>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="differential-gene-expression-dge-analysis.html#cb124-1" aria-hidden="true" tabindex="-1"></a>ans.gender.sva</span></code></pre></div>
+<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="differential-gene-expression-dge-analysis.html#cb123-1" aria-hidden="true" tabindex="-1"></a>ans.gender.sva</span></code></pre></div>
 <pre><code>$cohort1
 # A tibble: 40,363 x 8
    id                     n   beta     SE     t   P.Value adj.P.Val chromosome
@@ -532,7 +600,7 @@ attr(,&quot;class&quot;)
 <p>We have also implemented two other functions <code>ds.DESeq2</code> and <code>ds.edgeR</code> that perform DGE analysis using <a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html">DESeq2</a> and <a href="https://www.bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf">edgeR</a> methods. This is the R code used to that purpose:</p>
 <p><strong>To be supplied</strong></p>
 <p>We close the DataSHIELD session by:</p>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="differential-gene-expression-dge-analysis.html#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.logout</span>(conns)</span></code></pre></div>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="differential-gene-expression-dge-analysis.html#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.logout</span>(conns)</span></code></pre></div>
 
 </div>
 </div>

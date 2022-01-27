@@ -19,6 +19,11 @@ Along this book, there are some details regarding DataSHIELD and "resources" tha
     -   DataSHIELD (Section 5)
     -   What are resources (Section 6/7)
     
+We will be interacting with DataSHIELD through a data warehouse called Opal. This is the server that will handle the authentication of our credentials, storage of data and "resources" and will provide an R server where the non-disclosive analysis will be conducted. Information about it can also be foun online:
+
+-   Opal papers [1](https://academic.oup.com/ije/article/46/5/1372/4102813?searchresult=1); [2](https://academic.oup.com/ije/article/46/5/1372/4102813?searchresult=1#112563630)
+-   [Opal documentation](https://opaldoc.obiba.org/en/latest/)
+    
 ## What are "resources": A very simple explanation without any technicalities
 
 It is quite important to have a solid understanding of what are the "resources" and how we work with them, since in all the use cases we are interacting with them to load the Omic data on the R sessions. For that reason we included a very brief description of them without using technicalities.

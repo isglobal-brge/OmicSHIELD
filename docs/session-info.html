@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-01-26" />
+<meta name="date" content="2022-01-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -212,9 +212,9 @@ div.csl-indent {
 <li class="chapter" data-level="3.2.6" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#gwas-plots"><i class="fa fa-check"></i><b>3.2.6</b> GWAS Plots</a></li>
 <li class="chapter" data-level="3.2.7" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#meta-level-quality-control"><i class="fa fa-check"></i><b>3.2.7</b> Meta-level quality control</a></li>
 <li class="chapter" data-level="3.2.8" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#meta-analysis"><i class="fa fa-check"></i><b>3.2.8</b> Meta-analysis</a></li>
-<li class="chapter" data-level="3.2.9" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#fast-gwas-analysis"><i class="fa fa-check"></i><b>3.2.9</b> Fast GWAS analysis</a></li>
+<li class="chapter" data-level="3.2.9" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#ultra-fast-gwas"><i class="fa fa-check"></i><b>3.2.9</b> Ultra fast pooled GWAS analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#post-omic-analysis"><i class="fa fa-check"></i><b>3.3</b> Post omic analysis</a>
+<li class="chapter" data-level="3.3" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#post-omics"><i class="fa fa-check"></i><b>3.3</b> Post-omic analysis</a>
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#enrichment-analysis"><i class="fa fa-check"></i><b>3.3.1</b> Enrichment analysis</a></li>
 </ul></li>
@@ -291,7 +291,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="session-info" class="section level1" number="10">
 <h1><span class="header-section-number">10</span> Session info</h1>
-<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="session-info.html#cb159-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="session-info.html#cb158-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
 <pre><code>R version 4.0.4 (2021-02-15)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 10 x64 (build 19042)
@@ -308,102 +308,112 @@ attached base packages:
 [8] methods   base     
 
 other attached packages:
- [1] DOSE_3.16.0                            
- [2] biomaRt_2.46.3                         
- [3] gt_0.3.1                               
- [4] TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2
- [5] GenomicFeatures_1.42.3                 
- [6] AnnotationDbi_1.52.0                   
- [7] Biobase_2.50.0                         
- [8] GenomicRanges_1.42.0                   
- [9] GenomeInfoDb_1.26.7                    
-[10] IRanges_2.24.1                         
-[11] S4Vectors_0.28.1                       
-[12] BiocGenerics_0.36.0                    
-[13] ggrepel_0.9.1                          
-[14] patchwork_1.1.1                        
-[15] forcats_0.5.1                          
-[16] stringr_1.4.0                          
-[17] dplyr_1.0.5                            
-[18] purrr_0.3.4                            
-[19] readr_1.4.0                            
-[20] tidyr_1.1.3                            
-[21] tibble_3.1.0                           
-[22] ggplot2_3.3.3                          
-[23] tidyverse_1.3.0                        
-[24] magrittr_2.0.1                         
-[25] dsOmicsClient_1.0.7-10                 
-[26] DSLite_1.2.0                           
-[27] dsBaseClient_6.2.0-2                   
-[28] DSOpal_1.3.0                           
-[29] opalr_3.0.0                            
-[30] httr_1.4.2                             
-[31] DSI_1.3.0                              
-[32] R6_2.5.0                               
-[33] progress_1.2.2                         
-[34] BiocStyle_2.18.1                       
+ [1] org.Hs.eg.db_3.12.0                    
+ [2] ggnewscale_0.4.5                       
+ [3] enrichplot_1.10.2                      
+ [4] DOSE_3.16.0                            
+ [5] biomaRt_2.46.3                         
+ [6] gt_0.3.1                               
+ [7] TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2
+ [8] GenomicFeatures_1.42.3                 
+ [9] AnnotationDbi_1.52.0                   
+[10] Biobase_2.50.0                         
+[11] GenomicRanges_1.42.0                   
+[12] GenomeInfoDb_1.26.7                    
+[13] IRanges_2.24.1                         
+[14] S4Vectors_0.28.1                       
+[15] BiocGenerics_0.36.0                    
+[16] ggrepel_0.9.1                          
+[17] patchwork_1.1.1                        
+[18] forcats_0.5.1                          
+[19] stringr_1.4.0                          
+[20] dplyr_1.0.5                            
+[21] purrr_0.3.4                            
+[22] readr_1.4.0                            
+[23] tidyr_1.1.3                            
+[24] tibble_3.1.0                           
+[25] ggplot2_3.3.3                          
+[26] tidyverse_1.3.0                        
+[27] magrittr_2.0.1                         
+[28] dsOmicsClient_1.0.7-10                 
+[29] DSLite_1.2.0                           
+[30] dsBaseClient_6.2.0-2                   
+[31] DSOpal_1.3.0                           
+[32] opalr_3.0.0                            
+[33] httr_1.4.2                             
+[34] DSI_1.3.0                              
+[35] R6_2.5.0                               
+[36] progress_1.2.2                         
+[37] BiocStyle_2.18.1                       
 
 loaded via a namespace (and not attached):
-  [1] readxl_1.3.1                backports_1.2.1            
-  [3] fastmatch_1.1-0             BiocFileCache_1.14.0       
-  [5] plyr_1.8.6                  sn_2.0.0                   
-  [7] splines_4.0.4               BiocParallel_1.24.1        
-  [9] TH.data_1.0-10              digest_0.6.27              
- [11] GOSemSim_2.16.1             htmltools_0.5.1.1          
- [13] GO.db_3.12.1                fansi_0.4.2                
- [15] memoise_2.0.0               Biostrings_2.58.0          
- [17] modelr_0.1.8                matrixStats_0.58.0         
- [19] sandwich_3.0-0              askpass_1.1                
- [21] prettyunits_1.1.1           colorspace_2.0-0           
- [23] blob_1.2.1                  rvest_0.3.6                
- [25] rappdirs_0.3.3              haven_2.3.1                
- [27] rbibutils_2.1               xfun_0.28                  
- [29] crayon_1.4.1                RCurl_1.98-1.3             
- [31] jsonlite_1.7.2              survival_3.2-7             
- [33] zoo_1.8-9                   glue_1.4.2                 
- [35] gtable_0.3.0                zlibbioc_1.36.0            
- [37] XVector_0.30.0              DelayedArray_0.16.3        
- [39] scales_1.1.1                mvtnorm_1.1-1              
- [41] DBI_1.1.1                   Rcpp_1.0.7                 
- [43] metap_1.4                   plotrix_3.8-1              
- [45] tmvnsim_1.0-2               bit_4.0.4                  
- [47] fgsea_1.16.0                RColorBrewer_1.1-2         
- [49] TFisher_0.2.0               ellipsis_0.3.1             
- [51] farver_2.1.0                pkgconfig_2.0.3            
- [53] XML_3.99-0.6                sass_0.3.1                 
- [55] dbplyr_2.1.1                utf8_1.2.1                 
- [57] labeling_0.4.2              reshape2_1.4.4             
- [59] tidyselect_1.1.0            rlang_0.4.10               
- [61] munsell_0.5.0               cellranger_1.1.0           
- [63] tools_4.0.4                 cachem_1.0.4               
- [65] cli_2.4.0                   generics_0.1.0             
- [67] RSQLite_2.2.5               broom_0.7.6                
- [69] mathjaxr_1.4-0              evaluate_0.14              
- [71] fastmap_1.1.0               yaml_2.2.1                 
- [73] knitr_1.37                  bit64_4.0.5                
- [75] fs_1.5.0                    mime_0.10                  
- [77] DO.db_2.9                   xml2_1.3.2                 
- [79] compiler_4.0.4              rstudioapi_0.13            
- [81] png_0.1-7                   curl_4.3                   
- [83] reprex_2.0.0                bslib_0.2.4                
- [85] stringi_1.5.3               highr_0.8                  
- [87] lattice_0.20-41             Matrix_1.3-2               
- [89] multtest_2.46.0             vctrs_0.3.6                
- [91] mutoss_0.1-12               pillar_1.5.1               
- [93] lifecycle_1.0.0             BiocManager_1.30.12        
- [95] Rdpack_2.1.1                jquerylib_0.1.4            
- [97] data.table_1.13.0           bitops_1.0-6               
- [99] qvalue_2.22.0               rtracklayer_1.49.5         
-[101] bookdown_0.24               gridExtra_2.3              
-[103] codetools_0.2-18            MASS_7.3-53                
-[105] assertthat_0.2.1            SummarizedExperiment_1.20.0
-[107] openssl_1.4.3               withr_2.4.1                
-[109] GenomicAlignments_1.26.0    Rsamtools_2.6.0            
-[111] mnormt_2.0.2                multcomp_1.4-16            
-[113] GenomeInfoDbData_1.2.4      hms_1.0.0                  
-[115] grid_4.0.4                  labelled_2.8.0             
-[117] rmarkdown_2.11              MatrixGenerics_1.2.1       
-[119] numDeriv_2016.8-1.1         lubridate_1.7.10           </code></pre>
+  [1] utf8_1.2.1                  tidyselect_1.1.0           
+  [3] RSQLite_2.2.5               grid_4.0.4                 
+  [5] BiocParallel_1.24.1         scatterpie_0.1.6           
+  [7] munsell_0.5.0               codetools_0.2-18           
+  [9] mutoss_0.1-12               withr_2.4.1                
+ [11] colorspace_2.0-0            GOSemSim_2.16.1            
+ [13] highr_0.8                   knitr_1.37                 
+ [15] rstudioapi_0.13             labeling_0.4.2             
+ [17] MatrixGenerics_1.2.1        Rdpack_2.1.1               
+ [19] GenomeInfoDbData_1.2.4      mnormt_2.0.2               
+ [21] polyclip_1.10-0             bit64_4.0.5                
+ [23] farver_2.1.0                vctrs_0.3.6                
+ [25] generics_0.1.0              TH.data_1.0-10             
+ [27] xfun_0.28                   BiocFileCache_1.14.0       
+ [29] graphlayouts_0.7.1          bitops_1.0-6               
+ [31] cachem_1.0.4                fgsea_1.16.0               
+ [33] DelayedArray_0.16.3         assertthat_0.2.1           
+ [35] scales_1.1.1                multcomp_1.4-16            
+ [37] ggraph_2.0.5                gtable_0.3.0               
+ [39] tidygraph_1.2.0             sandwich_3.0-0             
+ [41] rlang_0.4.10                splines_4.0.4              
+ [43] rtracklayer_1.49.5          broom_0.7.6                
+ [45] BiocManager_1.30.12         yaml_2.2.1                 
+ [47] reshape2_1.4.4              modelr_0.1.8               
+ [49] backports_1.2.1             qvalue_2.22.0              
+ [51] tools_4.0.4                 bookdown_0.24              
+ [53] ellipsis_0.3.1              jquerylib_0.1.4            
+ [55] RColorBrewer_1.1-2          TFisher_0.2.0              
+ [57] Rcpp_1.0.7                  plyr_1.8.6                 
+ [59] zlibbioc_1.36.0             RCurl_1.98-1.3             
+ [61] prettyunits_1.1.1           openssl_1.4.3              
+ [63] viridis_0.5.1               cowplot_1.1.1              
+ [65] zoo_1.8-9                   SummarizedExperiment_1.20.0
+ [67] haven_2.3.1                 fs_1.5.0                   
+ [69] data.table_1.13.0           DO.db_2.9                  
+ [71] reprex_2.0.0                tmvnsim_1.0-2              
+ [73] mvtnorm_1.1-1               matrixStats_0.58.0         
+ [75] hms_1.0.0                   mime_0.10                  
+ [77] evaluate_0.14               XML_3.99-0.6               
+ [79] readxl_1.3.1                gridExtra_2.3              
+ [81] compiler_4.0.4              crayon_1.4.1               
+ [83] shadowtext_0.0.8            htmltools_0.5.1.1          
+ [85] lubridate_1.7.10            DBI_1.1.1                  
+ [87] tweenr_1.0.2                dbplyr_2.1.1               
+ [89] MASS_7.3-53                 rappdirs_0.3.3             
+ [91] Matrix_1.3-2                cli_2.4.0                  
+ [93] rbibutils_2.1               metap_1.4                  
+ [95] igraph_1.2.6                pkgconfig_2.0.3            
+ [97] sn_2.0.0                    rvcheck_0.1.8              
+ [99] GenomicAlignments_1.26.0    numDeriv_2016.8-1.1        
+[101] xml2_1.3.2                  bslib_0.2.4                
+[103] multtest_2.46.0             XVector_0.30.0             
+[105] rvest_0.3.6                 digest_0.6.27              
+[107] Biostrings_2.58.0           rmarkdown_2.11             
+[109] cellranger_1.1.0            fastmatch_1.1-0            
+[111] curl_4.3                    Rsamtools_2.6.0            
+[113] lifecycle_1.0.0             jsonlite_1.7.2             
+[115] viridisLite_0.3.0           askpass_1.1                
+[117] fansi_0.4.2                 labelled_2.8.0             
+[119] pillar_1.5.1                lattice_0.20-41            
+[121] fastmap_1.1.0               plotrix_3.8-1              
+[123] survival_3.2-7              GO.db_3.12.1               
+[125] glue_1.4.2                  png_0.1-7                  
+[127] bit_4.0.4                   ggforce_0.3.3              
+[129] stringi_1.5.3               sass_0.3.1                 
+[131] blob_1.2.1                  memoise_2.0.0              
+[133] mathjaxr_1.4-0             </code></pre>
 </div>
             </section>
 

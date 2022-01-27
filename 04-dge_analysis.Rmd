@@ -1,12 +1,21 @@
 # Differential gene expression (DGE) analysis
 
-In this section we will illustrate how to perform transcriptomic data analysis using data from [TCGA project](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga). We have uploaded to the demo Opal server a resource called `tcga_liver` whose URL is <http://duffel.rail.bio/recount/TCGA/rse_gene_liver.Rdata> which is available through the [recount project](https://jhubiostatistics.shinyapps.io/recount/). This resource contains the `RangeSummarizedExperiment`(RSE) with the RNAseq profiling of liver cancer data from TCGA. The resource is located inside the `OMICS` project. Some summaries of the dataset are the following:
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th style="text-align: left;"><p>`r emo::ji("warning")` RESOURCES USED ALONG THIS SECTION</p></th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><p>From <a href="https://opal-demo.obiba.org/">https://opal-demo.obiba.org/</a> :</p></td></tr><tr class="even"><td style="text-align: left;"><table><thead><tr class="header"><th><p>STUDY</p></th><th><p>TABLE</p></th><th><p>PROFILE</p></th></tr></thead><tbody><tr class="odd"><td><p>cohort1</p></td><td><p>OMICS.tcga_liver</p></td><td><p>omics</p></td></tr><tr 
+</tbody></table></td></tr></tbody></table>
+
+In this section we will illustrate how to perform transcriptomic data analysis using data from [TCGA project](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga). We have uploaded to the demo Opal server a resource called `tcga_liver` whose URL is <http://duffel.rail.bio/recount/TCGA/rse_gene_liver.Rdata> which is available through the [recount project](https://jhubiostatistics.shinyapps.io/recount/). 
+
+The `RangedSummarizedExperiment` (RSE) objects are part of the [BioConductor project](https://www.bioconductor.org/), as a brief summary, this types of objects are designed to contain different multi omic data, they can also contain the individuals phenotypes and additional metadata associated with a particular experiment. For further information about what are `RangedSummarizedExperiment` please take a look at the [official documentation](https://www.bioconductor.org/packages/devel/bioc/vignettes/SummarizedExperiment/inst/doc/SummarizedExperiment.html)
+
+The resource used on this section contains a `RangedSummarizedExperiment`with the RNAseq profiling of liver cancer data from TCGA.
+
+The resource is located inside the `OMICS` project. Some summaries of the dataset are the following:
 
 |                               | TCGA Liver data |
 |-------------------------------|-----------------|
-| **Number of individuals**     | 424             |
+| **Number of individuals**     |    424          |
 | **Number of genes**           | 58,037          |
-| **Number of covariate fields**| 864             |
+| **Number of covariate fields**|    864          |
 
 The structure used is illustrated on the following figure.
 

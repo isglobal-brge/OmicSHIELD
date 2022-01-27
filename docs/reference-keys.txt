@@ -18,6 +18,7 @@ fig:unnamed-chunk-11
 fig:unnamed-chunk-12
 fig:unnamed-chunk-13
 fig:unnamed-chunk-14
+fig:fastgwasperformance
 fig:fastManhattanPlot
 fig:prsCohortImage
 fig:dgeProposal
@@ -56,10 +57,10 @@ visualizing-the-results-of-the-meta-analysis
 manhatan-plot
 locuszoom
 meta-analysis-versus-pooled-linear-models
-fast-gwas-analysis
+ultra-fast-gwas
 gwas-plot
 meta-analysis-versus-fast-gwas
-post-omic-analysis
+post-omics
 enrichment-analysis
 annotation-of-genes
 enrichment-analysis-query

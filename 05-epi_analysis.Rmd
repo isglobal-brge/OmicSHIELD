@@ -1,10 +1,18 @@
 # Epigenome-wide association analysis (EWAS)
 
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th style="text-align: left;"><p>`r emo::ji("warning")` RESOURCES USED ALONG THIS SECTION</p></th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><p>From <a href="https://opal-demo.obiba.org/">https://opal-demo.obiba.org/</a> :</p></td></tr><tr class="even"><td style="text-align: left;"><table><thead><tr class="header"><th><p>STUDY</p></th><th><p>TABLE</p></th><th><p>PROFILE</p></th></tr></thead><tbody><tr class="odd"><td><p>cohort1</p></td><td><p>OMICS.GSE66351_1</p></td><td><p>omics</p></td></tr><tr 
+class="odd"><td><p>cohort2</p></td><td><p>OMICS.GSE66351_2</p></td><td><p>omics</p></td></tr><tr 
+</tbody></table></td></tr></tbody></table>
+
 In this section we will illustrate how to perform an epigenome-wide association analysis (EWAS) using methylation data. EWAS requires basically the same statistical methods as those used in DGE. It should be noticed that the **pooled analysis** we are going to illustrate here can also be performed with transcriptomic data, however the data needs to be harmonized beforehand to ensure each study has the same range values. For EWAS where methylation is measured using beta values (e.g CpG data are in the range 0-1) this is not a problem. In any case, adopting the **meta-analysis** approach could be a safe option without the need of harmonization. 
 
 Moreover, we encourage to perform **pooled analysis** only on the significant hits obtained by the **meta-analysis**, since it is a much slower methodology.
 
-The data used in this section has been downloaded from [GEO](https://www.ncbi.nlm.nih.gov/geo/) (accession number GSE66351) which contains DNA methylation profiling (Illumina 450K array). Data corresponds to CpGs beta values measured in the superior temporal gyrus and prefrontal cortex brain regions of patients with Alzheimer's. The data is encapsulated on `ExpressionSet` objects. Researchers who are not familiar with `ExpressionSet` can find information [here](https://www.bioconductor.org/packages/release/bioc/vignettes/Biobase/inst/doc/ExpressionSetIntroduction.pdf). Notice that data is encoded as beta-values that ensure data harmonization across studies.
+The data used in this section has been downloaded from [GEO](https://www.ncbi.nlm.nih.gov/geo/) (accession number GSE66351) which contains DNA methylation profiling (Illumina 450K array). Data corresponds to CpGs beta values measured in the superior temporal gyrus and prefrontal cortex brain regions of patients with Alzheimer's. 
+
+This kind of data is encapsulated on a type of R object called `ExpressionSet`, this objects are part of the [BioConductor project](https://www.bioconductor.org/) and are meant to contain different sources of genomic data, alongside the genomic data they can also contain the phenotypes and metadata associated to a study. Researchers who are not familiar with `ExpressionSet` can find further information [here](https://www.bioconductor.org/packages/release/bioc/vignettes/Biobase/inst/doc/ExpressionSetIntroduction.pdf).
+
+The data that we will be using along this section is an `ExpressionSet` objects. Notice that genomic data is encoded as beta-values that ensure data harmonization across studies.
 
 In order to illustrate how to perform data analyses using federated data, we have split the data into two synthetic cohorts (split by individuals). We have created two resources on the demo Opal server called `GSE66351_1` and `GSE66351_2` respectively. They can be found inside the `OMICS` project. Some summaries of the datasets are the following:
 
