@@ -8,7 +8,7 @@ In this section we will illustrate how to perform an epigenome-wide association 
 
 Moreover, we encourage to perform **pooled analysis** only on the significant hits obtained by the **meta-analysis**, since it is a much slower methodology.
 
-The data used in this section has been downloaded from [GEO](https://www.ncbi.nlm.nih.gov/geo/) (accession number GSE66351) which contains DNA methylation profiling (Illumina 450K array). Data corresponds to CpGs beta values measured in the superior temporal gyrus and prefrontal cortex brain regions of patients with Alzheimer's. 
+The data used in this section has been downloaded from [GEO](https://www.ncbi.nlm.nih.gov/geo/) (accession number GSE66351) which contains DNA methylation profiling (Illumina 450K array) (section \@ref(GSE66351description)). Data corresponds to CpGs beta values measured in the superior temporal gyrus and prefrontal cortex brain regions of patients with Alzheimer's. 
 
 This kind of data is encapsulated on a type of R object called `ExpressionSet`, this objects are part of the [BioConductor project](https://www.bioconductor.org/) and are meant to contain different sources of genomic data, alongside the genomic data they can also contain the phenotypes and metadata associated to a study. Researchers who are not familiar with `ExpressionSet` can find further information [here](https://www.bioconductor.org/packages/release/bioc/vignettes/Biobase/inst/doc/ExpressionSetIntroduction.pdf).
 

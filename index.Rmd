@@ -23,16 +23,12 @@ knitr::opts_chunk$set(comment="", warning=FALSE, message=FALSE, cache=TRUE)
 
 # Welcome {-}
 
-![](fig/ds_logo.png){width=50%}
-
-This is a website for a book that serves as official documentation for OmicSHIELD. On it you will find: introductory references to learn about DataSHIELD and "resources", explanation on the type of analysis that can be performed using OmicSHIELD and workflows (with reproducible code) of the main functionalities of OmicSHIELD.
-
-All the funcionalities described on this book have been developed at the Bioinformatic Research Group in Epidemiology (BRGE) of ISGlobal with external help from Yannick Marcon (Obiba); and are part of OmicSHIELD.
-
 ![](fig/logo_omicshield.png){width=50%}
 
-The aim of this book is to be a showcase of the capabilities of the software we developed as well as being a quick reference guide for new researchers interested in this technology.
+This is a website for a book that serves as official documentation for OmicSHIELD. On it you will find introductory references to learn about DataSHIELD and "resources", explanation on the type of analysis that can be performed using OmicSHIELD and workflows (with reproducible code) of the main functionalities of OmicSHIELD. Use cases in which OmicSHIELD is applied to real datasets are presented for illustrating the capabilities of the software for omic analyses (GWAS, transcriptomics and EWAS). 
 
-This material also serves as an online companion for the manuscript "NOMBRE DEL PAPER QUE ESCRIBIREMOS".
+This material is intended to be a quick reference guide for new researchers interested in this technology as well as to be an online companion for the manuscript "Privacy-protected federated omic data analysis in multi-center studies with OmicSHIELD".
+
+All the functionalities described on this book have been developed at the Bioinformatic Research Group in Epidemiology (BRGE) of ISGlobal with external help from Yannick Marcon (Obiba); and are part of OmicSHIELD.
 
 This website is free to use, and is licensed under a [MIT license](https://github.com/isglobal-brge/OmicSHIELD/blob/main/LICENSE).
