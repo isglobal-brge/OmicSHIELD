@@ -626,8 +626,8 @@ With all the information gathered we can visualize the results on the Table <a h
 </caption>
 
 ```{r f, echo=F}
-# library(gt)
-# total %>% gt() %>% tab_spanner(label = 'Beta', columns = c(Est.original, Est.pooled, Est.beta)) %>% tab_spanner(label = 'SE', columns = c(SE.original, SE.pooled, SE.beta)) %>% tab_spanner(label = 'P-Value', columns = c(pval.original, pval.pooled, pval.beta)) %>% cols_label(Est.original = "Original", Est.pooled = "Pooled", Est.beta = "Meta", SE.original = "Original", SE.pooled = "Pooled", SE.beta = "Meta", pval.original = "Original", pval.pooled = "Pooled", pval.beta = "Meta", rs = "SNP id") %>% fmt_number(columns = c(Est.original, Est.pooled, Est.beta, SE.original, SE.pooled, SE.beta), decimals = 3) %>% fmt_scientific(columns = c(pval.original, pval.pooled, pval.beta), decimals = 1) %>% tab_options(column_labels.font.weight = "bold") %>% tab_style(style = cell_fill(color = "grey"), locations = list(cells_body(columns = c(SE.original, SE.pooled, SE.beta), rows = c(seq(2,nrow(total),2))))) %>% tab_style(style = cell_fill(color = "lightgray"), locations = list(cells_body(columns = c(SE.original, SE.pooled, SE.beta), rows = c(seq(1,nrow(total),2))))) %>% tab_style(style = cell_borders(sides = "all", color = "lightgrey", style = "solid", weight = px(1)), locations = cells_body(columns = everything(), rows = everything())) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.original, rows = Est.original<0))) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.beta, rows = Est.beta<0))) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.pooled, rows = Est.pooled<0))) %>% tab_options(table.font.size = "10pt")
+library(gt)
+total %>% gt() %>% tab_spanner(label = 'Beta', columns = c(Est.original, Est.pooled, Est.beta)) %>% tab_spanner(label = 'SE', columns = c(SE.original, SE.pooled, SE.beta)) %>% tab_spanner(label = 'P-Value', columns = c(pval.original, pval.pooled, pval.beta)) %>% cols_label(Est.original = "Original", Est.pooled = "Pooled", Est.beta = "Meta", SE.original = "Original", SE.pooled = "Pooled", SE.beta = "Meta", pval.original = "Original", pval.pooled = "Pooled", pval.beta = "Meta", rs = "SNP id") %>% fmt_number(columns = c(Est.original, Est.pooled, Est.beta, SE.original, SE.pooled, SE.beta), decimals = 3) %>% fmt_scientific(columns = c(pval.original, pval.pooled, pval.beta), decimals = 1) %>% tab_options(column_labels.font.weight = "bold") %>% tab_style(style = cell_fill(color = "grey"), locations = list(cells_body(columns = c(SE.original, SE.pooled, SE.beta), rows = c(seq(2,nrow(total),2))))) %>% tab_style(style = cell_fill(color = "lightgray"), locations = list(cells_body(columns = c(SE.original, SE.pooled, SE.beta), rows = c(seq(1,nrow(total),2))))) %>% tab_style(style = cell_borders(sides = "all", color = "lightgrey", style = "solid", weight = px(1)), locations = cells_body(columns = everything(), rows = everything())) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.original, rows = Est.original<0))) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.beta, rows = Est.beta<0))) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.pooled, rows = Est.pooled<0))) %>% tab_options(table.font.size = "10pt")
 ```
 
 Finally, to conclude this study we can compute the bias and mean squared error (code not shown). The results are shown on the Table <a href="#tab:tab5">5</a>.
@@ -682,7 +682,7 @@ The usage is similar to the meta-GWAS with a couple of added options, feel free 
 ```{r multi_fast_GWAS, message=FALSE, warning=FALSE}
 results_fast <- ds.fastGWAS(genoData = paste0("gds.Data", 1:21), 
                             formula = "diabetes_diagnosed_doctor ~ sex + hdl_cholesterol", 
-                            family = "binomial", snpBlock = 5000)
+                            family = "binomial", resample = 6)
 ```
 
 ```{r}
@@ -695,7 +695,7 @@ We can display the results of the fast GWAS using a Manhattan plot.
 
 
 ```{r fastManhattanPlot, message=FALSE, warning=FALSE, fig.cap="Manhattan plot of the Cohort 1.", fig.align='center'}
-manhattan(results_fast, pvalCol = 4)
+manhattan(results_fast)
 ```
 
 #### Meta-analysis versus fast GWAS
@@ -752,8 +752,8 @@ With all the information gathered we can visualize the results on the Table <a h
 </caption>
 
 ```{r ff, echo=F}
-# library(gt)
-# total %>% gt() %>% tab_spanner(label = 'Beta', columns = c(Est.original, Est.fast, Est.beta)) %>% tab_spanner(label = 'SE', columns = c(SE.original, SE.fast, SE.beta)) %>% tab_spanner(label = 'P-Value', columns = c(pval.original, pval.fast, pval.beta)) %>% cols_label(Est.original = "Original", Est.fast = "Fast", Est.beta = "Meta", SE.original = "Original", SE.fast = "Fast", SE.beta = "Meta", pval.original = "Original", pval.fast = "Fast", pval.beta = "Meta", rs = "SNP id") %>% fmt_number(columns = c(Est.original, Est.fast, Est.beta, SE.original, SE.fast, SE.beta), decimals = 3) %>% fmt_scientific(columns = c(pval.original, pval.fast, pval.beta), decimals = 1) %>% tab_options(column_labels.font.weight = "bold") %>% tab_style(style = cell_fill(color = "grey"), locations = list(cells_body(columns = c(SE.original, SE.fast, SE.beta), rows = c(seq(2,nrow(total),2))))) %>% tab_style(style = cell_fill(color = "lightgray"), locations = list(cells_body(columns = c(SE.original, SE.fast, SE.beta), rows = c(seq(1,nrow(total),2))))) %>% tab_style(style = cell_borders(sides = "all", color = "lightgrey", style = "solid", weight = px(1)), locations = cells_body(columns = everything(), rows = everything())) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.original, rows = Est.original<0))) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.beta, rows = Est.beta<0))) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.fast, rows = Est.fast<0))) %>% tab_options(table.font.size = "10pt")
+library(gt)
+total %>% gt() %>% tab_spanner(label = 'Beta', columns = c(Est.original, Est.fast, Est.beta)) %>% tab_spanner(label = 'SE', columns = c(SE.original, SE.fast, SE.beta)) %>% tab_spanner(label = 'P-Value', columns = c(pval.original, pval.fast, pval.beta)) %>% cols_label(Est.original = "Original", Est.fast = "Fast", Est.beta = "Meta", SE.original = "Original", SE.fast = "Fast", SE.beta = "Meta", pval.original = "Original", pval.fast = "Fast", pval.beta = "Meta", rs = "SNP id") %>% fmt_number(columns = c(Est.original, Est.fast, Est.beta, SE.original, SE.fast, SE.beta), decimals = 3) %>% fmt_scientific(columns = c(pval.original, pval.fast, pval.beta), decimals = 1) %>% tab_options(column_labels.font.weight = "bold") %>% tab_style(style = cell_fill(color = "grey"), locations = list(cells_body(columns = c(SE.original, SE.fast, SE.beta), rows = c(seq(2,nrow(total),2))))) %>% tab_style(style = cell_fill(color = "lightgray"), locations = list(cells_body(columns = c(SE.original, SE.fast, SE.beta), rows = c(seq(1,nrow(total),2))))) %>% tab_style(style = cell_borders(sides = "all", color = "lightgrey", style = "solid", weight = px(1)), locations = cells_body(columns = everything(), rows = everything())) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.original, rows = Est.original<0))) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.beta, rows = Est.beta<0))) %>% tab_style(style = cell_text(color = "red"), locations = list(cells_body(columns = Est.fast, rows = Est.fast<0))) %>% tab_options(table.font.size = "10pt")
 ```
 
 Finally, to conclude this study we can compute the bias and mean squared error (code not shown). The results are shown on the Table <a href="#tab:tab7">7</a>.
