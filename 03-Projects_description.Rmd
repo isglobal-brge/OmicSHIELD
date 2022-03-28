@@ -46,7 +46,7 @@ The `RangedSummarizedExperiment` (RSE) objects are part of the [BioConductor pro
 
 The resource used on this project contains a `RangedSummarizedExperiment` with the RNAseq profiling of liver cancer data from TCGA. The resource is located inside the `OMICS` project. The structure used is illustrated on the following figure.
 
-```{r dgeProposal_1, echo=FALSE, fig.cap="Proposed infrastructure to perform DGE studies.", fig.align='center'}
+```{r dgeProposal1, echo=FALSE, fig.cap="Proposed infrastructure to perform DGE studies.", fig.align='center'}
 knitr::include_graphics("fig/dge_structure.png")
 ```
 
@@ -60,7 +60,7 @@ This kind of data is encapsulated on a type of R object called `ExpressionSet`, 
 
 In order to illustrate how to perform data analyses using federated data, we have split the data into two synthetic cohorts (split by individuals). We have created two resources on the demo Opal server called `GSE66351_1` and `GSE66351_2` respectively. They can be found inside the `OMICS` project. The structure used is illustrated on the following figure.
 
-```{r ewasProposal_1, echo=FALSE, fig.cap="Proposed infrastructure to perform EWAS studies.", fig.align='center'}
+```{r ewasProposal1, echo=FALSE, fig.cap="Proposed infrastructure to perform EWAS studies.", fig.align='center'}
 knitr::include_graphics("fig/ewas_structure.png")
 ```
 
@@ -98,9 +98,9 @@ In the next subsection, we present **extra details** for each of these datasets.
 
 #### Gene expression data. {#TranscriptomicsHELIXDatadescript}
 
-The **gene expression** data available for the **HELIX cohorts** correspond to **microarray data** deriving from the _Human Transcriptome Array 2.0_ platform of Affymetrix. These are hosted in the the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) as _ExpressionSet_ objects. Particularly, one _ExpressionSet_ file per cohort is hosted in the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) in the form of a **resource**, as presented in the **Figure \@ref(fig:FigHELIXresourcesOpal_transcrip)**. As it can be seen, data are organized within the Opal server in a **project** called **HELIX_omics**.
+The **gene expression** data available for the **HELIX cohorts** correspond to **microarray data** deriving from the _Human Transcriptome Array 2.0_ platform of Affymetrix. These are hosted in the the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) as _ExpressionSet_ objects. Particularly, one _ExpressionSet_ file per cohort is hosted in the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) in the form of a **resource**, as presented in the **Figure \@ref(fig:FigHELIXresourcesOpaltranscrip)**. As it can be seen, data are organized within the Opal server in a **project** called **HELIX_omics**.
 
-```{r FigHELIXresourcesOpal_transcrip, echo=FALSE, fig.align = 'center', out.height = "500px", out.width = "3000px", fig.cap = "Input ExposomeSet data organized by cohort in the Opal server as resources."}
+```{r FigHELIXresourcesOpaltranscrip, echo=FALSE, fig.align = 'center', out.height = "500px", out.width = "3000px", fig.cap = "Input ExposomeSet data organized by cohort in the Opal server as resources."}
 knitr::include_graphics(here::here("./fig", "geneexpression_HELIX.png"))
 ```
 
@@ -108,9 +108,9 @@ knitr::include_graphics(here::here("./fig", "geneexpression_HELIX.png"))
 
 The **epigenetic** data available for the **HELIX cohorts** correspond to genome-wide **DNA methylation data** obtained by microarray experiments using the _Infinium HumanMethylation450k_ platform from Illumina. The data format in which these data are hosted in the Opal is the type **GenomicRatioSet**. **GenomicRatioSet** is a extend of the class **SummarizedExperiment** especially designed for DNA methylation data obtained with the _Infinium HumanMethylation450k_ platform, that will be analysed with the associated R package [minfi](http://bioconductor.org/packages/release/bioc/html/minfi.html). This type of data usually contain **pre-processed DNA methylation values** at a genome-wide level, in the form of **M or/and Beta values**, together with the associated **genomic coordinates**. As in the case of **ExpressionSet** types, **GenomicRatioSet** can also incorporate **phenotype** and **metadata** information.
 
-Particularly, one  **GenomicRatioSet** file per cohort is hosted in the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) in the form of a **resource**, as presented in the **Figure \@ref(fig:FigHELIXresourcesOpal_DNAm)**. As it can be seen, data are organized within the Opal server in a **project** called **HELIX_omics**.
+Particularly, one  **GenomicRatioSet** file per cohort is hosted in the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) in the form of a **resource**, as presented in the **Figure \@ref(fig:FigHELIXresourcesOpalDNAm)**. As it can be seen, data are organized within the Opal server in a **project** called **HELIX_omics**.
 
-```{r FigHELIXresourcesOpal_DNAm, echo=FALSE, fig.align = 'center', out.height = "500px", out.width = "3000px", fig.cap = "Input GenomicRatioSet data organized by cohort in the Opal server as resources."}
+```{r FigHELIXresourcesOpalDNAm, echo=FALSE, fig.align = 'center', out.height = "500px", out.width = "3000px", fig.cap = "Input GenomicRatioSet data organized by cohort in the Opal server as resources."}
 knitr::include_graphics(here::here("./fig", "dnaM_HELIX.png"))
 ```
 

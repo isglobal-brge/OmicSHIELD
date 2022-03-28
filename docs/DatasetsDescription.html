@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-03-24" />
+<meta name="date" content="2022-03-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -419,10 +419,10 @@ Figure 3.2: Proposed infrastructure to perform single-cohort GWAS studies.
 </table>
 <p>The <code>RangedSummarizedExperiment</code> (RSE) objects are part of the <a href="https://www.bioconductor.org/">BioConductor project</a>, as a brief summary, these types of objects are designed to contain different multi-omic data, they can also contain the individuals phenotypes and additional metadata associated with a particular experiment. For further information about what are <code>RangedSummarizedExperiment</code> please take a look at the <a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/SummarizedExperiment/inst/doc/SummarizedExperiment.html">official documentation</a></p>
 <p>The resource used on this project contains a <code>RangedSummarizedExperiment</code> with the RNAseq profiling of liver cancer data from TCGA. The resource is located inside the <code>OMICS</code> project. The structure used is illustrated on the following figure.</p>
-<div class="figure" style="text-align: center">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:dgeProposal1"></span>
 <img src="fig/dge_structure.png" alt="Proposed infrastructure to perform DGE studies." width="698" />
 <p class="caption">
-(#fig:dgeProposal_1)Proposed infrastructure to perform DGE studies.
+Figure 3.3: Proposed infrastructure to perform DGE studies.
 </p>
 </div>
 <p>The data analyst corresponds to the “RStudio” session, which through DataSHIELD Interface (DSI) connects with the Opal server. This Opal server contains a resource that corresponds to the TCGA liver RSE.</p>
@@ -432,10 +432,10 @@ Figure 3.2: Proposed infrastructure to perform single-cohort GWAS studies.
 <p>The public data from the GSE66351 project were used in this section for illustrating how to perform <strong>EWAS</strong> in DataSHIELD. They has been downloaded from <a href="https://www.ncbi.nlm.nih.gov/geo/">GEO</a> (accession number GSE66351) and consist on DNA methylation reads from the Illumina 450K array. Data corresponds to CpGs beta values measured in the superior temporal gyrus and prefrontal cortex brain regions of patients with Alzheimer’s.</p>
 <p>This kind of data is encapsulated on a type of R object called <code>ExpressionSet</code>, this objects are part of the <a href="https://www.bioconductor.org/">BioConductor project</a> and are meant to contain different sources of genomic data, alongside the genomic data they can also contain the phenotypes and metadata associated to a study. Researchers who are not familiar with <code>ExpressionSet</code> can find further information <a href="https://www.bioconductor.org/packages/release/bioc/vignettes/Biobase/inst/doc/ExpressionSetIntroduction.pdf">here</a>. Notice that genomic data is encoded as beta-values that ensure data harmonization across studies.</p>
 <p>In order to illustrate how to perform data analyses using federated data, we have split the data into two synthetic cohorts (split by individuals). We have created two resources on the demo Opal server called <code>GSE66351_1</code> and <code>GSE66351_2</code> respectively. They can be found inside the <code>OMICS</code> project. The structure used is illustrated on the following figure.</p>
-<div class="figure" style="text-align: center">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ewasProposal1"></span>
 <img src="fig/ewas_structure.png" alt="Proposed infrastructure to perform EWAS studies." width="730" />
 <p class="caption">
-(#fig:ewasProposal_1)Proposed infrastructure to perform EWAS studies.
+Figure 3.4: Proposed infrastructure to perform EWAS studies.
 </p>
 </div>
 <p>Some summaries of the datasets are the following:</p>
@@ -478,11 +478,11 @@ Figure 3.2: Proposed infrastructure to perform single-cohort GWAS studies.
 </div>
 <div id="HELIXdescription" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> HELIX project.</h2>
-<p>The real-world research problem presented in this book comes from the <a href="https://www.projecthelix.eu">HELIX Project</a>. The <strong>HELIX (Human Early-Life Exposome) project</strong> gathers data from <strong>6 longitudinal-based European birth cohorts</strong>, with the aim of evaluating the effect of <strong>environmental risk factors</strong> on <strong>mothers and children health</strong>, with a special focus in the effects on <strong>molecular health profiles (omic data)</strong>. <strong>HELIX cohorts</strong> include the <em>BIB</em> (Born in Bradford) (United Kingdom), <em>EDEN</em> (Étude des Déterminants pré et postnatals du développement et de la santé de l’ENfant) (France), <em>INMA</em> (INfancia y Medio Ambiente) (Spain), <em>KANC</em> (Kaunus Cohort) (Lithuania), <em>MoBa</em> (Norwegian Mother and Child Cohort Study) (Norway), and <em>Rhea</em> (Mother-Child Cohort in Crete) (Greece). General details of the <strong>study design</strong> of <strong>HELIX</strong> can be found in the <strong>Figure <a href="DatasetsDescription.html#fig:FigHELIX">3.3</a></strong>. The whole <strong>HELIX dataset</strong> includes a total of 31,472 mother-child pairs. Among them, a <strong>subcohort of 1,301 children</strong> (approximately 200 children in each cohort) was selected <strong>here</strong> according to the following criteria of eligibility: 1) age 6 to 11 years; 2) omic data available (including gene expression and EWAS data); 3) complete address history; and 4) no serious health problems that may affect the clinical testing or the child safety.</p>
+<p>The real-world research problem presented in this book comes from the <a href="https://www.projecthelix.eu">HELIX Project</a>. The <strong>HELIX (Human Early-Life Exposome) project</strong> gathers data from <strong>6 longitudinal-based European birth cohorts</strong>, with the aim of evaluating the effect of <strong>environmental risk factors</strong> on <strong>mothers and children health</strong>, with a special focus in the effects on <strong>molecular health profiles (omic data)</strong>. <strong>HELIX cohorts</strong> include the <em>BIB</em> (Born in Bradford) (United Kingdom), <em>EDEN</em> (Étude des Déterminants pré et postnatals du développement et de la santé de l’ENfant) (France), <em>INMA</em> (INfancia y Medio Ambiente) (Spain), <em>KANC</em> (Kaunus Cohort) (Lithuania), <em>MoBa</em> (Norwegian Mother and Child Cohort Study) (Norway), and <em>Rhea</em> (Mother-Child Cohort in Crete) (Greece). General details of the <strong>study design</strong> of <strong>HELIX</strong> can be found in the <strong>Figure <a href="DatasetsDescription.html#fig:FigHELIX">3.5</a></strong>. The whole <strong>HELIX dataset</strong> includes a total of 31,472 mother-child pairs. Among them, a <strong>subcohort of 1,301 children</strong> (approximately 200 children in each cohort) was selected <strong>here</strong> according to the following criteria of eligibility: 1) age 6 to 11 years; 2) omic data available (including gene expression and EWAS data); 3) complete address history; and 4) no serious health problems that may affect the clinical testing or the child safety.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigHELIX"></span>
 <img src="http://www.projecthelix.eu/images/estructura/helix_study.gif" alt="General overview of the HELIX research project." width="90%" />
 <p class="caption">
-Figure 3.3: General overview of the HELIX research project.
+Figure 3.5: General overview of the HELIX research project.
 </p>
 </div>
 <p>In the <strong>1,301 children</strong>, a wide range of <strong>environmental exposures</strong> were evaluated to define the early-life exposome during <strong>two time periods</strong>: the <strong>prenatal pregnancy period</strong> and <strong>childhood</strong> (age 6 to 11 years). Collected exposures can be organized into three main parts of the <strong>exposome</strong>: <strong>outdoor exposures, chemical exposures measured through biomarkers, and lifestyle factors</strong>. All variables incorporated in the dataset have been appropriately <strong>pre-processed</strong> previous to analysis (outliers removal, normalization, and missing values imputation). Regarding <strong>phenotype data</strong>, a wide range of <strong>health outcomes</strong> are also available for the <strong>childhood</strong> period including phenotypes related to (1) obesity and cardiometabolic health, (2) respiratory health, and (3) cognition and mental health. Finally, <strong>omic data</strong> (mainly <strong>transcriptomic</strong> and <strong>genome-wide DNA methylation data</strong>) are also available in the <strong>childhood</strong> period. The <strong>objective</strong> of this dataset was illustrating a real case study of:</p>
@@ -492,32 +492,32 @@ Figure 3.3: General overview of the HELIX research project.
 </ul>
 <div id="HELIXopal" class="section level3" number="3.5.1">
 <h3><span class="header-section-number">3.5.1</span> Data organization in the Opal server.</h3>
-<p><strong>Omic</strong> data from the <strong>HELIX project</strong> were uploaded into to the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> simulating a <strong>single-site DataSHIELD architecture</strong>, as illustrated in <strong>Figure <a href="DatasetsDescription.html#fig:FigHELIXopal">3.4</a></strong>. Data were stored under the form of <strong>resources</strong> (one per cohort and data type). As illustrated in the figure, transcriptomic data) were stored under the form of <em>expressionSets</em> while EWAS data were stored as <em>GenomicRatioSet</em>. A summary of the structure and organization of this data in the <strong>Opal</strong> for the <strong>HELIX project</strong> is illustrated in <strong>Figure <a href="DatasetsDescription.html#fig:FigHELIXopal">3.4</a></strong>.</p>
+<p><strong>Omic</strong> data from the <strong>HELIX project</strong> were uploaded into to the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> simulating a <strong>single-site DataSHIELD architecture</strong>, as illustrated in <strong>Figure <a href="DatasetsDescription.html#fig:FigHELIXopal">3.6</a></strong>. Data were stored under the form of <strong>resources</strong> (one per cohort and data type). As illustrated in the figure, transcriptomic data) were stored under the form of <em>expressionSets</em> while EWAS data were stored as <em>GenomicRatioSet</em>. A summary of the structure and organization of this data in the <strong>Opal</strong> for the <strong>HELIX project</strong> is illustrated in <strong>Figure <a href="DatasetsDescription.html#fig:FigHELIXopal">3.6</a></strong>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigHELIXopal"></span>
 <img src="fig/HELIX%20OPAL%20STRUCTURE.png" alt="Input HELIX datasets organized by cohort in the Opal server." width="90%" />
 <p class="caption">
-Figure 3.4: Input HELIX datasets organized by cohort in the Opal server.
+Figure 3.6: Input HELIX datasets organized by cohort in the Opal server.
 </p>
 </div>
 <p>In the next subsection, we present <strong>extra details</strong> for each of these datasets.</p>
 <div id="TranscriptomicsHELIXDatadescript" class="section level4" number="3.5.1.1">
 <h4><span class="header-section-number">3.5.1.1</span> Gene expression data.</h4>
-<p>The <strong>gene expression</strong> data available for the <strong>HELIX cohorts</strong> correspond to <strong>microarray data</strong> deriving from the <em>Human Transcriptome Array 2.0</em> platform of Affymetrix. These are hosted in the the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> as <em>ExpressionSet</em> objects. Particularly, one <em>ExpressionSet</em> file per cohort is hosted in the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> in the form of a <strong>resource</strong>, as presented in the <strong>Figure @ref(fig:FigHELIXresourcesOpal_transcrip)</strong>. As it can be seen, data are organized within the Opal server in a <strong>project</strong> called <strong>HELIX_omics</strong>.</p>
-<div class="figure" style="text-align: center">
+<p>The <strong>gene expression</strong> data available for the <strong>HELIX cohorts</strong> correspond to <strong>microarray data</strong> deriving from the <em>Human Transcriptome Array 2.0</em> platform of Affymetrix. These are hosted in the the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> as <em>ExpressionSet</em> objects. Particularly, one <em>ExpressionSet</em> file per cohort is hosted in the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> in the form of a <strong>resource</strong>, as presented in the <strong>Figure <a href="DatasetsDescription.html#fig:FigHELIXresourcesOpaltranscrip">3.7</a></strong>. As it can be seen, data are organized within the Opal server in a <strong>project</strong> called <strong>HELIX_omics</strong>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigHELIXresourcesOpaltranscrip"></span>
 <img src="fig/geneexpression_HELIX.png" alt="Input ExposomeSet data organized by cohort in the Opal server as resources." width="3000px" height="500px" />
 <p class="caption">
-(#fig:FigHELIXresourcesOpal_transcrip)Input ExposomeSet data organized by cohort in the Opal server as resources.
+Figure 3.7: Input ExposomeSet data organized by cohort in the Opal server as resources.
 </p>
 </div>
 </div>
 <div id="EWASHELIXDatadescript" class="section level4" number="3.5.1.2">
 <h4><span class="header-section-number">3.5.1.2</span> Epigenetic data.</h4>
 <p>The <strong>epigenetic</strong> data available for the <strong>HELIX cohorts</strong> correspond to genome-wide <strong>DNA methylation data</strong> obtained by microarray experiments using the <em>Infinium HumanMethylation450k</em> platform from Illumina. The data format in which these data are hosted in the Opal is the type <strong>GenomicRatioSet</strong>. <strong>GenomicRatioSet</strong> is a extend of the class <strong>SummarizedExperiment</strong> especially designed for DNA methylation data obtained with the <em>Infinium HumanMethylation450k</em> platform, that will be analysed with the associated R package <a href="http://bioconductor.org/packages/release/bioc/html/minfi.html">minfi</a>. This type of data usually contain <strong>pre-processed DNA methylation values</strong> at a genome-wide level, in the form of <strong>M or/and Beta values</strong>, together with the associated <strong>genomic coordinates</strong>. As in the case of <strong>ExpressionSet</strong> types, <strong>GenomicRatioSet</strong> can also incorporate <strong>phenotype</strong> and <strong>metadata</strong> information.</p>
-<p>Particularly, one <strong>GenomicRatioSet</strong> file per cohort is hosted in the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> in the form of a <strong>resource</strong>, as presented in the <strong>Figure @ref(fig:FigHELIXresourcesOpal_DNAm)</strong>. As it can be seen, data are organized within the Opal server in a <strong>project</strong> called <strong>HELIX_omics</strong>.</p>
-<div class="figure" style="text-align: center">
+<p>Particularly, one <strong>GenomicRatioSet</strong> file per cohort is hosted in the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> in the form of a <strong>resource</strong>, as presented in the <strong>Figure <a href="DatasetsDescription.html#fig:FigHELIXresourcesOpalDNAm">3.8</a></strong>. As it can be seen, data are organized within the Opal server in a <strong>project</strong> called <strong>HELIX_omics</strong>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigHELIXresourcesOpalDNAm"></span>
 <img src="fig/dnaM_HELIX.png" alt="Input GenomicRatioSet data organized by cohort in the Opal server as resources." width="3000px" height="500px" />
 <p class="caption">
-(#fig:FigHELIXresourcesOpal_DNAm)Input GenomicRatioSet data organized by cohort in the Opal server as resources.
+Figure 3.8: Input GenomicRatioSet data organized by cohort in the Opal server as resources.
 </p>
 </div>
 

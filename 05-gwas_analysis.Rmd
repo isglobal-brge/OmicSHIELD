@@ -528,7 +528,7 @@ We can use the manhattan plot and locus zoom to visualize the results of the met
 ::: {#meta-analysis-gwas .tabcontent}
 ###### ⠀ {-}
 ```{r message=FALSE, warning=FALSE, fig.cap="Manhattan plot of the meta-analysis results."}
-manhattan(meta_bvalues)
+manhattan(meta_bvalues, pvalCol = 6)
 ```
 :::
 ::: {#common-truth .tabcontent}

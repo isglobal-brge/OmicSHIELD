@@ -4,8 +4,12 @@ fig:omicAnal2
 fig:figCINECA
 tab:tab1
 fig:FigCINECAopal
+fig:dgeProposal1
+fig:ewasProposal1
 fig:FigHELIX
 fig:FigHELIXopal
+fig:FigHELIXresourcesOpaltranscrip
+fig:FigHELIXresourcesOpalDNAm
 fig:multiCohortImage2
 fig:singleCohortImage
 tab:tab2
