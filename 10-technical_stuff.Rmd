@@ -1,16 +1,87 @@
 # (PART) Technical details {-}
 
-# GWAS
+# Fast GWAS
 
-TODO
+The method implemented for the fast GWAS is based on the research by @sikorska2013gwas We adapted their algorithm to our infrastructure to perform a fast pooled GWAS. Our implementation is described in the following pseudo-code:
+
+******
+**Step 1**: Fit the objective model^[Model obtained using `dsBaseClient::ds.glm`]
+
+******
+1.  Iteratively each `DP_i`^[`DP_i`: Data processor (Opal node)] extracts the coefficients of objective model
+2.  Client sends to each `DP_i` the coefficient values
+3.  Each `DP_i` computes the fitted values and residuals [`FIT_i`, `RES_i`]
+
+******
+**Step 2**: Using the residuals and genotype information [`RES_i`, `GEN_i`]
+
+******
+1.  Each DP_i computes `RES_i - mean(RES_i) :> YC_i`
+2.  Each DP_i computes `colSums(YC_i * GEN_i); colSums(GEN_i); colSums(GEN_i ^ 2)` and returns to the client [`B_i`, `S1_i`, `S2_i`]
+3.  The client merges [`B_i`, `S1_i`, `S2_i`] into [`B`, `S1`, `S2`]
+4.  The client computes the total number of individuals :> `N_IND`
+
+******
+**Step 3**: Using [`B`, `S1`, `S2`, `N_IND`, `YC_i`] compute betas and pvalues
+
+******
+1.  The client computes `S2 - (S1 ^ 2) / N_IND :> DEN1`
+2.  The client computes `B / DEN1 :>` BETA to obtain the beta values
+3.  Each `DP_i` computes `colSums(YC_i ^ 2)` and returns to client :> `YC2_i`
+4.  The client merges `YC2_i :> YC2`
+5.  The client computes `(YC2 - BETA ^ 2 * DEN1) / (N_IND - K - 2) :> SIGMA`
+6.  The client computes `sqrt(SIGMA * (1 / DEN1)) :> ERR`
+7.  The client computes `2 * pnorm(-abs(BETA / ERR)) :> PVAL` to obtain the pvalues
+
+******
+
+The data that is being shared to the client is always a result of an aggregation (i.e. column sums and different products). For that reason, we added some disclosure controls that guarantee that the aggregated data has a minimum of valid points to prevent data leaks (e.g. returning aggregates of a single individual will leak its data). It must be noted that the performance is limited by the slowest server, therefore increasing the amount of data providers to the study does not imply increasing the computational time, as all servers work in parallel. 
 
 # PCA
 
-TODO
+To compute a pooled PCA using horizontally partitioned data, the block method singular value decomposition has been implemented @berry2005parallel. The pseudo-code of the algorithm is as follows:
+
+******
+**Step 1**: Intermediate SVD^[Singular value decomposition]
+
+******
+1.  Each `DP_i`^[`DP_i`: Data processor (Opal node)] computes SVD(geno^[Encoded genotype data]) [`u_i`, `v_i`, `d_i`]
+2.  Each `DP_i` computes `u_i * d_i [res_i]`
+3.  Each `DP_i` returns `res_i` to the client
+
+******
+**Step 2**: Client aggregation
+
+******
+1.  The client receives res_i and merges it horizontally [aggregated]
+2.  The client computes SVD(aggregated) [final_results]
+3.  The client returns the pooled PCA results [final_results]
+
+******
+
+The algorithm used returns to the client the product of the left singular vectors (`u_i`) and singular values (`d_i`). This guarantees that the original data contained on each node is not reconstructible (i.e. we only share non-disclosive information among servers). 
+
+This is a general method to compute PCA. We have adapted this approach to allow performing PCA on genotype data. To this end, these two extra steps have been implemented.
+
+-  Genotype standardization: $\frac{X_{ij} - 2 \mu_{j}}{\sigma_j}$, where the genotype is $X_ij$ ($i$ is the individual index, $j$ is the SNP index), $\mu_j=2p_j$ is the mean of the 0,1,2-coded genotype ($p_j$ being the alternate allele frequency), and $\sigma_j$ is the expected standard error under Hardy-Weinberg Equilibrium, that is $\sqrt{2p_j (1-p_j)}$.
+-  Perform PCA using only selected SNPs that have been linked to differentiate ethnic groups @huang2015genetic.
 
 # Differential privacy
 
-TODO
+Differential privacy can be briefly described as an algorithm that if the output is observed, we can’t tell if an individual information has been used. This concept was introduced by @dwork2014algorithmic. Formally, this concept is referred to as $\epsilon$-differential privacy and it is mathematically expressed as:
+
+$$Pr[A(D_1)=S]≤exp(\epsilon)\cdot Pr[A(D_2)=S]$$
+
+
+Where A is a randomized algorithm that takes a dataset D as input, and $\epsilon$ is the privacy parameter that defines the level of privacy (as closer to 0 more privacy).
+
+In order to implement differential privacy into our software, the Laplace mechanism has been used. This mechanism adds noise to the output of a function, the noise is drawn from a Laplace distribution with mean 0 and scale $\Delta f/\epsilon$, where $\Delta f$  if the $l_1$ sensitivity defined by:
+
+$$\Delta f = max_{D_1, D_2} ||f(D_1) - f(D_2)||$$
+
+The assessment of $\Delta f$ can be particularly complex for certain functions (e.g. limma + voom), for that reason a sampling method @rubinstein2017pain has been used to assess $\Delta f$. Since the number of resamples performed can potentially impact the differential privacy quality, we allow the data owner to configure this parameter into the Opal server.
+
+For the specific case of fast GWAS, the differential privacy methods can severly affect random SNPs, for that reason we included a `resample` argument inside of the function to perform the analisis `resample` times and get the median values.
 
 # Internal structure of the PRS functionality
 

@@ -30,6 +30,8 @@ fig:unnamed-chunk-16
 fig:fastgwasperformance
 fig:fastManhattanPlot
 fig:prsCohortImage
+fig:plinkImage
+fig:snptestImage
 fig:dgeProposal
 fig:ewasProposal
 fig:block1Image
@@ -106,8 +108,16 @@ calculate-the-prs
 pgs-catalog-example
 custom-prs_table-example
 study-of-the-prs-results
-differential-gene-expression-dge-analysis
+plink
 connection-to-the-opal-server-3
+build-the-plink-call
+call-the-analysis
+snptest
+connection-to-the-opal-server-4
+build-the-snptest-call
+call-the-analysis-1
+differential-gene-expression-dge-analysis
+connection-to-the-opal-server-5
 assign-the-rse-resource
 inspect-the-rse
 pre-processing-for-rnaseq-data
@@ -115,7 +125,7 @@ dge-analysis
 surrogate-variable-analysis
 epigenome-wide-association-analysis-ewas
 initial-steps-for-all-use-cases
-connection-to-the-opal-server-4
+connection-to-the-opal-server-6
 assign-the-expressionset-resource
 ewas-inspect
 single-cpg-pooled-analysis
@@ -137,7 +147,7 @@ DNAmHELIX_analysis4
 DNAmHELIXenrichment
 references.
 part-technical-details
-gwas
+fast-gwas
 pca
 differential-privacy
 internal-structure-of-the-prs-functionality
@@ -152,6 +162,6 @@ general-remarks
 disclosure-filter-configurations
 part-appendix
 session-info
-contributos
+contributors
 part-references
 references
