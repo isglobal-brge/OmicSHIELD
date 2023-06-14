@@ -275,5 +275,3 @@ As always, the **DataSHIELD** session must be closed by:
 ```{r}
 datashield.logout(conns)
 ```
-
-# References.

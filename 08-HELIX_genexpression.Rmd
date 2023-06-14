@@ -37,8 +37,7 @@ Then, install the *client-side* version of the **dsOmicsClient** package directl
 
 install.packages("devtools")
 require("devtools")
-devtools::install_github("isglobal-brge/dsOmicsClient",ref="master",
-                         auth_token = "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",force=TRUE)
+devtools::install_github("isglobal-brge/dsOmicsClient",ref="master",force=TRUE)
 
 ```
 
@@ -66,24 +65,24 @@ In this section, we will cover how to **load** and **inspect** input **microarra
 ```{r TranscriptHELIXcreating_conns_login_1, echo=TRUE, results="hide", message=FALSE}
 
 builder <- DSI::newDSLoginBuilder()
-builder$append(server = "BIB", url = "https://datashield.isglobal.org/repo",
-               user =  "invited", password = "12345678",
-               profile = "rock-inma")
-builder$append(server = "EDEN", url = "https://datashield.isglobal.org/repo",
-               user =  "invited", password = "12345678",
-               profile = "rock-inma")
-builder$append(server = "KANC", url = "https://datashield.isglobal.org/repo",
-               user =  "invited", password = "12345678",
-               profile = "rock-inma")
-builder$append(server = "MoBA", url = "https://datashield.isglobal.org/repo",
-               user =  "invited", password = "12345678",
-               profile = "rock-inma")
-builder$append(server = "Rhea", url = "https://datashield.isglobal.org/repo",
-               user =  "invited", password = "12345678",
-               profile = "rock-inma")
-builder$append(server = "INMASAB", url = "https://datashield.isglobal.org/repo",
-               user =  "invited", password = "12345678",
-               profile = "rock-inma")
+builder$append(server = "BIB", url = "https://opal-demo.obiba.org",
+               user =  "dsuser", password = "P@ssw0rd",
+               profile = "omics")
+builder$append(server = "EDEN", url = "https://opal-demo.obiba.org",
+               user =  "dsuser", password = "P@ssw0rd",
+               profile = "omics")
+builder$append(server = "KANC", url = "https://opal-demo.obiba.org",
+               user =  "dsuser", password = "P@ssw0rd",
+               profile = "omics")
+builder$append(server = "MoBA", url = "https://opal-demo.obiba.org",
+               user =  "dsuser", password = "P@ssw0rd",
+               profile = "omics")
+builder$append(server = "Rhea", url = "https://opal-demo.obiba.org",
+               user =  "dsuser", password = "P@ssw0rd",
+               profile = "omics")
+builder$append(server = "INMASAB", url = "https://opal-demo.obiba.org",
+               user =  "dsuser", password = "P@ssw0rd",
+               profile = "omics")
 logindata <- builder$build()
 conns <- DSI::datashield.login(logins = logindata)
 
@@ -91,7 +90,7 @@ conns <- DSI::datashield.login(logins = logindata)
 
 Now that we have created a connection object to the Opal, we have started a new R session on the server, and our analysis will take place in this remote session, so we have to **load the data** into it. In this use case, available data are in the form **ExpressionSet** files. **ExpressionSet** is a file-format of the [BioConductor project](https://www.bioconductor.org/) that may contain different sources of **genomic data**. Alongside the **genomic data**, **ExpressionSet** may also contain some **phenotypes** and **metadata** associated to the population. Researchers who are not familiar with **ExpressionSet** can find further information [here](https://www.bioconductor.org/packages/release/bioc/vignettes/Biobase/inst/doc/ExpressionSetIntroduction.pdf).
 
-For our showcase, one **ExpressionSet** file per cohort is hosted in the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) in the form of a **resource**, all organized within the Opal server in a **project** called **"HELIX_omics"**.
+For our showcase, one **ExpressionSet** file per cohort is hosted in the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) in the form of a **resource**, all organized within the Opal server in a **project** called **"OMICS"**.
 
 For loading these data into the remote **DataSHIELD** session we will use the _DSI::datashield.assign.resource()_ function. This function takes the connections to the server created in the previous code chunk to assign all available **resource objects** from a project in the **Opal** to an **R object** in the **DataSHIELD remote session**. As it can be seen in the code, **resources** in **DataSHIELD** are called in the function following the next structure *"NameOfOpalProject.NameOfResource"*. 
 
@@ -99,17 +98,17 @@ For loading these data into the remote **DataSHIELD** session we will use the _D
 
 # We assign microarray data from all cohorts to an object called resource_pos
 DSI::datashield.assign.resource(conns[1], "resource_expr", 
-                                "HELIX_omics.genexpr_BIB")
+                                "OMICS.genexpr_BIB")
 DSI::datashield.assign.resource(conns[2], "resource_expr", 
-                                "HELIX_omics.genexpr_EDE")
+                                "OMICS.genexpr_EDE")
 DSI::datashield.assign.resource(conns[3], "resource_expr", 
-                                "HELIX_omics.genexpr_KAN")
+                                "OMICS.genexpr_KAN")
 DSI::datashield.assign.resource(conns[4], "resource_expr", 
-                                "HELIX_omics.genexpr_MOB")
+                                "OMICS.genexpr_MOB")
 DSI::datashield.assign.resource(conns[5], "resource_expr", 
-                                "HELIX_omics.genexpr_RHE")
+                                "OMICS.genexpr_RHE")
 DSI::datashield.assign.resource(conns[6], "resource_expr", 
-                                "HELIX_omics.genexpr_SAB")
+                                "OMICS.genexpr_SAB")
 
 ```
 
