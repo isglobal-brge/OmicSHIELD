@@ -230,7 +230,7 @@ knitr::include_graphics("fig/multi_cohort_flowchart.png")
 
 Brief description of each step:
 
--   **Step 1:** Logging into the Opal servers and load all the VCF files to the remote R sessions. Corresponds to the sections [Connection to the Opal server](#connection-to-the-opal-server-2), [Assign the VCF resources](#multi-vcf), [Assign the phenotypes](#assign-the-phenotypes-1) and [Merge VCF (genotype) and phenotype information](#merge-vcf-genotype-and-phenotype-information).
+-   **Step 1:** Logging into the Opal servers and load all the VCF files to the remote R sessions. Corresponds to the sections [Connection to the Opal server](#connection-to-the-opal-server-2), [Assign the VCF resources](#multi-vcf), [Assign the phenotypes](#assign-the-phenotypes-1) and [Merge VCF (genotype) and phenotype information](#merge-vcf-genotype-and-phenotype-information-1).
 -   **Step 2:** Performing a GWAS analysis on each cohort and collect all the aggregated non-disclosive statistics. Corresponds to the sections [Performing the GWAS](#performing-the-gwas-1) and [GWAS Plots].
 -   **Step 3:** Apply different QC control methodologies to assess possible problems on the data used on each cohort to perform the analysis. Corresponds to the section [Meta-level quality control].
 -   **Step 4:** Perform the meta-analysis of the aggregated statistics. Corresponds to the section [Meta-analysis](#meta-analysis-2).
@@ -263,7 +263,7 @@ conns <- DSI::datashield.login(logins = logindata)
 
 It is important to note that in this use case, we are only using one server that contains all the resources (<https://opal-demo.obiba.org/>), on this server there are all the resources that correspond to the different cohorts. On a more real scenario each one of the `builder$append` instructions would be connecting to a different server.
 
-### Assign the VCF resources {#multi-vcf}
+### Assign the VCF resources {#multi-vcf2}
 
 Now that we have created a connection object to the different Opals, we have started three R session, our analysis will take place on those remote sessions, so we have to load the data into them.
 
@@ -311,7 +311,7 @@ Now we have resolved the resources named `chrXX` into our remote R sessions. The
 ds.class("gds1_object")
 ```
 
-### Assign the phenotypes {#assign-the-phenotypes-1}
+### Assign the phenotypes {#assign-the-phenotypes-10}
 
 The objects we have loaded into our remote sessions are VCF files that contain genomic information of the individuals. To perform a GWAS this information has to be related to some phenotypes to extract relationships. Therefore, we need to load the phenotypes into the remote sessions. The phenotypes information is a table that contains the individuals as rows and phenotypes as columns. In this use case, we will use a resource (as with the VCF files) to load the phenotypes table into the remote sessions.
 
@@ -344,7 +344,7 @@ We can also check the column names to see which information is present on the ta
 ds.colnames("pheno_object")[[1]]
 ```
 
-### Merge VCF (genotype) and phenotype information {#merge-vcf-genotype-and-phenotype-information}
+### Merge VCF (genotype) and phenotype information {#merge-vcf-genotype-and-phenotype-information-1}
 
 Arrived at this point, we have 21 VCF objects at each cohort R session (each one corresponds to a chromosome) and a phenotypes table. The next step is merging each of the VCF objects with the phenotypes table. The same procedure as the [single cohort](#vcf_merge) can be applied to extract the arguments required.
 

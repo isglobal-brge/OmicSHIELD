@@ -99,7 +99,7 @@ The client performs two basic tasks. The first one is to select between a user i
 
 This is illustrated on the following figure.
 
-```{r block1Image, echo=FALSE, fig.cap="Flow chart of the client block.", fig.align='center'}
+```{r block10Image, echo=FALSE, fig.cap="Flow chart of the client block.", fig.align='center'}
 knitr::include_graphics("fig/block1.png")
 ```
 
@@ -109,7 +109,7 @@ The server resolver is in charge of resolving the resources. The interesting asp
 
 This block is illustrated on the following figure.
 
-```{r block2Image, echo=FALSE, fig.cap="Flow chart of the server resolver block.", fig.align='center'}
+```{r block20Image, echo=FALSE, fig.cap="Flow chart of the server resolver block.", fig.align='center'}
 knitr::include_graphics("fig/block2.png")
 ```
 
@@ -119,7 +119,7 @@ Many processes are performed inside the analysis block. For that reason, more th
 
 The block is illustrated on the following figure.
 
-```{r block3Image, echo=FALSE, fig.cap="Flow chart of the server analysis block.", fig.align='center'}
+```{r block30Image, echo=FALSE, fig.cap="Flow chart of the server analysis block.", fig.align='center'}
 knitr::include_graphics("fig/block3.png")
 ```
 
@@ -158,19 +158,19 @@ For epigenomics and differential gene expression analysis we portrayed the use o
 
 This table can be summarized on the following graphs:
 
-```{r e450hdd, echo=FALSE, fig.cap="Disk space requirements for EPIC 450K array versus number of individuals (10 meta-variables)", fig.align='center'}
+```{r e450hdd2, echo=FALSE, fig.cap="Disk space requirements for EPIC 450K array versus number of individuals (10 meta-variables)", fig.align='center'}
 knitr::include_graphics("fig/e450_hdd.png")
 ```
 
-```{r e850hdd, echo=FALSE, fig.cap="Disk space requirements for EPIC 850K array versus number of individuals (10 meta-variables)", fig.align='center'}
+```{r e850hdd2, echo=FALSE, fig.cap="Disk space requirements for EPIC 850K array versus number of individuals (10 meta-variables)", fig.align='center'}
 knitr::include_graphics("fig/e850_hdd.png")
 ```
 
-```{r e450ram, echo=FALSE, fig.cap="Maximum allocated RAM for EPIC 450K array versus number of individuals (1 adjustin covariable)", fig.align='center'}
+```{r e450ram2, echo=FALSE, fig.cap="Maximum allocated RAM for EPIC 450K array versus number of individuals (1 adjustin covariable)", fig.align='center'}
 knitr::include_graphics("fig/e450_ram.png")
 ```
 
-```{r e850ram, echo=FALSE, fig.cap="Maximum allocated RAM for EPIC 850K array versus number of individuals (1 adjustin covariable)", fig.align='center'}
+```{r e850ram2, echo=FALSE, fig.cap="Maximum allocated RAM for EPIC 850K array versus number of individuals (1 adjustin covariable)", fig.align='center'}
 knitr::include_graphics("fig/e850_ram.png")
 ```
 
@@ -210,8 +210,8 @@ To change this values, we have to login to the Opal web interface of our server,
 
 Once logged in, we navigate to Administration > DataSHIELD.
 
-On this configuration page we have to locate the "Profiles" section (information about them [here](https://opaldoc.obiba.org/en/latest/admin/rserver.html)), there we will find the different analysis profiles of our server, we can set up different filter configurations for each of the profiles. Following the Opal demo example we will be modifying the filters for the "omics" profile, which has the dsOmics package installed. To do so, we select the profile and go to the "Options" tab (illustrated on the figure \@ref(fig:opalFilters)). There we can manually edit the filter values at our own risk.
+On this configuration page we have to locate the "Profiles" section (information about them [here](https://opaldoc.obiba.org/en/latest/admin/rserver.html)), there we will find the different analysis profiles of our server, we can set up different filter configurations for each of the profiles. Following the Opal demo example we will be modifying the filters for the "omics" profile, which has the dsOmics package installed. To do so, we select the profile and go to the "Options" tab (illustrated on the figure \@ref(fig:opalFilters2)). There we can manually edit the filter values at our own risk.
 
-```{r opalFilters, echo=FALSE, fig.cap="DataSHIELD filters on the Opal web interface", fig.align='center'}
+```{r opalFilters2, echo=FALSE, fig.cap="DataSHIELD filters on the Opal web interface", fig.align='center'}
 knitr::include_graphics("fig/opal_filters.PNG")
 ```
