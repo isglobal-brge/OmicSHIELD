@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Genome wide association study (GWAS) analysis | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD</title>
   <meta name="description" content="5 Genome wide association study (GWAS) analysis | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Genome wide association study (GWAS) analysis | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-04-05" />
+<meta name="date" content="2023-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +31,6 @@
   
 <link rel="prev" href="exploration-of-genotype-data.html"/>
 <link rel="next" href="polygenic-risk-scores.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script>
   function unrolltab(evt, divName, tabName) {
     var i, tabcontent, tablinks;
@@ -116,7 +115,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -129,7 +128,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -192,15 +191,15 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#opal-servers"><i class="fa fa-check"></i><b>1.4</b> Opal servers</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="Omic.html"><a href="Omic.html"><i class="fa fa-check"></i><b>2</b> Omic data analysis: types of implemented analyses</a></li>
-<li class="chapter" data-level="3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html"><i class="fa fa-check"></i><b>3</b> Datasets description.</a>
+<li class="chapter" data-level="3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html"><i class="fa fa-check"></i><b>3</b> Datasets description</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAdescription"><i class="fa fa-check"></i><b>3.1</b> CINECA project.</a></li>
-<li class="chapter" data-level="3.2" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAopal"><i class="fa fa-check"></i><b>3.2</b> Data organization in the Opal server.</a></li>
-<li class="chapter" data-level="3.3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#TCGALiverdatadescription"><i class="fa fa-check"></i><b>3.3</b> TCGA Liver project.</a></li>
+<li class="chapter" data-level="3.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAdescription"><i class="fa fa-check"></i><b>3.1</b> CINECA project</a></li>
+<li class="chapter" data-level="3.2" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAopal"><i class="fa fa-check"></i><b>3.2</b> Data organization in the Opal server</a></li>
+<li class="chapter" data-level="3.3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#TCGALiverdatadescription"><i class="fa fa-check"></i><b>3.3</b> TCGA Liver project</a></li>
 <li class="chapter" data-level="3.4" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#GSE66351description"><i class="fa fa-check"></i><b>3.4</b> Epigenetic data from the GSE66351 project</a></li>
-<li class="chapter" data-level="3.5" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXdescription"><i class="fa fa-check"></i><b>3.5</b> HELIX project.</a>
+<li class="chapter" data-level="3.5" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXdescription"><i class="fa fa-check"></i><b>3.5</b> HELIX project</a>
 <ul>
-<li class="chapter" data-level="3.5.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXopal"><i class="fa fa-check"></i><b>3.5.1</b> Data organization in the Opal server.</a></li>
+<li class="chapter" data-level="3.5.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXopal"><i class="fa fa-check"></i><b>3.5.1</b> Data organization in the Opal server</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html"><i class="fa fa-check"></i><b>4</b> Exploration of Genotype data</a>
@@ -227,9 +226,9 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#multi-cohorts"><i class="fa fa-check"></i><b>5.2</b> Multi cohorts</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-2"><i class="fa fa-check"></i><b>5.2.1</b> Connection to the Opal server</a></li>
-<li class="chapter" data-level="5.2.2" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#multi-vcf"><i class="fa fa-check"></i><b>5.2.2</b> Assign the VCF resources</a></li>
-<li class="chapter" data-level="5.2.3" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#assign-the-phenotypes-1"><i class="fa fa-check"></i><b>5.2.3</b> Assign the phenotypes</a></li>
-<li class="chapter" data-level="5.2.4" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#merge-vcf-genotype-and-phenotype-information"><i class="fa fa-check"></i><b>5.2.4</b> Merge VCF (genotype) and phenotype information</a></li>
+<li class="chapter" data-level="5.2.2" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#multi-vcf2"><i class="fa fa-check"></i><b>5.2.2</b> Assign the VCF resources</a></li>
+<li class="chapter" data-level="5.2.3" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#assign-the-phenotypes-10"><i class="fa fa-check"></i><b>5.2.3</b> Assign the phenotypes</a></li>
+<li class="chapter" data-level="5.2.4" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#merge-vcf-genotype-and-phenotype-information-1"><i class="fa fa-check"></i><b>5.2.4</b> Merge VCF (genotype) and phenotype information</a></li>
 <li class="chapter" data-level="5.2.5" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#performing-the-gwas-1"><i class="fa fa-check"></i><b>5.2.5</b> Performing a meta - GWAS</a></li>
 <li class="chapter" data-level="5.2.6" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#gwas-plots"><i class="fa fa-check"></i><b>5.2.6</b> GWAS Plots</a></li>
 <li class="chapter" data-level="5.2.7" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#meta-level-quality-control"><i class="fa fa-check"></i><b>5.2.7</b> Meta-level quality control</a></li>
@@ -306,30 +305,29 @@ div.csl-indent {
 <li class="chapter" data-level="12.4" data-path="DNAmHELIX.html"><a href="DNAmHELIX.html#DNAmHELIX_analysis4"><i class="fa fa-check"></i><b>12.4</b> Adjusting for surrogate variables.</a></li>
 <li class="chapter" data-level="12.5" data-path="DNAmHELIX.html"><a href="DNAmHELIX.html#DNAmHELIXenrichment"><i class="fa fa-check"></i><b>12.5</b> Enrichment analysis of functional annotations.</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="references..html"><a href="references..html"><i class="fa fa-check"></i><b>13</b> References.</a></li>
 <li class="part"><span><b>IV Technical details</b></span></li>
-<li class="chapter" data-level="14" data-path="fast-gwas.html"><a href="fast-gwas.html"><i class="fa fa-check"></i><b>14</b> Fast GWAS</a></li>
-<li class="chapter" data-level="15" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>15</b> PCA</a></li>
-<li class="chapter" data-level="16" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i><b>16</b> Differential privacy</a></li>
-<li class="chapter" data-level="17" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html"><i class="fa fa-check"></i><b>17</b> Internal structure of the PRS functionality</a>
+<li class="chapter" data-level="13" data-path="fast-gwas.html"><a href="fast-gwas.html"><i class="fa fa-check"></i><b>13</b> Fast GWAS</a></li>
+<li class="chapter" data-level="14" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>14</b> PCA</a></li>
+<li class="chapter" data-level="15" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i><b>15</b> Differential privacy</a></li>
+<li class="chapter" data-level="16" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html"><i class="fa fa-check"></i><b>16</b> Internal structure of the PRS functionality</a>
 <ul>
-<li class="chapter" data-level="17.1" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#client"><i class="fa fa-check"></i><b>17.1</b> Client</a></li>
-<li class="chapter" data-level="17.2" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-resolver"><i class="fa fa-check"></i><b>17.2</b> Server resolver</a></li>
-<li class="chapter" data-level="17.3" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-analysis"><i class="fa fa-check"></i><b>17.3</b> Server analysis</a></li>
+<li class="chapter" data-level="16.1" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#client"><i class="fa fa-check"></i><b>16.1</b> Client</a></li>
+<li class="chapter" data-level="16.2" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-resolver"><i class="fa fa-check"></i><b>16.2</b> Server resolver</a></li>
+<li class="chapter" data-level="16.3" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-analysis"><i class="fa fa-check"></i><b>16.3</b> Server analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="compress.html"><a href="compress.html"><i class="fa fa-check"></i><b>18</b> Compression of GDS files vs. performance</a></li>
-<li class="chapter" data-level="19" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html"><i class="fa fa-check"></i><b>19</b> Recommended R server specs</a>
+<li class="chapter" data-level="17" data-path="compress.html"><a href="compress.html"><i class="fa fa-check"></i><b>17</b> Compression of GDS files vs. performance</a></li>
+<li class="chapter" data-level="18" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html"><i class="fa fa-check"></i><b>18</b> Recommended R server specs</a>
 <ul>
-<li class="chapter" data-level="19.1" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#limma-voom"><i class="fa fa-check"></i><b>19.1</b> Limma + voom</a></li>
-<li class="chapter" data-level="19.2" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#gwas-pca"><i class="fa fa-check"></i><b>19.2</b> GWAS + PCA</a></li>
-<li class="chapter" data-level="19.3" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#general-remarks"><i class="fa fa-check"></i><b>19.3</b> General remarks</a></li>
+<li class="chapter" data-level="18.1" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#limma-voom"><i class="fa fa-check"></i><b>18.1</b> Limma + voom</a></li>
+<li class="chapter" data-level="18.2" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#gwas-pca"><i class="fa fa-check"></i><b>18.2</b> GWAS + PCA</a></li>
+<li class="chapter" data-level="18.3" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#general-remarks"><i class="fa fa-check"></i><b>18.3</b> General remarks</a></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="disclosure-filter-configurations.html"><a href="disclosure-filter-configurations.html"><i class="fa fa-check"></i><b>20</b> Disclosure filter configurations</a></li>
+<li class="chapter" data-level="19" data-path="disclosure-filter-configurations.html"><a href="disclosure-filter-configurations.html"><i class="fa fa-check"></i><b>19</b> Disclosure filter configurations</a></li>
 <li class="part"><span><b>V Appendix</b></span></li>
-<li class="chapter" data-level="21" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i><b>21</b> Session info</a></li>
-<li class="chapter" data-level="22" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i><b>22</b> Contributors</a></li>
+<li class="chapter" data-level="20" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i><b>20</b> Session info</a></li>
+<li class="chapter" data-level="21" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i><b>21</b> Contributors</a></li>
 <li class="part"><span><b>VI References</b></span></li>
-<li class="chapter" data-level="23" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>23</b> References</a></li>
+<li class="chapter" data-level="22" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>22</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -350,8 +348,8 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="genome-wide-association-study-gwas-analysis" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> Genome wide association study (GWAS) analysis</h1>
+<div id="genome-wide-association-study-gwas-analysis" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Genome wide association study (GWAS) analysis<a href="genome-wide-association-study-gwas-analysis.html#genome-wide-association-study-gwas-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Three different use cases will be illustrated in this section:</p>
 <ul>
 <li>Single cohort GWAS. Using data from all the individuals.</li>
@@ -359,8 +357,8 @@ div.csl-indent {
 <li>Polygenic risk score. Using data from all the individuals.</li>
 </ul>
 <p>For this, we will be using data from the CINECA project presented in the section <a href="DatasetsDescription.html#CINECAdescription">3.1</a>. For all the illustrated cases we will use data divided by chromosome (VCF files). The procedure is the same if all the variants are on a single VCF. The phenotype information used throughout this section is not contained inside the VCF files mentioned previously, it is contained using traditional CSV/Excel files. This is to replicate the typical scenario where an investigator receives the genomic and phenotype data separated and has to merge it to study a specific relationship between the gene expression / variants and a certain phenotype.</p>
-<div id="single-cohort" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Single cohort</h2>
+<div id="single-cohort" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Single cohort<a href="genome-wide-association-study-gwas-analysis.html#single-cohort" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -450,9 +448,9 @@ omics
 Figure 5.1: Proposed infrastructure to perform single-cohort GWAS studies.
 </p>
 </div>
-<p>The data analyst corresponds to the “RStudio” session, which through DataSHIELD Interface (DSI) connects with the Opal server located at the cohort network. This Opal server contains an array of resources that correspond to the different VCF files (sliced by chromosome)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and a resource that corresponds to the phenotypes table of the studied individuals.</p>
-<div id="connection-to-the-opal-server-1" class="section level3" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> Connection to the Opal server</h3>
+<p>The data analyst corresponds to the “RStudio” session, which through DataSHIELD Interface (DSI) connects with the Opal server located at the cohort network. This Opal server contains an array of resources that correspond to the different VCF files (sliced by chromosome) <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and a resource that corresponds to the phenotypes table of the studied individuals.</p>
+<div id="connection-to-the-opal-server-1" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Connection to the Opal server<a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We have to create an Opal connection object to the cohort server. We do that using the following functions.</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="genome-wide-association-study-gwas-analysis.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSI&#39;</span>)</span>
 <span id="cb32-2"><a href="genome-wide-association-study-gwas-analysis.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSOpal&#39;</span>)</span>
@@ -466,8 +464,8 @@ Figure 5.1: Proposed infrastructure to perform single-cohort GWAS studies.
 <span id="cb32-10"><a href="genome-wide-association-study-gwas-analysis.html#cb32-10" aria-hidden="true" tabindex="-1"></a>logindata <span class="ot">&lt;-</span> builder<span class="sc">$</span><span class="fu">build</span>()</span>
 <span id="cb32-11"><a href="genome-wide-association-study-gwas-analysis.html#cb32-11" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata)</span></code></pre></div>
 </div>
-<div id="assign-the-vcf-resources" class="section level3" number="5.1.2">
-<h3><span class="header-section-number">5.1.2</span> Assign the VCF resources</h3>
+<div id="assign-the-vcf-resources" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Assign the VCF resources<a href="genome-wide-association-study-gwas-analysis.html#assign-the-vcf-resources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Now that we have created a connection object to the Opal, we have started a new R session on the server, our analysis will take place in this remote session, so we have to load the data into it.</p>
 <p>In this use case we will use 21 different resources from the <code>GWAS</code> project hosted on the <a href="https://opal-demo.obiba.org/">demo Opal server</a>. This resources correspond to VCF files with information on individual chromosomes. The names of the resources are <code>chrXX</code> (where XX is the chromosome number). Following the Opal syntax, we will refer to them using the string <code>GWAS.chrXX</code>.</p>
 <p>To load the resources we will use the <code>DSI::datashield.assign.resource()</code> function. Note that along the use case we use the <code>lapply</code> function to simplify our code since we have to perform repetitive operations. <code>lapply</code> is a way of creating loops in R, for more information visit <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/lapply">the documentation</a>.</p>
@@ -479,7 +477,7 @@ Figure 5.1: Proposed infrastructure to perform single-cohort GWAS studies.
 <pre><code>$cohort1
 [1] &quot;GDSFileResourceClient&quot; &quot;FileResourceClient&quot;    &quot;ResourceClient&quot;       
 [4] &quot;R6&quot;                   </code></pre>
-<p>To resolve the resources and retrieve the data in the remote session we will use the <code>DSI::datashield.assign.expr()</code> function. This function runs a line of code on the remote session,<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> and in particular we want to run the function <code>as.resource.object()</code>, which is the DataSHIELD function in charge of resolving the resources.</p>
+<p>To resolve the resources and retrieve the data in the remote session we will use the <code>DSI::datashield.assign.expr()</code> function. This function runs a line of code on the remote session <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, and in particular we want to run the function <code>as.resource.object()</code>, which is the DataSHIELD function in charge of resolving the resources.</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="genome-wide-association-study-gwas-analysis.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">21</span>, <span class="cf">function</span>(x){</span>
 <span id="cb36-2"><a href="genome-wide-association-study-gwas-analysis.html#cb36-2" aria-hidden="true" tabindex="-1"></a>  DSI<span class="sc">::</span><span class="fu">datashield.assign.expr</span>(<span class="at">conns =</span> conns, <span class="at">symbol =</span> <span class="fu">paste0</span>(<span class="st">&quot;gds&quot;</span>, x, <span class="st">&quot;_object&quot;</span>),</span>
 <span id="cb36-3"><a href="genome-wide-association-study-gwas-analysis.html#cb36-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">expr =</span> <span class="fu">as.symbol</span>(<span class="fu">paste0</span>(<span class="st">&quot;as.resource.object(chr&quot;</span>, x, <span class="st">&quot;)&quot;</span>)))</span>
@@ -491,8 +489,8 @@ Figure 5.1: Proposed infrastructure to perform single-cohort GWAS studies.
 attr(,&quot;package&quot;)
 [1] &quot;GWASTools&quot;</code></pre>
 </div>
-<div id="assign-the-phenotypes" class="section level3" number="5.1.3">
-<h3><span class="header-section-number">5.1.3</span> Assign the phenotypes</h3>
+<div id="assign-the-phenotypes" class="section level3 hasAnchor" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Assign the phenotypes<a href="genome-wide-association-study-gwas-analysis.html#assign-the-phenotypes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The objects we have loaded into our remote session are VCF files that contain genomic information of the individuals. To perform a GWAS this information has to be related to some phenotypes to extract relationships. Therefore, we need to load the phenotypes into the remote session. The phenotypes information is a table that contains the individuals as rows and phenotypes as columns. In this use case, we will use a resource (as with the VCF files) to load the phenotypes table into the remote session.</p>
 <p>The procedure is practically the same as before with some minor tweaks. To begin, we have the phenotypes information in a single table (hence, a single resource). Then, instead of using the function <code>as.resource.object</code>, we will use <code>as.resource.data.frame</code>, this is because before we were loading a special object (VCF file) and now we are loading a plain table, so the internal treatment on the remote session has to be different.</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="genome-wide-association-study-gwas-analysis.html#cb39-1" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns, <span class="st">&quot;pheno&quot;</span>, <span class="st">&quot;GWAS.ega_phenotypes&quot;</span>)</span>
@@ -542,8 +540,8 @@ attr(,&quot;package&quot;)
 [71] &quot;circulatory_disorders&quot;               &quot;digestive_disorders&quot;                
 [73] &quot;nervous_disorders&quot;                   &quot;immune_disorders&quot;                   </code></pre>
 </div>
-<div id="vcf_merge" class="section level3" number="5.1.4">
-<h3><span class="header-section-number">5.1.4</span> Merge VCF (genotype) and phenotype information</h3>
+<div id="vcf_merge" class="section level3 hasAnchor" number="5.1.4">
+<h3><span class="header-section-number">5.1.4</span> Merge VCF (genotype) and phenotype information<a href="genome-wide-association-study-gwas-analysis.html#vcf_merge" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Arrived at this point, we have 21 VCF objects (each one corresponds to a chromosome) and a phenotypes table on our remote session. The next step is merging each of the VCF objects with the phenotypes table. Before doing that however, we have to gather some information from the phenotypes table. The information to gather is summarized on the Table <a href="genome-wide-association-study-gwas-analysis.html#tab:tab2">5.1</a>.</p>
 <table>
 <caption><span id="tab:tab2">Table 5.1: </span> Information to gather from the phenotypes table.</caption>
@@ -576,7 +574,7 @@ attr(,&quot;package&quot;)
 </tr>
 <tr class="odd">
 <td>What is the encoding for case and for control on this column?</td>
-<td>Similar as the sex column, the case/control will be translated to the particular standard of the software we have used to develop our functionalities<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> .</td>
+<td>Similar as the sex column, the case/control will be translated to the particular standard of the software we have used to develop our functionalities <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> .</td>
 </tr>
 </tbody>
 </table>
@@ -643,8 +641,8 @@ Total                                                  2502</code></pre>
 <p>For this use case we will use the following formula.</p>
 <div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="genome-wide-association-study-gwas-analysis.html#cb50-1" aria-hidden="true" tabindex="-1"></a>diabetes_diagnosed_doctor <span class="sc">~</span> sex <span class="sc">+</span> hdl_cholesterol</span></code></pre></div>
 </div>
-<div id="performing-the-gwas" class="section level3" number="5.1.5">
-<h3><span class="header-section-number">5.1.5</span> Performing the GWAS</h3>
+<div id="performing-the-gwas" class="section level3 hasAnchor" number="5.1.5">
+<h3><span class="header-section-number">5.1.5</span> Performing the GWAS<a href="genome-wide-association-study-gwas-analysis.html#performing-the-gwas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We are finally ready to achieve our ultimate goal, performing a GWAS analysis. We have our data (genotype + phenotypes) organized into the correspondent objects (GenotypeData) and our association formula ready. The function <code>ds.metaGWAS</code> is in charge of doing the analysis, we have to supply it with the names of the GenotypeData objects of the remote R session and the formula. Since we have 21 different objects, the <code>paste0</code> function is used to simplify the call.</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="genome-wide-association-study-gwas-analysis.html#cb51-1" aria-hidden="true" tabindex="-1"></a>results_single <span class="ot">&lt;-</span> <span class="fu">ds.metaGWAS</span>(<span class="at">genoData =</span> <span class="fu">paste0</span>(<span class="st">&quot;gds.Data&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">21</span>), </span>
 <span id="cb51-2"><a href="genome-wide-association-study-gwas-analysis.html#cb51-2" aria-hidden="true" tabindex="-1"></a>                              <span class="at">model =</span> diabetes_diagnosed_doctor <span class="sc">~</span> sex <span class="sc">+</span> hdl_cholesterol)[[<span class="dv">1</span>]]</span>
@@ -683,8 +681,8 @@ Figure 5.2: LocusZoom plot of the surrounding region of the top hit SNP.
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="genome-wide-association-study-gwas-analysis.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.logout</span>(conns)</span></code></pre></div>
 </div>
 </div>
-<div id="multi-cohorts" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Multi cohorts</h2>
+<div id="multi-cohorts" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Multi cohorts<a href="genome-wide-association-study-gwas-analysis.html#multi-cohorts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -842,25 +840,25 @@ omics
 Figure 5.3: Proposed infrastructure to perform multi-cohort GWAS studies.
 </p>
 </div>
-<p>The data analyst corresponds to the “RStudio” session, which through DataSHIELD Interface (DSI) connects with the Opal server located at the cohort network. This Opal server contains an array of resources that correspond to the different VCF files (sliced by chromosome)<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> and a resource that corresponds to the phenotypes table of the studied individuals.</p>
+<p>The data analyst corresponds to the “RStudio” session, which through DataSHIELD Interface (DSI) connects with the Opal server located at the cohort network. This Opal server contains an array of resources that correspond to the different VCF files (sliced by chromosome) <a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> and a resource that corresponds to the phenotypes table of the studied individuals.</p>
 <p>This use case will portray a complete study methodology, more precisely we will follow this flowchart:</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:multiCohortFlowchart"></span>
 <img src="fig/multi_cohort_flowchart.png" alt="Flowchart to perform multi-cohort GWAS studies. Adapted from @winkler2014quality" width="553" />
 <p class="caption">
-Figure 5.4: Flowchart to perform multi-cohort GWAS studies. Adapted from <span class="citation"><a href="#ref-winkler2014quality" role="doc-biblioref">Winkler et al.</a> (<a href="#ref-winkler2014quality" role="doc-biblioref">2014</a>)</span>
+Figure 5.4: Flowchart to perform multi-cohort GWAS studies. Adapted from <span class="citation">Winkler et al. (<a href="#ref-winkler2014quality" role="doc-biblioref">2014</a>)</span>
 </p>
 </div>
 <p>Brief description of each step:</p>
 <ul>
-<li><strong>Step 1:</strong> Logging into the Opal servers and load all the VCF files to the remote R sessions. Corresponds to the sections <a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-2">Connection to the Opal server</a>, <a href="exploration-of-genotype-data.html#multi-vcf">Assign the VCF resources</a>, <a href="exploration-of-genotype-data.html#assign-the-phenotypes-1">Assign the phenotypes</a> and <a href="exploration-of-genotype-data.html#merge-vcf-genotype-and-phenotype-information">Merge VCF (genotype) and phenotype information</a>.</li>
+<li><strong>Step 1:</strong> Logging into the Opal servers and load all the VCF files to the remote R sessions. Corresponds to the sections <a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-2">Connection to the Opal server</a>, <a href="exploration-of-genotype-data.html#multi-vcf">Assign the VCF resources</a>, <a href="exploration-of-genotype-data.html#assign-the-phenotypes-1">Assign the phenotypes</a> and <a href="genome-wide-association-study-gwas-analysis.html#merge-vcf-genotype-and-phenotype-information-1">Merge VCF (genotype) and phenotype information</a>.</li>
 <li><strong>Step 2:</strong> Performing a GWAS analysis on each cohort and collect all the aggregated non-disclosive statistics. Corresponds to the sections <a href="genome-wide-association-study-gwas-analysis.html#performing-the-gwas-1">Performing the GWAS</a> and <a href="genome-wide-association-study-gwas-analysis.html#gwas-plots">GWAS Plots</a>.</li>
 <li><strong>Step 3:</strong> Apply different QC control methodologies to assess possible problems on the data used on each cohort to perform the analysis. Corresponds to the section <a href="genome-wide-association-study-gwas-analysis.html#meta-level-quality-control">Meta-level quality control</a>.</li>
 <li><strong>Step 4:</strong> Perform the meta-analysis of the aggregated statistics. Corresponds to the section <a href="#meta-analysis-2">Meta-analysis</a>.</li>
 <li><strong>Step 5:</strong> Perform a pooled ultra fast GWAS and compare the results to the ones of the meta-analysis. Corresponds to the section <a href="genome-wide-association-study-gwas-analysis.html#ultra-fast-gwas">Ultra fast GWAS</a>.</li>
 <li><strong>Step 6:</strong> Perform post-omics analysis: Enrichment analysis. Corresponds to the section <a href="genome-wide-association-study-gwas-analysis.html#post-omics">Post-omic analysis</a>.</li>
 </ul>
-<div id="connection-to-the-opal-server-2" class="section level3" number="5.2.1">
-<h3><span class="header-section-number">5.2.1</span> Connection to the Opal server</h3>
+<div id="connection-to-the-opal-server-2" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Connection to the Opal server<a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We have to create an Opal connection object to the different cohorts server. We do that using the following functions.</p>
 <div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="genome-wide-association-study-gwas-analysis.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSI&#39;</span>)</span>
 <span id="cb56-2"><a href="genome-wide-association-study-gwas-analysis.html#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSOpal&#39;</span>)</span>
@@ -881,8 +879,8 @@ Figure 5.4: Flowchart to perform multi-cohort GWAS studies. Adapted from <span c
 <span id="cb56-17"><a href="genome-wide-association-study-gwas-analysis.html#cb56-17" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata)</span></code></pre></div>
 <p>It is important to note that in this use case, we are only using one server that contains all the resources (<a href="https://opal-demo.obiba.org/" class="uri">https://opal-demo.obiba.org/</a>), on this server there are all the resources that correspond to the different cohorts. On a more real scenario each one of the <code>builder$append</code> instructions would be connecting to a different server.</p>
 </div>
-<div id="multi-vcf" class="section level3" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Assign the VCF resources</h3>
+<div id="multi-vcf2" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Assign the VCF resources<a href="genome-wide-association-study-gwas-analysis.html#multi-vcf2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Now that we have created a connection object to the different Opals, we have started three R session, our analysis will take place on those remote sessions, so we have to load the data into them.</p>
 <p>In this use case we will use 63 different resources from the <code>GWAS</code> project hosted on the <a href="https://opal-demo.obiba.org/">demo Opal server</a>. This resources correspond to VCF files with information on individual chromosomes (21 chromosomes per three cohorts). The names of the resources are <code>chrXXY</code> (where XX is the chromosome number and Y is the cohort A/B/C). Following the Opal syntax, we will refer to them using the string <code>GWAS.chrXXY</code>.</p>
 <p>We have to refer specifically to each different server by using <code>conns[X]</code>, this allows us to communicate with the server of interest to indicate to it the resources that it has to load.</p>
@@ -936,8 +934,8 @@ $cohort3
 attr(,&quot;package&quot;)
 [1] &quot;GWASTools&quot;</code></pre>
 </div>
-<div id="assign-the-phenotypes-1" class="section level3" number="5.2.3">
-<h3><span class="header-section-number">5.2.3</span> Assign the phenotypes</h3>
+<div id="assign-the-phenotypes-10" class="section level3 hasAnchor" number="5.2.3">
+<h3><span class="header-section-number">5.2.3</span> Assign the phenotypes<a href="genome-wide-association-study-gwas-analysis.html#assign-the-phenotypes-10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The objects we have loaded into our remote sessions are VCF files that contain genomic information of the individuals. To perform a GWAS this information has to be related to some phenotypes to extract relationships. Therefore, we need to load the phenotypes into the remote sessions. The phenotypes information is a table that contains the individuals as rows and phenotypes as columns. In this use case, we will use a resource (as with the VCF files) to load the phenotypes table into the remote sessions.</p>
 <p>As with the VCF resources, here we load a different resource to each cohort, as it is expected that each cohort has only the phenotypes information regarding their individuals, therefore different tables. Note that we are assigning the resource to the same variable at each server (<code>pheno</code>), so we only need one function call to resolve all the resources together.</p>
 <div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="genome-wide-association-study-gwas-analysis.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cohort 1 phenotypes table</span></span>
@@ -1002,8 +1000,8 @@ $cohort3
 [71] &quot;circulatory_disorders&quot;               &quot;digestive_disorders&quot;                
 [73] &quot;nervous_disorders&quot;                   &quot;immune_disorders&quot;                   </code></pre>
 </div>
-<div id="merge-vcf-genotype-and-phenotype-information" class="section level3" number="5.2.4">
-<h3><span class="header-section-number">5.2.4</span> Merge VCF (genotype) and phenotype information</h3>
+<div id="merge-vcf-genotype-and-phenotype-information-1" class="section level3 hasAnchor" number="5.2.4">
+<h3><span class="header-section-number">5.2.4</span> Merge VCF (genotype) and phenotype information<a href="genome-wide-association-study-gwas-analysis.html#merge-vcf-genotype-and-phenotype-information-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Arrived at this point, we have 21 VCF objects at each cohort R session (each one corresponds to a chromosome) and a phenotypes table. The next step is merging each of the VCF objects with the phenotypes table. The same procedure as the <a href="genome-wide-association-study-gwas-analysis.html#vcf_merge">single cohort</a> can be applied to extract the arguments required.</p>
 <p>With all this information we can now merge the phenotypes and VCF objects into a type of object named GenotypeData. We will use the <code>ds.GenotypeData</code> function.</p>
 <div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="genome-wide-association-study-gwas-analysis.html#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">21</span>, <span class="cf">function</span>(x){</span>
@@ -1017,8 +1015,8 @@ $cohort3
 <p>The objects we just created are named <code>gds.DataXX</code> on the remote session. Now we are ready to perform a GWAS analysis. We will use the same formula as the single cohort use case to be able to compare the results later:</p>
 <div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="genome-wide-association-study-gwas-analysis.html#cb69-1" aria-hidden="true" tabindex="-1"></a>diabetes_diagnosed_doctor <span class="sc">~</span> sex <span class="sc">+</span> hdl_cholesterol</span></code></pre></div>
 </div>
-<div id="performing-the-gwas-1" class="section level3" number="5.2.5">
-<h3><span class="header-section-number">5.2.5</span> Performing a meta - GWAS</h3>
+<div id="performing-the-gwas-1" class="section level3 hasAnchor" number="5.2.5">
+<h3><span class="header-section-number">5.2.5</span> Performing a meta - GWAS<a href="genome-wide-association-study-gwas-analysis.html#performing-the-gwas-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We now proceed to perform the GWAS analysis.</p>
 <div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="genome-wide-association-study-gwas-analysis.html#cb70-1" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">ds.metaGWAS</span>(<span class="at">genoData =</span> <span class="fu">paste0</span>(<span class="st">&quot;gds.Data&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">21</span>), </span>
 <span id="cb70-2"><a href="genome-wide-association-study-gwas-analysis.html#cb70-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">model =</span> diabetes_diagnosed_doctor <span class="sc">~</span> sex <span class="sc">+</span> hdl_cholesterol)</span></code></pre></div>
@@ -1034,8 +1032,8 @@ Cohort 2
 Cohort 3
 </button>
 <div id="Cohort1" class="tabcontent">
-<div id="section" class="section level4 unnumbered">
-<h4>⠀</h4>
+<div id="section" class="section level4 unnumbered hasAnchor">
+<h4>⠀<a href="genome-wide-association-study-gwas-analysis.html#section" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <pre><code># A tibble: 865,162 x 10
    rs      chr       pos p.value n.obs  freq    Est Est.SE ref_allele alt_allele
  * &lt;chr&gt;   &lt;chr&gt;   &lt;int&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;     
@@ -1053,8 +1051,8 @@ Cohort 3
 </div>
 </div>
 <div id="Cohort2" class="tabcontent">
-<div id="section-1" class="section level4 unnumbered">
-<h4>⠀</h4>
+<div id="section-1" class="section level4 unnumbered hasAnchor">
+<h4>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <pre><code># A tibble: 865,190 x 10
    rs      chr       pos p.value n.obs  freq    Est Est.SE ref_allele alt_allele
  * &lt;chr&gt;   &lt;chr&gt;   &lt;int&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;     
@@ -1072,8 +1070,8 @@ Cohort 3
 </div>
 </div>
 <div id="Cohort3" class="tabcontent">
-<div id="section-2" class="section level4 unnumbered">
-<h4>⠀</h4>
+<div id="section-2" class="section level4 unnumbered hasAnchor">
+<h4>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <pre><code># A tibble: 849,560 x 10
    rs      chr       pos p.value n.obs  freq    Est Est.SE ref_allele alt_allele
  * &lt;chr&gt;   &lt;chr&gt;   &lt;int&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;     
@@ -1092,8 +1090,8 @@ Cohort 3
 </div>
 </div>
 </div>
-<div id="gwas-plots" class="section level3" number="5.2.6">
-<h3><span class="header-section-number">5.2.6</span> GWAS Plots</h3>
+<div id="gwas-plots" class="section level3 hasAnchor" number="5.2.6">
+<h3><span class="header-section-number">5.2.6</span> GWAS Plots<a href="genome-wide-association-study-gwas-analysis.html#gwas-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can display the results of the GWAS using a Manhattan plot for each cohort.</p>
 <div id="gwas-results" class="tab">
 <button class="tablinks" id="gwas_plot_1" onclick="unrolltab(event, &#39;gwas-results&#39;, &#39;Cohort1plot&#39;)">
@@ -1106,8 +1104,8 @@ Cohort 2
 Cohort 3
 </button>
 <div id="Cohort1plot" class="tabcontent">
-<div id="section-3" class="section level4 unnumbered">
-<h4>⠀</h4>
+<div id="section-3" class="section level4 unnumbered hasAnchor">
+<h4>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="genome-wide-association-study-gwas-analysis.html#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">manhattan</span>(results[[<span class="dv">1</span>]])</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:multiCohortManhattanPlot"></span>
 <img src="OmicSHIELD_bookdown_files/figure-html/multiCohortManhattanPlot-1.png" alt="Manhattan plot of the Cohort 1." width="672" />
@@ -1118,8 +1116,8 @@ Figure 5.5: Manhattan plot of the Cohort 1.
 </div>
 </div>
 <div id="Cohort2plot" class="tabcontent">
-<div id="section-4" class="section level4 unnumbered">
-<h4>⠀</h4>
+<div id="section-4" class="section level4 unnumbered hasAnchor">
+<h4>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-4" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="genome-wide-association-study-gwas-analysis.html#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">manhattan</span>(results[[<span class="dv">2</span>]])</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:multiCohortManhattanPlot2"></span>
 <img src="OmicSHIELD_bookdown_files/figure-html/multiCohortManhattanPlot2-1.png" alt="Manhattan plot of the Cohort 1." width="672" />
@@ -1130,8 +1128,8 @@ Figure 5.6: Manhattan plot of the Cohort 1.
 </div>
 </div>
 <div id="Cohort3plot" class="tabcontent">
-<div id="section-5" class="section level4 unnumbered">
-<h4>⠀</h4>
+<div id="section-5" class="section level4 unnumbered hasAnchor">
+<h4>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-5" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="genome-wide-association-study-gwas-analysis.html#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">manhattan</span>(results[[<span class="dv">3</span>]])</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:multiCohortManhattanPlot3"></span>
 <img src="OmicSHIELD_bookdown_files/figure-html/multiCohortManhattanPlot3-1.png" alt="Manhattan plot of the Cohort 1." width="672" />
@@ -1143,8 +1141,8 @@ Figure 5.7: Manhattan plot of the Cohort 1.
 </div>
 </div>
 </div>
-<div id="meta-level-quality-control" class="section level3" number="5.2.7">
-<h3><span class="header-section-number">5.2.7</span> Meta-level quality control</h3>
+<div id="meta-level-quality-control" class="section level3 hasAnchor" number="5.2.7">
+<h3><span class="header-section-number">5.2.7</span> Meta-level quality control<a href="genome-wide-association-study-gwas-analysis.html#meta-level-quality-control" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Up to this point we have collected the aggregated statistics from each cohort and we have visualized them. Before meta-analyzing this statistics we have to perform some quality control to make sure there are no major issues. There are three different methods bundled in <code>dsOmicsClient</code> to perform such task:</p>
 <ul>
 <li><strong>EAF Plot:</strong> Plotting the reported EAFs against a reference set, such as from the HapMap or 1000 Genomes projects, or from one specific study, can help visualize patterns that pinpoint strand issues, allele miscoding or the inclusion of individuals whose self-reported ancestry did not match their genetic ancestry.</li>
@@ -1152,8 +1150,8 @@ Figure 5.7: Manhattan plot of the Cohort 1.
 <li><strong>SE-N Plot:</strong> Plot to reveal issues with trait transformations. A collection of studies with no issues will fall on a line.</li>
 </ul>
 <p>If any of these QC raises some inconsistencies, please contact the correspondent study analyst.</p>
-<div id="eaf-plot" class="section level4" number="5.2.7.1">
-<h4><span class="header-section-number">5.2.7.1</span> EAF Plot</h4>
+<div id="eaf-plot" class="section level4 hasAnchor" number="5.2.7.1">
+<h4><span class="header-section-number">5.2.7.1</span> EAF Plot<a href="genome-wide-association-study-gwas-analysis.html#eaf-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>For this plot we are comparing the estimated allele frequencies to a reference set, so the first step is to get ourselves a reference set. For this example we will be using the <code>ALL.wgs.phase1_release_v3.20101123</code> reference set. We will download it and load it into the client R session.</p>
 <div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="genome-wide-association-study-gwas-analysis.html#cb77-1" aria-hidden="true" tabindex="-1"></a>reference <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(<span class="st">&quot;https://homepages.uni-regensburg.de/~wit59712/easyqc/exomechip/ALL.wgs.phase1_release_v3.20101123.snps_indels_sv.sites.EUR_AF.txt.exm.tab.sexChr.DI.txt.GZ&quot;</span>)</span>
 <span id="cb77-2"><a href="genome-wide-association-study-gwas-analysis.html#cb77-2" aria-hidden="true" tabindex="-1"></a>reference</span></code></pre></div>
@@ -1179,10 +1177,10 @@ Figure 5.7: Manhattan plot of the Cohort 1.
 Figure 5.8: EAF Plot.
 </p>
 </div>
-<p>The obtained results are the expected, which is a linear correlation of slope one. This indicates the alleles are correctly encoded. For further explanation on how to assess the results produced by this plot, please refer to the Figure 4 of <span class="citation"><a href="#ref-winkler2014quality" role="doc-biblioref">Winkler et al.</a> (<a href="#ref-winkler2014quality" role="doc-biblioref">2014</a>)</span>.</p>
+<p>The obtained results are the expected, which is a linear correlation of slope one. This indicates the alleles are correctly encoded. For further explanation on how to assess the results produced by this plot, please refer to the Figure 4 of <span class="citation">Winkler et al. (<a href="#ref-winkler2014quality" role="doc-biblioref">2014</a>)</span>.</p>
 </div>
-<div id="p-z-plot" class="section level4" number="5.2.7.2">
-<h4><span class="header-section-number">5.2.7.2</span> P-Z Plot</h4>
+<div id="p-z-plot" class="section level4 hasAnchor" number="5.2.7.2">
+<h4><span class="header-section-number">5.2.7.2</span> P-Z Plot<a href="genome-wide-association-study-gwas-analysis.html#p-z-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This plot will assess the issues with beta estimates, standard errors and P values. Here we will only need the results from the <code>ds.GWAS</code> function and pass them to the function <code>pzPlot</code>.</p>
 <div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="genome-wide-association-study-gwas-analysis.html#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pzPlot</span>(results)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:pzplot"></span>
@@ -1192,10 +1190,10 @@ Figure 5.9: P-Z Plot.
 </p>
 </div>
 <p>Please note that all the SNPs are plotted, for that reason there may be some performance issues if there are many SNPs to be plotted.</p>
-<p>A dataset with no issues will show perfect concordance. For further details please refer to the Figure 3 of <span class="citation"><a href="#ref-winkler2014quality" role="doc-biblioref">Winkler et al.</a> (<a href="#ref-winkler2014quality" role="doc-biblioref">2014</a>)</span>.</p>
+<p>A dataset with no issues will show perfect concordance. For further details please refer to the Figure 3 of <span class="citation">Winkler et al. (<a href="#ref-winkler2014quality" role="doc-biblioref">2014</a>)</span>.</p>
 </div>
-<div id="se-n-plot" class="section level4" number="5.2.7.3">
-<h4><span class="header-section-number">5.2.7.3</span> SE-N Plot</h4>
+<div id="se-n-plot" class="section level4 hasAnchor" number="5.2.7.3">
+<h4><span class="header-section-number">5.2.7.3</span> SE-N Plot<a href="genome-wide-association-study-gwas-analysis.html#se-n-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Finally, we will assess issues with trait transformations. For this we will only need the results from the <code>ds.GWAS</code> function and pass them to the function <code>seNPlot</code>.</p>
 <div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="genome-wide-association-study-gwas-analysis.html#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seNPlot</span>(results)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:senplot"></span>
@@ -1204,18 +1202,18 @@ Figure 5.9: P-Z Plot.
 Figure 5.10: SE-N Plot.
 </p>
 </div>
-<p>If all the study points fall on a line, no issues are present. For further detail please refer to the Figure 2 of <span class="citation"><a href="#ref-winkler2014quality" role="doc-biblioref">Winkler et al.</a> (<a href="#ref-winkler2014quality" role="doc-biblioref">2014</a>)</span>.</p>
+<p>If all the study points fall on a line, no issues are present. For further detail please refer to the Figure 2 of <span class="citation">Winkler et al. (<a href="#ref-winkler2014quality" role="doc-biblioref">2014</a>)</span>.</p>
 </div>
 </div>
-<div id="meta-analysis" class="section level3" number="5.2.8">
-<h3><span class="header-section-number">5.2.8</span> Meta-analysis</h3>
+<div id="meta-analysis" class="section level3 hasAnchor" number="5.2.8">
+<h3><span class="header-section-number">5.2.8</span> Meta-analysis<a href="genome-wide-association-study-gwas-analysis.html#meta-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Given no problems have been detected on the meta-level QC, we will proceed. Up to this point, we have obtained association results for each cohort on the study. The next step is to combine this information using meta-analysis methods to derive a pooled estimate. Each researcher might have an already built pipeline to do so, or a preferred method; nevertheless, we included a couple methods inside <code>dsOmicsClient</code>. They are the following:</p>
 <ul>
 <li>Meta-analysis of p-values: Using the sum of logs method (Fisher’s method).</li>
-<li>Meta-analysis of beta values: Using a fixed-effects model. Methodology extracted and adapted from <span class="citation"><a href="#ref-betameta" role="doc-biblioref">Pirinen</a> (<a href="#ref-betameta" role="doc-biblioref">2020</a>)</span>.</li>
+<li>Meta-analysis of beta values: Using a fixed-effects model. Methodology extracted and adapted from <span class="citation">Pirinen (<a href="#ref-betameta" role="doc-biblioref">2020</a>)</span>.</li>
 </ul>
-<div id="assessment-of-the-meta-analysis-methods" class="section level4" number="5.2.8.1">
-<h4><span class="header-section-number">5.2.8.1</span> Assessment of the meta-analysis methods</h4>
+<div id="assessment-of-the-meta-analysis-methods" class="section level4 hasAnchor" number="5.2.8.1">
+<h4><span class="header-section-number">5.2.8.1</span> Assessment of the meta-analysis methods<a href="genome-wide-association-study-gwas-analysis.html#assessment-of-the-meta-analysis-methods" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Previously, we have calculated the same GWAS analysis both using all the individuals and a simulated three-cohort scenario. This gives us the ability to assess how good or bad are the different meta-analysis methods; to do so, we will compare both meta-analysis to the complete data, the evaluation method will be counting the number of top hits that match, more specifically we will search for matches on the top twenty hits.</p>
 <p>We apply both methods to the multi-cohort use case results:</p>
 <div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="genome-wide-association-study-gwas-analysis.html#cb82-1" aria-hidden="true" tabindex="-1"></a>meta_pvalues <span class="ot">&lt;-</span> <span class="fu">metaPvalues</span>(results)</span>
@@ -1237,11 +1235,11 @@ Figure 5.10: SE-N Plot.
 <pre><code>[1] 1</code></pre>
 <p>The meta-analysis using beta values recovers a higher amount of top SNPs, therefore it can be considerate a more powerful method for GWAS meta-analyses.</p>
 </div>
-<div id="visualizing-the-results-of-the-meta-analysis" class="section level4" number="5.2.8.2">
-<h4><span class="header-section-number">5.2.8.2</span> Visualizing the results of the meta-analysis</h4>
+<div id="visualizing-the-results-of-the-meta-analysis" class="section level4 hasAnchor" number="5.2.8.2">
+<h4><span class="header-section-number">5.2.8.2</span> Visualizing the results of the meta-analysis<a href="genome-wide-association-study-gwas-analysis.html#visualizing-the-results-of-the-meta-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We can use the manhattan plot and locus zoom to visualize the results of the meta-analysis as we visualized the single cohorts before. To help assess the meta-analysis behaviour, we will plot together the meta-analysis results and the complete data results.</p>
-<div id="manhatan-plot" class="section level5" number="5.2.8.2.1">
-<h5><span class="header-section-number">5.2.8.2.1</span> Manhatan plot</h5>
+<div id="manhatan-plot" class="section level5 hasAnchor" number="5.2.8.2.1">
+<h5><span class="header-section-number">5.2.8.2.1</span> Manhatan plot<a href="genome-wide-association-study-gwas-analysis.html#manhatan-plot" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <div id="manhattan-plots" class="tab">
 <button class="tablinks" id="manhattan-plots-tab" onclick="unrolltab(event, &#39;manhattan-plots&#39;, &#39;meta-analysis-gwas&#39;)">
 Meta-analysis
@@ -1250,8 +1248,8 @@ Meta-analysis
 Complete data
 </button>
 <div id="meta-analysis-gwas" class="tabcontent">
-<div id="section-6" class="section level6 unnumbered">
-<h6>⠀</h6>
+<div id="section-6" class="section level6 unnumbered hasAnchor">
+<h6>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-6" class="anchor-section" aria-label="Anchor link to header"></a></h6>
 <div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="genome-wide-association-study-gwas-analysis.html#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="fu">manhattan</span>(meta_bvalues, <span class="at">pvalCol =</span> <span class="dv">6</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-13"></span>
 <img src="OmicSHIELD_bookdown_files/figure-html/unnamed-chunk-13-1.png" alt="Manhattan plot of the meta-analysis results." width="672" />
@@ -1262,8 +1260,8 @@ Figure 5.11: Manhattan plot of the meta-analysis results.
 </div>
 </div>
 <div id="common-truth" class="tabcontent">
-<div id="section-7" class="section level6 unnumbered">
-<h6>⠀</h6>
+<div id="section-7" class="section level6 unnumbered hasAnchor">
+<h6>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-7" class="anchor-section" aria-label="Anchor link to header"></a></h6>
 <div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="genome-wide-association-study-gwas-analysis.html#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="fu">manhattan</span>(results_single)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-14"></span>
 <img src="OmicSHIELD_bookdown_files/figure-html/unnamed-chunk-14-1.png" alt="Manhattan plot of the complete data." width="672" />
@@ -1275,8 +1273,8 @@ Figure 5.12: Manhattan plot of the complete data.
 </div>
 </div>
 </div>
-<div id="locuszoom" class="section level5" number="5.2.8.2.2">
-<h5><span class="header-section-number">5.2.8.2.2</span> LocusZoom</h5>
+<div id="locuszoom" class="section level5 hasAnchor" number="5.2.8.2.2">
+<h5><span class="header-section-number">5.2.8.2.2</span> LocusZoom<a href="genome-wide-association-study-gwas-analysis.html#locuszoom" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <div id="locuszoom-plots" class="tab">
 <button class="tablinks" id="locuszoom-plots-tabs" onclick="unrolltab(event, &#39;locuszoom-plots&#39;, &#39;meta-analysis-gwas-locus&#39;)">
 Meta-analysis
@@ -1285,8 +1283,8 @@ Meta-analysis
 Complete data
 </button>
 <div id="meta-analysis-gwas-locus" class="tabcontent">
-<div id="section-8" class="section level6 unnumbered">
-<h6>⠀</h6>
+<div id="section-8" class="section level6 unnumbered hasAnchor">
+<h6>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-8" class="anchor-section" aria-label="Anchor link to header"></a></h6>
 <div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="genome-wide-association-study-gwas-analysis.html#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="fu">LocusZoom</span>(meta_bvalues, <span class="at">pvalue =</span> <span class="st">&quot;p.F&quot;</span>, <span class="at">use_biomaRt =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-15"></span>
 <img src="OmicSHIELD_bookdown_files/figure-html/unnamed-chunk-15-1.png" alt="LocusZoom plot of the meta-analysis results." width="672" />
@@ -1297,8 +1295,8 @@ Figure 5.13: LocusZoom plot of the meta-analysis results.
 </div>
 </div>
 <div id="common-truth-locus" class="tabcontent">
-<div id="section-9" class="section level6 unnumbered">
-<h6>⠀</h6>
+<div id="section-9" class="section level6 unnumbered hasAnchor">
+<h6>⠀<a href="genome-wide-association-study-gwas-analysis.html#section-9" class="anchor-section" aria-label="Anchor link to header"></a></h6>
 <div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="genome-wide-association-study-gwas-analysis.html#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="fu">LocusZoom</span>(results_single, <span class="at">use_biomaRt =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-16"></span>
 <img src="OmicSHIELD_bookdown_files/figure-html/unnamed-chunk-16-1.png" alt="LocusZoom plot of the complete data." width="672" />
@@ -1311,8 +1309,8 @@ Figure 5.14: LocusZoom plot of the complete data.
 </div>
 </div>
 </div>
-<div id="meta-analysis-versus-pooled-linear-models" class="section level4" number="5.2.8.3">
-<h4><span class="header-section-number">5.2.8.3</span> Meta-analysis versus pooled linear models</h4>
+<div id="meta-analysis-versus-pooled-linear-models" class="section level4 hasAnchor" number="5.2.8.3">
+<h4><span class="header-section-number">5.2.8.3</span> Meta-analysis versus pooled linear models<a href="genome-wide-association-study-gwas-analysis.html#meta-analysis-versus-pooled-linear-models" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The <code>dsOmicsClient</code> package also bundles a function to fit pooled generalized linear models (GLM) on single (or multiple) SNPs. On this section we will compare the results of the meta-analysis to the pooled GLM models to see which method is more accurate. The meta-analysis method will be the beta values (fixed-effects model).</p>
 <p>The study methodology will be similar to the one we just performed. The top 20 hits yielded by the meta-analysis will be selected, those SNPs will be studied using the pooled GLM function. Both results will be compared to the complete data.</p>
 <p>We aim to replicate a real scenario with this study, typically there is no access to the complete data (if so there is no point on performing meta-analysis on synthetic multi-cohorts), therefore we simulate the discovery of SNPs of interest via meta-analysis, then we want to assess if studying individually those SNPs using pooled GLM will put us closer to the results yielded by having the complete data.</p>
@@ -2316,8 +2314,8 @@ Figure 5.14: LocusZoom plot of the complete data.
 </ol>
 </div>
 </div>
-<div id="ultra-fast-gwas" class="section level3" number="5.2.9">
-<h3><span class="header-section-number">5.2.9</span> Ultra fast pooled GWAS analysis</h3>
+<div id="ultra-fast-gwas" class="section level3 hasAnchor" number="5.2.9">
+<h3><span class="header-section-number">5.2.9</span> Ultra fast pooled GWAS analysis<a href="genome-wide-association-study-gwas-analysis.html#ultra-fast-gwas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>An alternate methodology to performing a meta analysis is to use the fast GWAS methodology. This method is named after the performance it achieves, however, it does provide further advantages other than computational speed. The main advantage is that it does not compute the results for each cohort to then be meta-analyzed, it actually computes them using a pooled technique that achieves the <em>exact</em> same results when all the individuals are together than when they are separated by cohorts. This is of great importance as there is no need to worry about cohort-imbalance, which is usually a problem in multi-cohort meta-analysis studies. The only downside of this method is that it does not yield the same results of a traditional GWAS analysis pipeline, the inacuraccy of the results however is really low, detailed information about that can be found on the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-166">paper that proposes the method</a>.</p>
 <p>The performance of the function can be summarized to be ~45 seconds per 1M of SNPs (statistic extracted using 2.5k individuals divided into three study servers). From our test this performance has hold linear up to 10M SNPs, we did not test any further. The graphic for &lt; 1M SNPs can be found on the following figure.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:fastgwasperformance"></span>
@@ -2331,8 +2329,8 @@ Figure 5.15: Benhmark of <code>ds.fastGWAS</code> function.
 <span id="cb95-2"><a href="genome-wide-association-study-gwas-analysis.html#cb95-2" aria-hidden="true" tabindex="-1"></a>                            <span class="at">formula =</span> <span class="st">&quot;diabetes_diagnosed_doctor ~ sex + hdl_cholesterol&quot;</span>, </span>
 <span id="cb95-3"><a href="genome-wide-association-study-gwas-analysis.html#cb95-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">family =</span> <span class="st">&quot;binomial&quot;</span>, <span class="at">resample =</span> <span class="dv">6</span>)</span></code></pre></div>
 <div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="genome-wide-association-study-gwas-analysis.html#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.logout</span>(conns)</span></code></pre></div>
-<div id="gwas-plot" class="section level4" number="5.2.9.1">
-<h4><span class="header-section-number">5.2.9.1</span> GWAS Plot</h4>
+<div id="gwas-plot" class="section level4 hasAnchor" number="5.2.9.1">
+<h4><span class="header-section-number">5.2.9.1</span> GWAS Plot<a href="genome-wide-association-study-gwas-analysis.html#gwas-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We can display the results of the fast GWAS using a Manhattan plot.</p>
 <div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="genome-wide-association-study-gwas-analysis.html#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="fu">manhattan</span>(results_fast)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:fastManhattanPlot"></span>
@@ -2342,8 +2340,8 @@ Figure 5.16: Manhattan plot of the Cohort 1.
 </p>
 </div>
 </div>
-<div id="meta-analysis-versus-fast-gwas" class="section level4" number="5.2.9.2">
-<h4><span class="header-section-number">5.2.9.2</span> Meta-analysis versus fast GWAS</h4>
+<div id="meta-analysis-versus-fast-gwas" class="section level4 hasAnchor" number="5.2.9.2">
+<h4><span class="header-section-number">5.2.9.2</span> Meta-analysis versus fast GWAS<a href="genome-wide-association-study-gwas-analysis.html#meta-analysis-versus-fast-gwas" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>To finish the GWAS section we can evaluate the results of the beta meta-analysis and the results of the fast GWAS. Both methods will be compared to the ground truth.</p>
 <p>As before we can start by seeing the amount of SNPs that both methodologies recover as top hits.</p>
 <div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="genome-wide-association-study-gwas-analysis.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract 20 top hits for all three cases</span></span>
@@ -3225,14 +3223,14 @@ Figure 5.16: Manhattan plot of the Cohort 1.
 </div>
 </div>
 </div>
-<div id="post-omics" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> Post-omic analysis</h2>
+<div id="post-omics" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Post-omic analysis<a href="genome-wide-association-study-gwas-analysis.html#post-omics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Up to this point we have analyzed the genotype and phenotype data by performing a genome wide association study. We can further study the yielded results by performing an enrichment analysis.</p>
-<div id="enrichment-analysis" class="section level3" number="5.3.1">
-<h3><span class="header-section-number">5.3.1</span> Enrichment analysis</h3>
+<div id="enrichment-analysis" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Enrichment analysis<a href="genome-wide-association-study-gwas-analysis.html#enrichment-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The GWAS results are a collection of SNPs that displayed a relationship with a given phenotype. Those SNPs may fall inside gene regions, and those genes can be functionally related. Studying this can help researchers understand the underlying biological processes. Those analysis are carried by querying the selected gene to a database, for this example we will be using the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4397996/">DisGeNET database</a>.</p>
-<div id="annotation-of-genes" class="section level4" number="5.3.1.1">
-<h4><span class="header-section-number">5.3.1.1</span> Annotation of genes</h4>
+<div id="annotation-of-genes" class="section level4 hasAnchor" number="5.3.1.1">
+<h4><span class="header-section-number">5.3.1.1</span> Annotation of genes<a href="genome-wide-association-study-gwas-analysis.html#annotation-of-genes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The first step of the enrichment analysis is to annotate the genes that contain the SNPs of interest yielded by the GWAS. There are many ways to perform this step, we propose to use the <code>biomaRt</code> package and retrieve the annotation from the <code>ensembl</code> genome browser.</p>
 <p>First we select the SNPs of interest. We have established a <code>p.value</code> threshold to do so.</p>
 <div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="genome-wide-association-study-gwas-analysis.html#cb103-1" aria-hidden="true" tabindex="-1"></a>snps_of_interest <span class="ot">&lt;-</span> results_fast <span class="sc">%&gt;%</span> </span>
@@ -3256,29 +3254,29 @@ Figure 5.16: Manhattan plot of the Cohort 1.
 <span id="cb104-14"><a href="genome-wide-association-study-gwas-analysis.html#cb104-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">mart =</span> gene.ensembl)</span>
 <span id="cb104-15"><a href="genome-wide-association-study-gwas-analysis.html#cb104-15" aria-hidden="true" tabindex="-1"></a>}))</span></code></pre></div>
 </div>
-<div id="enrichment-analysis-query" class="section level4" number="5.3.1.2">
-<h4><span class="header-section-number">5.3.1.2</span> Enrichment analysis query</h4>
+<div id="enrichment-analysis-query" class="section level4 hasAnchor" number="5.3.1.2">
+<h4><span class="header-section-number">5.3.1.2</span> Enrichment analysis query<a href="genome-wide-association-study-gwas-analysis.html#enrichment-analysis-query" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Having the genes of interest annotated, the final step is to query them to DisGeNET. We will use the function <code>enrichDGN</code> from the package <code>DOSE</code> for it. This package is part of a large <a href="https://yulab-smu.top/biomedical-knowledge-mining-book/figures/clusterProfiler-diagram.png">ecosystem</a> of packages dedicated to enrichment analysis, this allows for easy representation of the query results.</p>
 <div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="genome-wide-association-study-gwas-analysis.html#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DOSE)</span>
 <span id="cb105-2"><a href="genome-wide-association-study-gwas-analysis.html#cb105-2" aria-hidden="true" tabindex="-1"></a>enrichment <span class="ot">&lt;-</span> <span class="fu">enrichDGN</span>(<span class="fu">unlist</span>(genes_interest<span class="sc">$</span>entrezgene_id), </span>
 <span id="cb105-3"><a href="genome-wide-association-study-gwas-analysis.html#cb105-3" aria-hidden="true" tabindex="-1"></a>                        <span class="at">pvalueCutoff =</span> <span class="fl">0.2</span>)</span></code></pre></div>
 </div>
-<div id="enrichment-analysis-plots" class="section level4" number="5.3.1.3">
-<h4><span class="header-section-number">5.3.1.3</span> Enrichment analysis plots</h4>
+<div id="enrichment-analysis-plots" class="section level4 hasAnchor" number="5.3.1.3">
+<h4><span class="header-section-number">5.3.1.3</span> Enrichment analysis plots<a href="genome-wide-association-study-gwas-analysis.html#enrichment-analysis-plots" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Here we will portray some of the visualizations that can be performed with the query results. For more information and further visualization options please read the <a href="https://yulab-smu.top/biomedical-knowledge-mining-book/index.html">official vignette</a>.</p>
-<div id="barplot" class="section level5" number="5.3.1.3.1">
-<h5><span class="header-section-number">5.3.1.3.1</span> Barplot</h5>
+<div id="barplot" class="section level5 hasAnchor" number="5.3.1.3.1">
+<h5><span class="header-section-number">5.3.1.3.1</span> Barplot<a href="genome-wide-association-study-gwas-analysis.html#barplot" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="genome-wide-association-study-gwas-analysis.html#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(enrichplot)</span>
 <span id="cb106-2"><a href="genome-wide-association-study-gwas-analysis.html#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(enrichment)</span></code></pre></div>
 <p><img src="OmicSHIELD_bookdown_files/figure-html/barplot_enrichment-1.png" width="672" /></p>
 </div>
-<div id="dotplot" class="section level5" number="5.3.1.3.2">
-<h5><span class="header-section-number">5.3.1.3.2</span> Dotplot</h5>
+<div id="dotplot" class="section level5 hasAnchor" number="5.3.1.3.2">
+<h5><span class="header-section-number">5.3.1.3.2</span> Dotplot<a href="genome-wide-association-study-gwas-analysis.html#dotplot" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="genome-wide-association-study-gwas-analysis.html#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dotplot</span>(enrichment)</span></code></pre></div>
 <p><img src="OmicSHIELD_bookdown_files/figure-html/dotplot_enrichment-1.png" width="672" /></p>
 </div>
-<div id="cnet-plot" class="section level5" number="5.3.1.3.3">
-<h5><span class="header-section-number">5.3.1.3.3</span> CNET plot</h5>
+<div id="cnet-plot" class="section level5 hasAnchor" number="5.3.1.3.3">
+<h5><span class="header-section-number">5.3.1.3.3</span> CNET plot<a href="genome-wide-association-study-gwas-analysis.html#cnet-plot" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="genome-wide-association-study-gwas-analysis.html#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggnewscale)</span>
 <span id="cb108-2"><a href="genome-wide-association-study-gwas-analysis.html#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="co"># convert gene ID to Symbol</span></span>
 <span id="cb108-3"><a href="genome-wide-association-study-gwas-analysis.html#cb108-3" aria-hidden="true" tabindex="-1"></a>edox <span class="ot">&lt;-</span> <span class="fu">setReadable</span>(enrichment, <span class="st">&#39;org.Hs.eg.db&#39;</span>, <span class="st">&#39;ENTREZID&#39;</span>)</span>
@@ -3289,7 +3287,7 @@ Figure 5.16: Manhattan plot of the Cohort 1.
 </div>
 </div>
 </div>
-<h3> References</h3>
+<h3> References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-betameta" class="csl-entry">
 Pirinen, Matti. 2020. <span>“GWAS 9: Meta-Analysis and Summary Statistics.”</span> <a href="https://www.mv.helsinki.fi/home/mjxpirin/GWAS_course/material/GWAS9.html">https://www.mv.helsinki.fi/home/mjxpirin/GWAS_course/material/GWAS9.html</a>.
@@ -3363,7 +3361,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

@@ -91,7 +91,6 @@ In the **1,301 children**, a wide range of **environmental exposures** were eval
 **Omic** data from the **HELIX project** were uploaded into to the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) simulating a **single-site DataSHIELD architecture**, as illustrated in **Figure \@ref(fig:FigHELIXopal)**. Data were stored under the form of **resources** (one per cohort and data type). As illustrated in the figure, transcriptomic data) were stored under the form of _expressionSets_ while EWAS data were stored as _GenomicRatioSet_. A summary of the structure and organization of this data in the **Opal** for the **HELIX project** is illustrated in **Figure \@ref(fig:FigHELIXopal)**.
 
 ```{r FigHELIXopal, echo=FALSE, fig.align = 'center', out.width = "90%", fig.cap = "Input HELIX datasets organized by cohort in the Opal server."}
-# knitr::include_graphics(here::here("./fig", "HELIX OPAL STRUCTURE.png"))
 knitr::include_graphics("fig/HELIX_OPAL_STRUCTURE.png")
 ```
 
@@ -112,7 +111,7 @@ The **epigenetic** data available for the **HELIX cohorts** correspond to genome
 Particularly, one  **GenomicRatioSet** file per cohort is hosted in the [Opal BRGE site](https://datashield.isglobal.org/brge/ui/index.html) in the form of a **resource**, as presented in the **Figure \@ref(fig:FigHELIXresourcesOpalDNAm)**. As it can be seen, data are organized within the Opal server in a **project** called **HELIX_omics**.
 
 ```{r FigHELIXresourcesOpalDNAm, echo=FALSE, fig.align = 'center', out.height = "500px", out.width = "3000px", fig.cap = "Input GenomicRatioSet data organized by cohort in the Opal server as resources."}
-knitr::include_graphics(here::here("./fig", "dnaM_HELIX.png"))
+knitr::include_graphics("fig/dnaM_HELIX.png")
 ```
 
 

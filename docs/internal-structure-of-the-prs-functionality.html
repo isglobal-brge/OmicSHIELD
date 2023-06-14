@@ -4,26 +4,25 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>17 Internal structure of the PRS functionality | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD</title>
-  <meta name="description" content="17 Internal structure of the PRS functionality | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <title>16 Internal structure of the PRS functionality | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD</title>
+  <meta name="description" content="16 Internal structure of the PRS functionality | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="17 Internal structure of the PRS functionality | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
+  <meta property="og:title" content="16 Internal structure of the PRS functionality | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
   <meta property="og:type" content="book" />
-  
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="17 Internal structure of the PRS functionality | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
+  <meta name="twitter:title" content="16 Internal structure of the PRS functionality | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
   
   
   
 
 
 
-<meta name="date" content="2022-04-05" />
+<meta name="date" content="2023-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +31,6 @@
   
 <link rel="prev" href="differential-privacy.html"/>
 <link rel="next" href="compress.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script>
   function unrolltab(evt, divName, tabName) {
     var i, tabcontent, tablinks;
@@ -116,7 +115,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -129,7 +128,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -192,15 +191,15 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#opal-servers"><i class="fa fa-check"></i><b>1.4</b> Opal servers</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="Omic.html"><a href="Omic.html"><i class="fa fa-check"></i><b>2</b> Omic data analysis: types of implemented analyses</a></li>
-<li class="chapter" data-level="3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html"><i class="fa fa-check"></i><b>3</b> Datasets description.</a>
+<li class="chapter" data-level="3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html"><i class="fa fa-check"></i><b>3</b> Datasets description</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAdescription"><i class="fa fa-check"></i><b>3.1</b> CINECA project.</a></li>
-<li class="chapter" data-level="3.2" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAopal"><i class="fa fa-check"></i><b>3.2</b> Data organization in the Opal server.</a></li>
-<li class="chapter" data-level="3.3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#TCGALiverdatadescription"><i class="fa fa-check"></i><b>3.3</b> TCGA Liver project.</a></li>
+<li class="chapter" data-level="3.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAdescription"><i class="fa fa-check"></i><b>3.1</b> CINECA project</a></li>
+<li class="chapter" data-level="3.2" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAopal"><i class="fa fa-check"></i><b>3.2</b> Data organization in the Opal server</a></li>
+<li class="chapter" data-level="3.3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#TCGALiverdatadescription"><i class="fa fa-check"></i><b>3.3</b> TCGA Liver project</a></li>
 <li class="chapter" data-level="3.4" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#GSE66351description"><i class="fa fa-check"></i><b>3.4</b> Epigenetic data from the GSE66351 project</a></li>
-<li class="chapter" data-level="3.5" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXdescription"><i class="fa fa-check"></i><b>3.5</b> HELIX project.</a>
+<li class="chapter" data-level="3.5" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXdescription"><i class="fa fa-check"></i><b>3.5</b> HELIX project</a>
 <ul>
-<li class="chapter" data-level="3.5.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXopal"><i class="fa fa-check"></i><b>3.5.1</b> Data organization in the Opal server.</a></li>
+<li class="chapter" data-level="3.5.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXopal"><i class="fa fa-check"></i><b>3.5.1</b> Data organization in the Opal server</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html"><i class="fa fa-check"></i><b>4</b> Exploration of Genotype data</a>
@@ -227,9 +226,9 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#multi-cohorts"><i class="fa fa-check"></i><b>5.2</b> Multi cohorts</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-2"><i class="fa fa-check"></i><b>5.2.1</b> Connection to the Opal server</a></li>
-<li class="chapter" data-level="5.2.2" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#multi-vcf"><i class="fa fa-check"></i><b>5.2.2</b> Assign the VCF resources</a></li>
-<li class="chapter" data-level="5.2.3" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#assign-the-phenotypes-1"><i class="fa fa-check"></i><b>5.2.3</b> Assign the phenotypes</a></li>
-<li class="chapter" data-level="5.2.4" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#merge-vcf-genotype-and-phenotype-information"><i class="fa fa-check"></i><b>5.2.4</b> Merge VCF (genotype) and phenotype information</a></li>
+<li class="chapter" data-level="5.2.2" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#multi-vcf2"><i class="fa fa-check"></i><b>5.2.2</b> Assign the VCF resources</a></li>
+<li class="chapter" data-level="5.2.3" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#assign-the-phenotypes-10"><i class="fa fa-check"></i><b>5.2.3</b> Assign the phenotypes</a></li>
+<li class="chapter" data-level="5.2.4" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#merge-vcf-genotype-and-phenotype-information-1"><i class="fa fa-check"></i><b>5.2.4</b> Merge VCF (genotype) and phenotype information</a></li>
 <li class="chapter" data-level="5.2.5" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#performing-the-gwas-1"><i class="fa fa-check"></i><b>5.2.5</b> Performing a meta - GWAS</a></li>
 <li class="chapter" data-level="5.2.6" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#gwas-plots"><i class="fa fa-check"></i><b>5.2.6</b> GWAS Plots</a></li>
 <li class="chapter" data-level="5.2.7" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#meta-level-quality-control"><i class="fa fa-check"></i><b>5.2.7</b> Meta-level quality control</a></li>
@@ -306,30 +305,29 @@ div.csl-indent {
 <li class="chapter" data-level="12.4" data-path="DNAmHELIX.html"><a href="DNAmHELIX.html#DNAmHELIX_analysis4"><i class="fa fa-check"></i><b>12.4</b> Adjusting for surrogate variables.</a></li>
 <li class="chapter" data-level="12.5" data-path="DNAmHELIX.html"><a href="DNAmHELIX.html#DNAmHELIXenrichment"><i class="fa fa-check"></i><b>12.5</b> Enrichment analysis of functional annotations.</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="references..html"><a href="references..html"><i class="fa fa-check"></i><b>13</b> References.</a></li>
 <li class="part"><span><b>IV Technical details</b></span></li>
-<li class="chapter" data-level="14" data-path="fast-gwas.html"><a href="fast-gwas.html"><i class="fa fa-check"></i><b>14</b> Fast GWAS</a></li>
-<li class="chapter" data-level="15" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>15</b> PCA</a></li>
-<li class="chapter" data-level="16" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i><b>16</b> Differential privacy</a></li>
-<li class="chapter" data-level="17" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html"><i class="fa fa-check"></i><b>17</b> Internal structure of the PRS functionality</a>
+<li class="chapter" data-level="13" data-path="fast-gwas.html"><a href="fast-gwas.html"><i class="fa fa-check"></i><b>13</b> Fast GWAS</a></li>
+<li class="chapter" data-level="14" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>14</b> PCA</a></li>
+<li class="chapter" data-level="15" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i><b>15</b> Differential privacy</a></li>
+<li class="chapter" data-level="16" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html"><i class="fa fa-check"></i><b>16</b> Internal structure of the PRS functionality</a>
 <ul>
-<li class="chapter" data-level="17.1" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#client"><i class="fa fa-check"></i><b>17.1</b> Client</a></li>
-<li class="chapter" data-level="17.2" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-resolver"><i class="fa fa-check"></i><b>17.2</b> Server resolver</a></li>
-<li class="chapter" data-level="17.3" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-analysis"><i class="fa fa-check"></i><b>17.3</b> Server analysis</a></li>
+<li class="chapter" data-level="16.1" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#client"><i class="fa fa-check"></i><b>16.1</b> Client</a></li>
+<li class="chapter" data-level="16.2" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-resolver"><i class="fa fa-check"></i><b>16.2</b> Server resolver</a></li>
+<li class="chapter" data-level="16.3" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-analysis"><i class="fa fa-check"></i><b>16.3</b> Server analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="compress.html"><a href="compress.html"><i class="fa fa-check"></i><b>18</b> Compression of GDS files vs. performance</a></li>
-<li class="chapter" data-level="19" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html"><i class="fa fa-check"></i><b>19</b> Recommended R server specs</a>
+<li class="chapter" data-level="17" data-path="compress.html"><a href="compress.html"><i class="fa fa-check"></i><b>17</b> Compression of GDS files vs. performance</a></li>
+<li class="chapter" data-level="18" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html"><i class="fa fa-check"></i><b>18</b> Recommended R server specs</a>
 <ul>
-<li class="chapter" data-level="19.1" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#limma-voom"><i class="fa fa-check"></i><b>19.1</b> Limma + voom</a></li>
-<li class="chapter" data-level="19.2" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#gwas-pca"><i class="fa fa-check"></i><b>19.2</b> GWAS + PCA</a></li>
-<li class="chapter" data-level="19.3" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#general-remarks"><i class="fa fa-check"></i><b>19.3</b> General remarks</a></li>
+<li class="chapter" data-level="18.1" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#limma-voom"><i class="fa fa-check"></i><b>18.1</b> Limma + voom</a></li>
+<li class="chapter" data-level="18.2" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#gwas-pca"><i class="fa fa-check"></i><b>18.2</b> GWAS + PCA</a></li>
+<li class="chapter" data-level="18.3" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#general-remarks"><i class="fa fa-check"></i><b>18.3</b> General remarks</a></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="disclosure-filter-configurations.html"><a href="disclosure-filter-configurations.html"><i class="fa fa-check"></i><b>20</b> Disclosure filter configurations</a></li>
+<li class="chapter" data-level="19" data-path="disclosure-filter-configurations.html"><a href="disclosure-filter-configurations.html"><i class="fa fa-check"></i><b>19</b> Disclosure filter configurations</a></li>
 <li class="part"><span><b>V Appendix</b></span></li>
-<li class="chapter" data-level="21" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i><b>21</b> Session info</a></li>
-<li class="chapter" data-level="22" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i><b>22</b> Contributors</a></li>
+<li class="chapter" data-level="20" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i><b>20</b> Session info</a></li>
+<li class="chapter" data-level="21" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i><b>21</b> Contributors</a></li>
 <li class="part"><span><b>VI References</b></span></li>
-<li class="chapter" data-level="23" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>23</b> References</a></li>
+<li class="chapter" data-level="22" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>22</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -350,8 +348,8 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="internal-structure-of-the-prs-functionality" class="section level1" number="17">
-<h1><span class="header-section-number">17</span> Internal structure of the PRS functionality</h1>
+<div id="internal-structure-of-the-prs-functionality" class="section level1 hasAnchor" number="16">
+<h1><span class="header-section-number">16</span> Internal structure of the PRS functionality<a href="internal-structure-of-the-prs-functionality.html#internal-structure-of-the-prs-functionality" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The PRS function can be divided into three main blocks that perform the required tasks to come up with the results. The three functional blocks are the following:</p>
 <ul>
 <li>Client: Assemble the <code>prs_table</code> table if PGS Catalog is used, perform calls to the server to subset the resources and calculate the PRS with the subsetted resources.</li>
@@ -359,36 +357,36 @@ div.csl-indent {
 <li>Server analysis: Use the resolved resources (small VCF files with only the SNPs of interest according to the <code>prs_table</code> table) to calculate the PRS.</li>
 </ul>
 <p>In order to introduce a little how those three blocks work internally, schematized flow charts have been designed. To understand the exact inner working of the functionality it is advised to follow the flowcharts alongside the actual source code. Find the links to the three blocks source code, <a href="https://github.com/isglobal-brge/dsOmicsClient/blob/master/R/ds.PRS.R">client</a>, <a href="https://github.com/isglobal-brge/dsOmics/blob/master/R/GDSFileResourceClient.R#L43">server resolver</a> and <a href="https://github.com/isglobal-brge/dsOmics/blob/master/R/PRSDS.R">server analysis</a>.</p>
-<div id="client" class="section level2" number="17.1">
-<h2><span class="header-section-number">17.1</span> Client</h2>
+<div id="client" class="section level2 hasAnchor" number="16.1">
+<h2><span class="header-section-number">16.1</span> Client<a href="internal-structure-of-the-prs-functionality.html#client" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The client performs two basic tasks. The first one is to select between a user introduced <code>prs_table</code> or to retrieve the <code>prs_table</code> from the PGS Catalog. Please note that <code>prs_table</code> stands for Region Of Interest, which may not be the common term for PGS analysis but it makes sense since it refers to a table that contain the SNP’s of interest and their weight to the score. If the user introduces a custom <code>prs_table</code> and a PGS Catalog ID, only the introduced table will be used, discarding the PGS Catalog ID information. Once this table is assembled, the next step is to call the required functions on the study servers. First, the resource resolver is called, and after that, the function that calculates the PRS is called.</p>
 <p>This is illustrated on the following figure.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:block1Image"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:block10Image"></span>
 <img src="fig/block1.png" alt="Flow chart of the client block." width="1130" />
 <p class="caption">
-Figure 17.1: Flow chart of the client block.
+Figure 16.1: Flow chart of the client block.
 </p>
 </div>
 </div>
-<div id="server-resolver" class="section level2" number="17.2">
-<h2><span class="header-section-number">17.2</span> Server resolver</h2>
+<div id="server-resolver" class="section level2 hasAnchor" number="16.2">
+<h2><span class="header-section-number">16.2</span> Server resolver<a href="internal-structure-of-the-prs-functionality.html#server-resolver" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The server resolver is in charge of resolving the resources. The interesting aspect is that only a region of interest is actually assigned to the R session, this is to avoid overloading the memory with unnecessary information. There are two different methodologies to perform this subsetting, one is using chromosome names and position and the other is using the SNP id’s. Due to the technical specification of VCF files, is much easier to perform the subsetting using chromosome names and positions because there is an indexing file for the VCF files to perform fast queries of regions by position. On the other hand, to filter a VCF file using SNP id’s, the whole file has to be scanned, yielding a much slower process.</p>
 <p>This block is illustrated on the following figure.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:block2Image"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:block20Image"></span>
 <img src="fig/block2.png" alt="Flow chart of the server resolver block." width="513" />
 <p class="caption">
-Figure 17.2: Flow chart of the server resolver block.
+Figure 16.2: Flow chart of the server resolver block.
 </p>
 </div>
 </div>
-<div id="server-analysis" class="section level2" number="17.3">
-<h2><span class="header-section-number">17.3</span> Server analysis</h2>
+<div id="server-analysis" class="section level2 hasAnchor" number="16.3">
+<h2><span class="header-section-number">16.3</span> Server analysis<a href="internal-structure-of-the-prs-functionality.html#server-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Many processes are performed inside the analysis block. For that reason, more than a flow chart, a step by step guide has been illustrated with the objects that are created (or modified) on each step. The most important step on this block is making sure that the alternate (risk) alleles match between the VCF resources and the alternate alleles stated by the <code>prs_table</code> or PGS Catalog.</p>
 <p>The block is illustrated on the following figure.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:block3Image"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:block30Image"></span>
 <img src="fig/block3.png" alt="Flow chart of the server analysis block." width="563" />
 <p class="caption">
-Figure 17.3: Flow chart of the server analysis block.
+Figure 16.3: Flow chart of the server analysis block.
 </p>
 </div>
 </div>
@@ -449,7 +447,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

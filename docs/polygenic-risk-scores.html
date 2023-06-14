@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6 Polygenic risk scores | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD</title>
   <meta name="description" content="6 Polygenic risk scores | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6 Polygenic risk scores | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-04-05" />
+<meta name="date" content="2023-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +31,6 @@
   
 <link rel="prev" href="genome-wide-association-study-gwas-analysis.html"/>
 <link rel="next" href="plink.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script>
   function unrolltab(evt, divName, tabName) {
     var i, tabcontent, tablinks;
@@ -116,7 +115,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -129,7 +128,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -192,15 +191,15 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#opal-servers"><i class="fa fa-check"></i><b>1.4</b> Opal servers</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="Omic.html"><a href="Omic.html"><i class="fa fa-check"></i><b>2</b> Omic data analysis: types of implemented analyses</a></li>
-<li class="chapter" data-level="3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html"><i class="fa fa-check"></i><b>3</b> Datasets description.</a>
+<li class="chapter" data-level="3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html"><i class="fa fa-check"></i><b>3</b> Datasets description</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAdescription"><i class="fa fa-check"></i><b>3.1</b> CINECA project.</a></li>
-<li class="chapter" data-level="3.2" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAopal"><i class="fa fa-check"></i><b>3.2</b> Data organization in the Opal server.</a></li>
-<li class="chapter" data-level="3.3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#TCGALiverdatadescription"><i class="fa fa-check"></i><b>3.3</b> TCGA Liver project.</a></li>
+<li class="chapter" data-level="3.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAdescription"><i class="fa fa-check"></i><b>3.1</b> CINECA project</a></li>
+<li class="chapter" data-level="3.2" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAopal"><i class="fa fa-check"></i><b>3.2</b> Data organization in the Opal server</a></li>
+<li class="chapter" data-level="3.3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#TCGALiverdatadescription"><i class="fa fa-check"></i><b>3.3</b> TCGA Liver project</a></li>
 <li class="chapter" data-level="3.4" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#GSE66351description"><i class="fa fa-check"></i><b>3.4</b> Epigenetic data from the GSE66351 project</a></li>
-<li class="chapter" data-level="3.5" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXdescription"><i class="fa fa-check"></i><b>3.5</b> HELIX project.</a>
+<li class="chapter" data-level="3.5" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXdescription"><i class="fa fa-check"></i><b>3.5</b> HELIX project</a>
 <ul>
-<li class="chapter" data-level="3.5.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXopal"><i class="fa fa-check"></i><b>3.5.1</b> Data organization in the Opal server.</a></li>
+<li class="chapter" data-level="3.5.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXopal"><i class="fa fa-check"></i><b>3.5.1</b> Data organization in the Opal server</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html"><i class="fa fa-check"></i><b>4</b> Exploration of Genotype data</a>
@@ -227,9 +226,9 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#multi-cohorts"><i class="fa fa-check"></i><b>5.2</b> Multi cohorts</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-2"><i class="fa fa-check"></i><b>5.2.1</b> Connection to the Opal server</a></li>
-<li class="chapter" data-level="5.2.2" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#multi-vcf"><i class="fa fa-check"></i><b>5.2.2</b> Assign the VCF resources</a></li>
-<li class="chapter" data-level="5.2.3" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#assign-the-phenotypes-1"><i class="fa fa-check"></i><b>5.2.3</b> Assign the phenotypes</a></li>
-<li class="chapter" data-level="5.2.4" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#merge-vcf-genotype-and-phenotype-information"><i class="fa fa-check"></i><b>5.2.4</b> Merge VCF (genotype) and phenotype information</a></li>
+<li class="chapter" data-level="5.2.2" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#multi-vcf2"><i class="fa fa-check"></i><b>5.2.2</b> Assign the VCF resources</a></li>
+<li class="chapter" data-level="5.2.3" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#assign-the-phenotypes-10"><i class="fa fa-check"></i><b>5.2.3</b> Assign the phenotypes</a></li>
+<li class="chapter" data-level="5.2.4" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#merge-vcf-genotype-and-phenotype-information-1"><i class="fa fa-check"></i><b>5.2.4</b> Merge VCF (genotype) and phenotype information</a></li>
 <li class="chapter" data-level="5.2.5" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#performing-the-gwas-1"><i class="fa fa-check"></i><b>5.2.5</b> Performing a meta - GWAS</a></li>
 <li class="chapter" data-level="5.2.6" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#gwas-plots"><i class="fa fa-check"></i><b>5.2.6</b> GWAS Plots</a></li>
 <li class="chapter" data-level="5.2.7" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#meta-level-quality-control"><i class="fa fa-check"></i><b>5.2.7</b> Meta-level quality control</a></li>
@@ -306,30 +305,29 @@ div.csl-indent {
 <li class="chapter" data-level="12.4" data-path="DNAmHELIX.html"><a href="DNAmHELIX.html#DNAmHELIX_analysis4"><i class="fa fa-check"></i><b>12.4</b> Adjusting for surrogate variables.</a></li>
 <li class="chapter" data-level="12.5" data-path="DNAmHELIX.html"><a href="DNAmHELIX.html#DNAmHELIXenrichment"><i class="fa fa-check"></i><b>12.5</b> Enrichment analysis of functional annotations.</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="references..html"><a href="references..html"><i class="fa fa-check"></i><b>13</b> References.</a></li>
 <li class="part"><span><b>IV Technical details</b></span></li>
-<li class="chapter" data-level="14" data-path="fast-gwas.html"><a href="fast-gwas.html"><i class="fa fa-check"></i><b>14</b> Fast GWAS</a></li>
-<li class="chapter" data-level="15" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>15</b> PCA</a></li>
-<li class="chapter" data-level="16" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i><b>16</b> Differential privacy</a></li>
-<li class="chapter" data-level="17" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html"><i class="fa fa-check"></i><b>17</b> Internal structure of the PRS functionality</a>
+<li class="chapter" data-level="13" data-path="fast-gwas.html"><a href="fast-gwas.html"><i class="fa fa-check"></i><b>13</b> Fast GWAS</a></li>
+<li class="chapter" data-level="14" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>14</b> PCA</a></li>
+<li class="chapter" data-level="15" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i><b>15</b> Differential privacy</a></li>
+<li class="chapter" data-level="16" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html"><i class="fa fa-check"></i><b>16</b> Internal structure of the PRS functionality</a>
 <ul>
-<li class="chapter" data-level="17.1" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#client"><i class="fa fa-check"></i><b>17.1</b> Client</a></li>
-<li class="chapter" data-level="17.2" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-resolver"><i class="fa fa-check"></i><b>17.2</b> Server resolver</a></li>
-<li class="chapter" data-level="17.3" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-analysis"><i class="fa fa-check"></i><b>17.3</b> Server analysis</a></li>
+<li class="chapter" data-level="16.1" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#client"><i class="fa fa-check"></i><b>16.1</b> Client</a></li>
+<li class="chapter" data-level="16.2" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-resolver"><i class="fa fa-check"></i><b>16.2</b> Server resolver</a></li>
+<li class="chapter" data-level="16.3" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-analysis"><i class="fa fa-check"></i><b>16.3</b> Server analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="compress.html"><a href="compress.html"><i class="fa fa-check"></i><b>18</b> Compression of GDS files vs. performance</a></li>
-<li class="chapter" data-level="19" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html"><i class="fa fa-check"></i><b>19</b> Recommended R server specs</a>
+<li class="chapter" data-level="17" data-path="compress.html"><a href="compress.html"><i class="fa fa-check"></i><b>17</b> Compression of GDS files vs. performance</a></li>
+<li class="chapter" data-level="18" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html"><i class="fa fa-check"></i><b>18</b> Recommended R server specs</a>
 <ul>
-<li class="chapter" data-level="19.1" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#limma-voom"><i class="fa fa-check"></i><b>19.1</b> Limma + voom</a></li>
-<li class="chapter" data-level="19.2" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#gwas-pca"><i class="fa fa-check"></i><b>19.2</b> GWAS + PCA</a></li>
-<li class="chapter" data-level="19.3" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#general-remarks"><i class="fa fa-check"></i><b>19.3</b> General remarks</a></li>
+<li class="chapter" data-level="18.1" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#limma-voom"><i class="fa fa-check"></i><b>18.1</b> Limma + voom</a></li>
+<li class="chapter" data-level="18.2" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#gwas-pca"><i class="fa fa-check"></i><b>18.2</b> GWAS + PCA</a></li>
+<li class="chapter" data-level="18.3" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#general-remarks"><i class="fa fa-check"></i><b>18.3</b> General remarks</a></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="disclosure-filter-configurations.html"><a href="disclosure-filter-configurations.html"><i class="fa fa-check"></i><b>20</b> Disclosure filter configurations</a></li>
+<li class="chapter" data-level="19" data-path="disclosure-filter-configurations.html"><a href="disclosure-filter-configurations.html"><i class="fa fa-check"></i><b>19</b> Disclosure filter configurations</a></li>
 <li class="part"><span><b>V Appendix</b></span></li>
-<li class="chapter" data-level="21" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i><b>21</b> Session info</a></li>
-<li class="chapter" data-level="22" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i><b>22</b> Contributors</a></li>
+<li class="chapter" data-level="20" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i><b>20</b> Session info</a></li>
+<li class="chapter" data-level="21" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i><b>21</b> Contributors</a></li>
 <li class="part"><span><b>VI References</b></span></li>
-<li class="chapter" data-level="23" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>23</b> References</a></li>
+<li class="chapter" data-level="22" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>22</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -350,8 +348,8 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="polygenic-risk-scores" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> Polygenic risk scores</h1>
+<div id="polygenic-risk-scores" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Polygenic risk scores<a href="polygenic-risk-scores.html#polygenic-risk-scores" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -502,17 +500,17 @@ omics
 </tbody></table></td></tr>
 </tbody>
 </table>
-<div id="definition" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Definition</h2>
+<div id="definition" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Definition<a href="polygenic-risk-scores.html#definition" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>By checking for specific variants and quantifying them, a researcher can extract the polygenic risk score (PRS) of an individual, which translates to an associated risk of the individual versus a concrete phenotype. A definition of the term reads</p>
 <blockquote>
-<p>“A weighted sum of the number of risk alleles carried by an individual, where the risk alleles and their weights are defined by the loci and their measured effects as detected by genome wide association studies.” (Extracted from <span class="citation"><a href="#ref-torkamani2018personal" role="doc-biblioref">Torkamani, Wineinger, and Topol</a> (<a href="#ref-torkamani2018personal" role="doc-biblioref">2018</a>)</span>)</p>
+<p>“A weighted sum of the number of risk alleles carried by an individual, where the risk alleles and their weights are defined by the loci and their measured effects as detected by genome wide association studies.” (Extracted from <span class="citation">Torkamani, Wineinger, and Topol (<a href="#ref-torkamani2018personal" role="doc-biblioref">2018</a>)</span>)</p>
 </blockquote>
-<p>The use of PRS markers is very popular nowadays and it has been proved to be a good tool to asses associated risks <span class="citation"><a href="#ref-escott2017polygenic" role="doc-biblioref">Escott-Price et al.</a> (<a href="#ref-escott2017polygenic" role="doc-biblioref">2017</a>)</span>, <span class="citation"><a href="#ref-forgetta2020development" role="doc-biblioref">Forgetta et al.</a> (<a href="#ref-forgetta2020development" role="doc-biblioref">2020</a>)</span>, <span class="citation"><a href="#ref-kramer2020breast" role="doc-biblioref">Kramer et al.</a> (<a href="#ref-kramer2020breast" role="doc-biblioref">2020</a>)</span>.</p>
+<p>The use of PRS markers is very popular nowadays and it has been proved to be a good tool to asses associated risks <span class="citation">Escott-Price et al. (<a href="#ref-escott2017polygenic" role="doc-biblioref">2017</a>)</span>, <span class="citation">Forgetta et al. (<a href="#ref-forgetta2020development" role="doc-biblioref">2020</a>)</span>, <span class="citation">Kramer et al. (<a href="#ref-kramer2020breast" role="doc-biblioref">2020</a>)</span>.</p>
 <p>When calculating the PRS using DataSHIELD, the actual scores are not returned, as it would not be GDPR compliant to be able to determine the risk of an individual versus a certain disease. The actual results are stored on the servers and optionally can be merged to the phenotypes table. This allows further study of the PRS using summaries or fitting pooled GLM models to assess relationships between phenotypes and PRS scores.</p>
 </div>
-<div id="study-configuration" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Study configuration</h2>
+<div id="study-configuration" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Study configuration<a href="polygenic-risk-scores.html#study-configuration" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The PRS use case will be set up as a multi-cohort, using the same dataset as the multi-cohort GWAS (same VCF resources). A single cohort PRS could be performed analogously using the single cohort example of the GWAS.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:prsCohortImage"></span>
 <img src="fig/prs.PNG" alt="Proposed infrastructure to perform PRS studies." width="918" />
@@ -521,17 +519,24 @@ Figure 6.1: Proposed infrastructure to perform PRS studies.
 </p>
 </div>
 </div>
-<div id="source-of-polygenic-scores" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span> Source of polygenic scores</h2>
+<div id="source-of-polygenic-scores" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Source of polygenic scores<a href="polygenic-risk-scores.html#source-of-polygenic-scores" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There is a public repository of polygenic scores available at <a href="https://www.pgscatalog.org/" class="uri">https://www.pgscatalog.org/</a>, on this website there are 2155 different polygenic scores (January 2022) that have been extracted from curated literature. All those scores refer to 526 different traits. Due the relevance of this project, we made sure to include a way of sourcing it’s contents automatically.</p>
 <p>There are two ways of stating the SNPs of interest and their weights in order to calculate the PRS.</p>
 <ul>
-<li><p>Provide a <a href="https://www.pgscatalog.org/browse/scores/">PGS Catalog</a> ‘Polygenic Score ID &amp; Name.’ If this option is in use, the SNPs and beta weights will be downloaded from the PGS Catalog and will be used to calculate the PRS. (Example: <code>PGS000008</code>)</p></li>
+<li><p>Provide a <a href="https://www.pgscatalog.org/browse/scores/">PGS Catalog</a> ‘Polygenic Score ID &amp; Name’. If this option is in use, the SNPs and beta weights will be downloaded from the PGS Catalog and will be used to calculate the PRS. (Example: <code>PGS000008</code>)</p></li>
 <li><p>Providing a <code>prs_table</code> (SNPs of interest) table. The <code>prs_table</code> table has to have a defined structure and column names in order to be understood by this function. This table can be formulated using two schemas:</p>
 <ul>
 <li>Scheme 1: Provide SNP positions. Use the column names: <code>chr_name</code>, <code>chr_position</code>, <code>effect_allele</code>, <code>reference_allele</code>, <code>effect_weight</code>.</li>
 </ul>
 <table>
+<colgroup>
+<col width="13%" />
+<col width="19%" />
+<col width="20%" />
+<col width="25%" />
+<col width="20%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>chr_name</th>
@@ -615,8 +620,8 @@ Figure 6.1: Proposed infrastructure to perform PRS studies.
 <p>The <code>effect_weight</code> have to be the betas (log(OR)).</p>
 <p>Please note when using a custom <code>prs_table</code> table that it is much faster to use the Schema 1, as the subset of the VCF files is miles faster to do using chromosome name and positions rather than SNP id’s.</p>
 </div>
-<div id="connection-to-the-opal-server-2" class="section level2" number="6.4">
-<h2><span class="header-section-number">6.4</span> Connection to the Opal server</h2>
+<div id="connection-to-the-opal-server-2" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Connection to the Opal server<a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We have to create an Opal connection object to the cohort server. We do that using the following functions.</p>
 <div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="polygenic-risk-scores.html#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSI&#39;</span>)</span>
 <span id="cb109-2"><a href="polygenic-risk-scores.html#cb109-2" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&#39;DSOpal&#39;</span>)</span>
@@ -636,8 +641,8 @@ Figure 6.1: Proposed infrastructure to perform PRS studies.
 <span id="cb109-16"><a href="polygenic-risk-scores.html#cb109-16" aria-hidden="true" tabindex="-1"></a>logindata <span class="ot">&lt;-</span> builder<span class="sc">$</span><span class="fu">build</span>()</span>
 <span id="cb109-17"><a href="polygenic-risk-scores.html#cb109-17" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata)</span></code></pre></div>
 </div>
-<div id="assign-the-vcf-resources-1" class="section level2" number="6.5">
-<h2><span class="header-section-number">6.5</span> Assign the VCF resources</h2>
+<div id="assign-the-vcf-resources-1" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Assign the VCF resources<a href="polygenic-risk-scores.html#assign-the-vcf-resources-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We assign the VCF and phenotypes resources.</p>
 <div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="polygenic-risk-scores.html#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cohort 1 resources</span></span>
 <span id="cb110-2"><a href="polygenic-risk-scores.html#cb110-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">21</span>, <span class="cf">function</span>(x){</span>
@@ -665,17 +670,17 @@ Figure 6.1: Proposed infrastructure to perform PRS studies.
 <span id="cb112-3"><a href="polygenic-risk-scores.html#cb112-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">expr =</span> <span class="fu">as.symbol</span>(<span class="fu">paste0</span>(<span class="st">&quot;as.resource.object(chr&quot;</span>, x, <span class="st">&quot;)&quot;</span>)))</span>
 <span id="cb112-4"><a href="polygenic-risk-scores.html#cb112-4" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
 </div>
-<div id="calculate-the-prs" class="section level2" number="6.6">
-<h2><span class="header-section-number">6.6</span> Calculate the PRS</h2>
+<div id="calculate-the-prs" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Calculate the PRS<a href="polygenic-risk-scores.html#calculate-the-prs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The PRS results will be added to the phenotypes table to be later studied using a pooled GLM. To do that, the following arguments of the function <code>ds.PRS</code> will be used:</p>
 <ul>
 <li><code>table</code>: Name of the table where the results will be merged.</li>
 <li><code>table_id_column</code>: Number of the column in the <code>table</code> table that contains the individuals ID to merge the results from the PRS.</li>
 <li><code>table_prs_name</code>: Name to append to the PRS results. It will take the structure <code>prs_table_prs_name</code> and <code>prs_nw_table_prs_name</code>.</li>
 </ul>
-<div id="pgs-catalog-example" class="section level3" number="6.6.1">
-<h3><span class="header-section-number">6.6.1</span> PGS Catalog Example</h3>
-<p>For this example we will calculate the PRS associated to the trait ‘HDL Cholesterol’ and ‘Thyroid cancer,’ which corresponds to the PGS ID <a href="https://www.pgscatalog.org/score/PGS000660/">PGS000660</a> and <a href="https://www.pgscatalog.org/score/PGS000636/">PGS000636</a></p>
+<div id="pgs-catalog-example" class="section level3 hasAnchor" number="6.6.1">
+<h3><span class="header-section-number">6.6.1</span> PGS Catalog Example<a href="polygenic-risk-scores.html#pgs-catalog-example" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For this example we will calculate the PRS associated to the trait ‘HDL Cholesterol’ and ‘Thyroid cancer’, which corresponds to the PGS ID <a href="https://www.pgscatalog.org/score/PGS000660/">PGS000660</a> and <a href="https://www.pgscatalog.org/score/PGS000636/">PGS000636</a></p>
 <div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="polygenic-risk-scores.html#cb113-1" aria-hidden="true" tabindex="-1"></a>resources <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;gds&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">21</span>, <span class="st">&quot;_object&quot;</span>)</span>
 <span id="cb113-2"><a href="polygenic-risk-scores.html#cb113-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb113-3"><a href="polygenic-risk-scores.html#cb113-3" aria-hidden="true" tabindex="-1"></a><span class="co"># HDL cholesterol</span></span>
@@ -689,8 +694,8 @@ Figure 6.1: Proposed infrastructure to perform PRS studies.
 <pre><code>[1] &quot;prs_PGS000660&quot;    &quot;prs_nw_PGS000660&quot; &quot;n_snps_PGS000660&quot; &quot;prs_PGS000636&quot;   
 [5] &quot;prs_nw_PGS000636&quot; &quot;n_snps_PGS000636&quot;</code></pre>
 </div>
-<div id="custom-prs_table-example" class="section level3" number="6.6.2">
-<h3><span class="header-section-number">6.6.2</span> Custom <code>prs_table</code> example</h3>
+<div id="custom-prs_table-example" class="section level3 hasAnchor" number="6.6.2">
+<h3><span class="header-section-number">6.6.2</span> Custom <code>prs_table</code> example<a href="polygenic-risk-scores.html#custom-prs_table-example" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Here we will illustrate a use case with a custom <code>prs_table</code>, please note that the proposed SNPs of interest and betas are totally arbitrary.</p>
 <p>We will first assemble the <code>prs_table</code> table following the indications found on the Details section of <code>?ds.PRS</code> (Schema 1).</p>
 <div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="polygenic-risk-scores.html#cb116-1" aria-hidden="true" tabindex="-1"></a>prs_table <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">chr_name =</span> <span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">9</span>, <span class="dv">9</span>, <span class="dv">9</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>),</span>
@@ -707,8 +712,8 @@ Figure 6.1: Proposed infrastructure to perform PRS studies.
 <span id="cb117-5"><a href="polygenic-risk-scores.html#cb117-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">table_prs_name =</span> <span class="st">&quot;custom_prs_table_results&quot;</span>)</span></code></pre></div>
 </div>
 </div>
-<div id="study-of-the-prs-results" class="section level2" number="6.7">
-<h2><span class="header-section-number">6.7</span> Study of the PRS results</h2>
+<div id="study-of-the-prs-results" class="section level2 hasAnchor" number="6.7">
+<h2><span class="header-section-number">6.7</span> Study of the PRS results<a href="polygenic-risk-scores.html#study-of-the-prs-results" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We can fit pooled GLM models using the function <code>ds.glm</code>. In this use case we will fit a model to relate the <code>HDL.cholesterol</code> to <code>prs_PGS000660</code> adjusted by <code>sex</code>. The same will be done with the <code>prs_PGS000636</code>.</p>
 <div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="polygenic-risk-scores.html#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.glm</span>(<span class="at">formula =</span> <span class="st">&quot;hdl_cholesterol ~ prs_PGS000660 + sex&quot;</span>, </span>
 <span id="cb118-2"><a href="polygenic-risk-scores.html#cb118-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">family =</span> <span class="st">&quot;gaussian&quot;</span>, <span class="at">data =</span> <span class="st">&quot;phenotypes&quot;</span>)<span class="sc">$</span>coefficients</span></code></pre></div>
@@ -734,7 +739,7 @@ sexmale       0.03404586</code></pre>
 
 </div>
 </div>
-<h3> References</h3>
+<h3> References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-escott2017polygenic" class="csl-entry">
 Escott-Price, Valentina, Amanda J Myers, Matt Huentelman, and John Hardy. 2017. <span>“Polygenic Risk Score Analysis of Pathologically Confirmed Alzheimer Disease.”</span> <em>Annals of Neurology</em> 82 (2): 311–14.
@@ -805,7 +810,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>12 Epigenetic analysis in the HELIX cohort. | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD</title>
   <meta name="description" content="12 Epigenetic analysis in the HELIX cohort. | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="12 Epigenetic analysis in the HELIX cohort. | Privacy protected federated omic data analysis in multi-center studies with DataSHIELD" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-04-05" />
+<meta name="date" content="2023-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,8 +30,7 @@
   
   
 <link rel="prev" href="TranscriptHELIX.html"/>
-<link rel="next" href="references..html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<link rel="next" href="fast-gwas.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script>
   function unrolltab(evt, divName, tabName) {
     var i, tabcontent, tablinks;
@@ -116,7 +115,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -129,7 +128,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -192,15 +191,15 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#opal-servers"><i class="fa fa-check"></i><b>1.4</b> Opal servers</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="Omic.html"><a href="Omic.html"><i class="fa fa-check"></i><b>2</b> Omic data analysis: types of implemented analyses</a></li>
-<li class="chapter" data-level="3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html"><i class="fa fa-check"></i><b>3</b> Datasets description.</a>
+<li class="chapter" data-level="3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html"><i class="fa fa-check"></i><b>3</b> Datasets description</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAdescription"><i class="fa fa-check"></i><b>3.1</b> CINECA project.</a></li>
-<li class="chapter" data-level="3.2" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAopal"><i class="fa fa-check"></i><b>3.2</b> Data organization in the Opal server.</a></li>
-<li class="chapter" data-level="3.3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#TCGALiverdatadescription"><i class="fa fa-check"></i><b>3.3</b> TCGA Liver project.</a></li>
+<li class="chapter" data-level="3.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAdescription"><i class="fa fa-check"></i><b>3.1</b> CINECA project</a></li>
+<li class="chapter" data-level="3.2" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#CINECAopal"><i class="fa fa-check"></i><b>3.2</b> Data organization in the Opal server</a></li>
+<li class="chapter" data-level="3.3" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#TCGALiverdatadescription"><i class="fa fa-check"></i><b>3.3</b> TCGA Liver project</a></li>
 <li class="chapter" data-level="3.4" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#GSE66351description"><i class="fa fa-check"></i><b>3.4</b> Epigenetic data from the GSE66351 project</a></li>
-<li class="chapter" data-level="3.5" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXdescription"><i class="fa fa-check"></i><b>3.5</b> HELIX project.</a>
+<li class="chapter" data-level="3.5" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXdescription"><i class="fa fa-check"></i><b>3.5</b> HELIX project</a>
 <ul>
-<li class="chapter" data-level="3.5.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXopal"><i class="fa fa-check"></i><b>3.5.1</b> Data organization in the Opal server.</a></li>
+<li class="chapter" data-level="3.5.1" data-path="DatasetsDescription.html"><a href="DatasetsDescription.html#HELIXopal"><i class="fa fa-check"></i><b>3.5.1</b> Data organization in the Opal server</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html"><i class="fa fa-check"></i><b>4</b> Exploration of Genotype data</a>
@@ -227,9 +226,9 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#multi-cohorts"><i class="fa fa-check"></i><b>5.2</b> Multi cohorts</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#connection-to-the-opal-server-2"><i class="fa fa-check"></i><b>5.2.1</b> Connection to the Opal server</a></li>
-<li class="chapter" data-level="5.2.2" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#multi-vcf"><i class="fa fa-check"></i><b>5.2.2</b> Assign the VCF resources</a></li>
-<li class="chapter" data-level="5.2.3" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#assign-the-phenotypes-1"><i class="fa fa-check"></i><b>5.2.3</b> Assign the phenotypes</a></li>
-<li class="chapter" data-level="5.2.4" data-path="exploration-of-genotype-data.html"><a href="exploration-of-genotype-data.html#merge-vcf-genotype-and-phenotype-information"><i class="fa fa-check"></i><b>5.2.4</b> Merge VCF (genotype) and phenotype information</a></li>
+<li class="chapter" data-level="5.2.2" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#multi-vcf2"><i class="fa fa-check"></i><b>5.2.2</b> Assign the VCF resources</a></li>
+<li class="chapter" data-level="5.2.3" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#assign-the-phenotypes-10"><i class="fa fa-check"></i><b>5.2.3</b> Assign the phenotypes</a></li>
+<li class="chapter" data-level="5.2.4" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#merge-vcf-genotype-and-phenotype-information-1"><i class="fa fa-check"></i><b>5.2.4</b> Merge VCF (genotype) and phenotype information</a></li>
 <li class="chapter" data-level="5.2.5" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#performing-the-gwas-1"><i class="fa fa-check"></i><b>5.2.5</b> Performing a meta - GWAS</a></li>
 <li class="chapter" data-level="5.2.6" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#gwas-plots"><i class="fa fa-check"></i><b>5.2.6</b> GWAS Plots</a></li>
 <li class="chapter" data-level="5.2.7" data-path="genome-wide-association-study-gwas-analysis.html"><a href="genome-wide-association-study-gwas-analysis.html#meta-level-quality-control"><i class="fa fa-check"></i><b>5.2.7</b> Meta-level quality control</a></li>
@@ -306,30 +305,29 @@ div.csl-indent {
 <li class="chapter" data-level="12.4" data-path="DNAmHELIX.html"><a href="DNAmHELIX.html#DNAmHELIX_analysis4"><i class="fa fa-check"></i><b>12.4</b> Adjusting for surrogate variables.</a></li>
 <li class="chapter" data-level="12.5" data-path="DNAmHELIX.html"><a href="DNAmHELIX.html#DNAmHELIXenrichment"><i class="fa fa-check"></i><b>12.5</b> Enrichment analysis of functional annotations.</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="references..html"><a href="references..html"><i class="fa fa-check"></i><b>13</b> References.</a></li>
 <li class="part"><span><b>IV Technical details</b></span></li>
-<li class="chapter" data-level="14" data-path="fast-gwas.html"><a href="fast-gwas.html"><i class="fa fa-check"></i><b>14</b> Fast GWAS</a></li>
-<li class="chapter" data-level="15" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>15</b> PCA</a></li>
-<li class="chapter" data-level="16" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i><b>16</b> Differential privacy</a></li>
-<li class="chapter" data-level="17" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html"><i class="fa fa-check"></i><b>17</b> Internal structure of the PRS functionality</a>
+<li class="chapter" data-level="13" data-path="fast-gwas.html"><a href="fast-gwas.html"><i class="fa fa-check"></i><b>13</b> Fast GWAS</a></li>
+<li class="chapter" data-level="14" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>14</b> PCA</a></li>
+<li class="chapter" data-level="15" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i><b>15</b> Differential privacy</a></li>
+<li class="chapter" data-level="16" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html"><i class="fa fa-check"></i><b>16</b> Internal structure of the PRS functionality</a>
 <ul>
-<li class="chapter" data-level="17.1" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#client"><i class="fa fa-check"></i><b>17.1</b> Client</a></li>
-<li class="chapter" data-level="17.2" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-resolver"><i class="fa fa-check"></i><b>17.2</b> Server resolver</a></li>
-<li class="chapter" data-level="17.3" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-analysis"><i class="fa fa-check"></i><b>17.3</b> Server analysis</a></li>
+<li class="chapter" data-level="16.1" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#client"><i class="fa fa-check"></i><b>16.1</b> Client</a></li>
+<li class="chapter" data-level="16.2" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-resolver"><i class="fa fa-check"></i><b>16.2</b> Server resolver</a></li>
+<li class="chapter" data-level="16.3" data-path="internal-structure-of-the-prs-functionality.html"><a href="internal-structure-of-the-prs-functionality.html#server-analysis"><i class="fa fa-check"></i><b>16.3</b> Server analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="compress.html"><a href="compress.html"><i class="fa fa-check"></i><b>18</b> Compression of GDS files vs. performance</a></li>
-<li class="chapter" data-level="19" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html"><i class="fa fa-check"></i><b>19</b> Recommended R server specs</a>
+<li class="chapter" data-level="17" data-path="compress.html"><a href="compress.html"><i class="fa fa-check"></i><b>17</b> Compression of GDS files vs. performance</a></li>
+<li class="chapter" data-level="18" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html"><i class="fa fa-check"></i><b>18</b> Recommended R server specs</a>
 <ul>
-<li class="chapter" data-level="19.1" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#limma-voom"><i class="fa fa-check"></i><b>19.1</b> Limma + voom</a></li>
-<li class="chapter" data-level="19.2" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#gwas-pca"><i class="fa fa-check"></i><b>19.2</b> GWAS + PCA</a></li>
-<li class="chapter" data-level="19.3" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#general-remarks"><i class="fa fa-check"></i><b>19.3</b> General remarks</a></li>
+<li class="chapter" data-level="18.1" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#limma-voom"><i class="fa fa-check"></i><b>18.1</b> Limma + voom</a></li>
+<li class="chapter" data-level="18.2" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#gwas-pca"><i class="fa fa-check"></i><b>18.2</b> GWAS + PCA</a></li>
+<li class="chapter" data-level="18.3" data-path="recommended-r-server-specs.html"><a href="recommended-r-server-specs.html#general-remarks"><i class="fa fa-check"></i><b>18.3</b> General remarks</a></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="disclosure-filter-configurations.html"><a href="disclosure-filter-configurations.html"><i class="fa fa-check"></i><b>20</b> Disclosure filter configurations</a></li>
+<li class="chapter" data-level="19" data-path="disclosure-filter-configurations.html"><a href="disclosure-filter-configurations.html"><i class="fa fa-check"></i><b>19</b> Disclosure filter configurations</a></li>
 <li class="part"><span><b>V Appendix</b></span></li>
-<li class="chapter" data-level="21" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i><b>21</b> Session info</a></li>
-<li class="chapter" data-level="22" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i><b>22</b> Contributors</a></li>
+<li class="chapter" data-level="20" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i><b>20</b> Session info</a></li>
+<li class="chapter" data-level="21" data-path="contributors.html"><a href="contributors.html"><i class="fa fa-check"></i><b>21</b> Contributors</a></li>
 <li class="part"><span><b>VI References</b></span></li>
-<li class="chapter" data-level="23" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>23</b> References</a></li>
+<li class="chapter" data-level="22" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>22</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -350,16 +348,16 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="DNAmHELIX" class="section level1" number="12">
-<h1><span class="header-section-number">12</span> Epigenetic analysis in the HELIX cohort.</h1>
+<div id="DNAmHELIX" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">12</span> Epigenetic analysis in the HELIX cohort.<a href="DNAmHELIX.html#DNAmHELIX" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>In this section, we will illustrate how to perform <strong>DNA methylation differential analysis</strong> using real data from the <strong>HELIX project</strong>. Particularly, we will analyse <strong>microarray data</strong> deriving from the <em>Infinium HumanMethylation450k</em> platform of Illumina. On these data, we will show how to perform a <strong>epigenome-wide association analysis (EWAS)</strong> to compare the <strong>DNA methylation profiles</strong> differing between <strong>boys</strong> and <strong>girls</strong> in the <strong>HELIX cohorts</strong>. We will illustrate the following use cases:</p>
 <ul>
 <li>Full genome meta-analysis.</li>
 <li>Full genome meta-analysis adjusting for surrogate variables.</li>
 </ul>
 <p>In comparison to <strong>gene expression data</strong>, where data are not always normalized in the same way (especially in the case of <strong>RNAseq data</strong>), when analyzing <strong>EWAS data</strong> one count on normalized Beta or M-Values. This favors the harmonization of the dataset between cohorts, thereby making possible to perform a <strong>pooled analysis</strong> instead of a <strong>meta-analysis</strong> approach.</p>
-<div id="DNAmHELIX_gettingstarted" class="section level2" number="12.1">
-<h2><span class="header-section-number">12.1</span> Getting started.</h2>
+<div id="DNAmHELIX_gettingstarted" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> Getting started.<a href="DNAmHELIX.html#DNAmHELIX_gettingstarted" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this section, we will describe how to <strong>configure R and DataSHIELD</strong> with the <strong>needed packages</strong> to carry out proposed analyses in remote. We start by <strong>installing</strong> the <em>client-side</em> version of the following <strong>DataSHIELD/Opal</strong> integration packages.</p>
 <div class="sourceCode" id="cb242"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb242-1"><a href="DNAmHELIX.html#cb242-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;DSOpal&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)</span>
 <span id="cb242-2"><a href="DNAmHELIX.html#cb242-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;DSI&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)</span></code></pre></div>
@@ -370,8 +368,7 @@ div.csl-indent {
 <p>Then, install the <em>client-side</em> version of the <strong>dsOmicsClient</strong> package directly from <em>GitHub</em>.</p>
 <div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="DNAmHELIX.html#cb244-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</span>
 <span id="cb244-2"><a href="DNAmHELIX.html#cb244-2" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;devtools&quot;</span>)</span>
-<span id="cb244-3"><a href="DNAmHELIX.html#cb244-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;isglobal-brge/dsOmicsClient&quot;</span>,<span class="at">ref=</span><span class="st">&quot;master&quot;</span>,</span>
-<span id="cb244-4"><a href="DNAmHELIX.html#cb244-4" aria-hidden="true" tabindex="-1"></a>                         <span class="at">auth_token =</span> <span class="st">&quot;INSERT_YOUR_GITHUB_TOKEN_HERE&quot;</span>)</span></code></pre></div>
+<span id="cb244-3"><a href="DNAmHELIX.html#cb244-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;isglobal-brge/dsOmicsClient&quot;</span>,<span class="at">ref=</span><span class="st">&quot;master&quot;</span>)</span></code></pre></div>
 <p>Once installations are completed, all the packages are <strong>loaded</strong> as usual.</p>
 <div class="sourceCode" id="cb245"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb245-1"><a href="DNAmHELIX.html#cb245-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(DSOpal)</span>
 <span id="cb245-2"><a href="DNAmHELIX.html#cb245-2" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(DSI)</span>
@@ -382,46 +379,46 @@ div.csl-indent {
 <span id="cb245-7"><a href="DNAmHELIX.html#cb245-7" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(clusterProfiler)</span>
 <span id="cb245-8"><a href="DNAmHELIX.html#cb245-8" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(org.Hs.eg.db)</span></code></pre></div>
 </div>
-<div id="DNAmHELIX_load" class="section level2" number="12.2">
-<h2><span class="header-section-number">12.2</span> Data formatting and manipulation in DataSHIELD.</h2>
+<div id="DNAmHELIX_load" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> Data formatting and manipulation in DataSHIELD.<a href="DNAmHELIX.html#DNAmHELIX_load" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this section, we will cover how to <strong>load</strong> and <strong>inspect</strong> input <strong>microarray data</strong> with <strong>DataSHIELD</strong>. We start by <strong>creating the connection to the opal server</strong> using an user who have <strong>DataSHIELD permissions</strong>.</p>
 <div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="DNAmHELIX.html#cb246-1" aria-hidden="true" tabindex="-1"></a> builder <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">newDSLoginBuilder</span>()</span>
-<span id="cb246-2"><a href="DNAmHELIX.html#cb246-2" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;BIB&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://datashield.isglobal.org/repo&quot;</span>,</span>
-<span id="cb246-3"><a href="DNAmHELIX.html#cb246-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;invited&quot;</span>, <span class="at">password =</span> <span class="st">&quot;12345678&quot;</span></span>
-<span id="cb246-4"><a href="DNAmHELIX.html#cb246-4" aria-hidden="true" tabindex="-1"></a>                , <span class="at">profile =</span> <span class="st">&quot;rock-inma&quot;</span>)</span>
-<span id="cb246-5"><a href="DNAmHELIX.html#cb246-5" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;EDEN&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://datashield.isglobal.org/repo&quot;</span>,</span>
-<span id="cb246-6"><a href="DNAmHELIX.html#cb246-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;invited&quot;</span>, <span class="at">password =</span> <span class="st">&quot;12345678&quot;</span>,</span>
-<span id="cb246-7"><a href="DNAmHELIX.html#cb246-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;rock-inma&quot;</span>)</span>
-<span id="cb246-8"><a href="DNAmHELIX.html#cb246-8" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;KANC&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://datashield.isglobal.org/repo&quot;</span>,</span>
-<span id="cb246-9"><a href="DNAmHELIX.html#cb246-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;invited&quot;</span>, <span class="at">password =</span> <span class="st">&quot;12345678&quot;</span>,</span>
-<span id="cb246-10"><a href="DNAmHELIX.html#cb246-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;rock-inma&quot;</span>)</span>
-<span id="cb246-11"><a href="DNAmHELIX.html#cb246-11" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;MoBA&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://datashield.isglobal.org/repo&quot;</span>,</span>
-<span id="cb246-12"><a href="DNAmHELIX.html#cb246-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;invited&quot;</span>, <span class="at">password =</span> <span class="st">&quot;12345678&quot;</span>,</span>
-<span id="cb246-13"><a href="DNAmHELIX.html#cb246-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;rock-inma&quot;</span>)</span>
-<span id="cb246-14"><a href="DNAmHELIX.html#cb246-14" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;Rhea&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://datashield.isglobal.org/repo&quot;</span>,</span>
-<span id="cb246-15"><a href="DNAmHELIX.html#cb246-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;invited&quot;</span>, <span class="at">password =</span> <span class="st">&quot;12345678&quot;</span>,</span>
-<span id="cb246-16"><a href="DNAmHELIX.html#cb246-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;rock-inma&quot;</span>)</span>
-<span id="cb246-17"><a href="DNAmHELIX.html#cb246-17" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;INMASAB&quot;</span>, <span class="at">url =</span><span class="st">&quot;https://datashield.isglobal.org/repo&quot;</span>,</span>
-<span id="cb246-18"><a href="DNAmHELIX.html#cb246-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;invited&quot;</span>, <span class="at">password =</span> <span class="st">&quot;12345678&quot;</span>,</span>
-<span id="cb246-19"><a href="DNAmHELIX.html#cb246-19" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;rock-inma&quot;</span>)</span>
+<span id="cb246-2"><a href="DNAmHELIX.html#cb246-2" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;BIB&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://opal-demo.obiba.org&quot;</span>,</span>
+<span id="cb246-3"><a href="DNAmHELIX.html#cb246-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;dsuser&quot;</span>, <span class="at">password =</span> <span class="st">&quot;P@ssw0rd&quot;</span></span>
+<span id="cb246-4"><a href="DNAmHELIX.html#cb246-4" aria-hidden="true" tabindex="-1"></a>                , <span class="at">profile =</span> <span class="st">&quot;omics&quot;</span>)</span>
+<span id="cb246-5"><a href="DNAmHELIX.html#cb246-5" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;EDEN&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://opal-demo.obiba.org&quot;</span>,</span>
+<span id="cb246-6"><a href="DNAmHELIX.html#cb246-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;dsuser&quot;</span>, <span class="at">password =</span> <span class="st">&quot;P@ssw0rd&quot;</span>,</span>
+<span id="cb246-7"><a href="DNAmHELIX.html#cb246-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;omics&quot;</span>)</span>
+<span id="cb246-8"><a href="DNAmHELIX.html#cb246-8" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;KANC&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://opal-demo.obiba.org&quot;</span>,</span>
+<span id="cb246-9"><a href="DNAmHELIX.html#cb246-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;dsuser&quot;</span>, <span class="at">password =</span> <span class="st">&quot;P@ssw0rd&quot;</span>,</span>
+<span id="cb246-10"><a href="DNAmHELIX.html#cb246-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;omics&quot;</span>)</span>
+<span id="cb246-11"><a href="DNAmHELIX.html#cb246-11" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;MoBA&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://opal-demo.obiba.org&quot;</span>,</span>
+<span id="cb246-12"><a href="DNAmHELIX.html#cb246-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;dsuser&quot;</span>, <span class="at">password =</span> <span class="st">&quot;P@ssw0rd&quot;</span>,</span>
+<span id="cb246-13"><a href="DNAmHELIX.html#cb246-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;omics&quot;</span>)</span>
+<span id="cb246-14"><a href="DNAmHELIX.html#cb246-14" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;Rhea&quot;</span>, <span class="at">url =</span> <span class="st">&quot;https://opal-demo.obiba.org&quot;</span>,</span>
+<span id="cb246-15"><a href="DNAmHELIX.html#cb246-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;dsuser&quot;</span>, <span class="at">password =</span> <span class="st">&quot;P@ssw0rd&quot;</span>,</span>
+<span id="cb246-16"><a href="DNAmHELIX.html#cb246-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;omics&quot;</span>)</span>
+<span id="cb246-17"><a href="DNAmHELIX.html#cb246-17" aria-hidden="true" tabindex="-1"></a> builder<span class="sc">$</span><span class="fu">append</span>(<span class="at">server =</span> <span class="st">&quot;INMASAB&quot;</span>, <span class="at">url =</span><span class="st">&quot;https://opal-demo.obiba.org&quot;</span>,</span>
+<span id="cb246-18"><a href="DNAmHELIX.html#cb246-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">user =</span>  <span class="st">&quot;dsuser&quot;</span>, <span class="at">password =</span> <span class="st">&quot;P@ssw0rd&quot;</span>,</span>
+<span id="cb246-19"><a href="DNAmHELIX.html#cb246-19" aria-hidden="true" tabindex="-1"></a>                <span class="at">profile =</span> <span class="st">&quot;omics&quot;</span>)</span>
 <span id="cb246-20"><a href="DNAmHELIX.html#cb246-20" aria-hidden="true" tabindex="-1"></a> logindata <span class="ot">&lt;-</span> builder<span class="sc">$</span><span class="fu">build</span>()</span>
 <span id="cb246-21"><a href="DNAmHELIX.html#cb246-21" aria-hidden="true" tabindex="-1"></a> conns <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata)</span></code></pre></div>
 <p>Now that we have created a connection object to the Opal, we have started a new R session on the server, and our analysis will take place in this remote session, so we have to <strong>load the data</strong> into it. In this use case, available data are in the form <strong>GenomicRatioSet</strong>, a extend of the class <strong>SummarizedExperiment</strong> especially designed for DNA methylation data obtained with the <em>Infinium HumanMethylation450k</em> platform and usually analysed with the associated R package <a href="http://bioconductor.org/packages/release/bioc/html/minfi.html">minfi</a>. This type of data usually contain <strong>pre-processed DNA methylation values</strong> at a genome-wide level, in the form of <strong>M or/and Beta values</strong>, together with the associated <strong>genomic coordinates</strong>. As in the case of <strong>ExpressionSet</strong> types, <strong>GenomicRatioSet</strong> can also incorporate <strong>phenotype</strong> and <strong>metadata</strong> information.</p>
-<p>For our showcase, one <strong>GenomicRatioSet</strong> file per cohort is hosted in the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> in the form of a <strong>resource</strong>, all organized within the Opal server in a <strong>project</strong> called <strong>HELIX_omics</strong>.</p>
+<p>For our showcase, one <strong>GenomicRatioSet</strong> file per cohort is hosted in the <a href="https://datashield.isglobal.org/brge/ui/index.html">Opal BRGE site</a> in the form of a <strong>resource</strong>, all organized within the Opal server in a <strong>project</strong> called <strong>OMICS</strong>.</p>
 <p>For loading these data into the remote <strong>DataSHIELD</strong> session we will use the <em>DSI::datashield.assign.resource()</em> function. This function takes the connections to the server created in the previous code chunk to assign all available <strong>resource objects</strong> from a project in the <strong>Opal</strong> to an <strong>R object</strong> in the <strong>DataSHIELD remote session</strong>. As it can be seen in the code, <strong>resources</strong> in <strong>DataSHIELD</strong> are called in the function following the next structure <em>“NameOfOpalProject.NameOfResource”</em>.</p>
 <div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="DNAmHELIX.html#cb247-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We assign post-natal data from all cohorts to an object called resource_pos</span></span>
 <span id="cb247-2"><a href="DNAmHELIX.html#cb247-2" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns[<span class="dv">1</span>], <span class="st">&quot;assinged_resource_DNAm&quot;</span>, </span>
-<span id="cb247-3"><a href="DNAmHELIX.html#cb247-3" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;HELIX_omics.methy_BIB&quot;</span>)</span>
+<span id="cb247-3"><a href="DNAmHELIX.html#cb247-3" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;OMICS.methy_BIB&quot;</span>)</span>
 <span id="cb247-4"><a href="DNAmHELIX.html#cb247-4" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns[<span class="dv">2</span>], <span class="st">&quot;assinged_resource_DNAm&quot;</span>, </span>
-<span id="cb247-5"><a href="DNAmHELIX.html#cb247-5" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;HELIX_omics.methy_EDE&quot;</span>)</span>
+<span id="cb247-5"><a href="DNAmHELIX.html#cb247-5" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;OMICS.methy_EDE&quot;</span>)</span>
 <span id="cb247-6"><a href="DNAmHELIX.html#cb247-6" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns[<span class="dv">3</span>], <span class="st">&quot;assinged_resource_DNAm&quot;</span>, </span>
-<span id="cb247-7"><a href="DNAmHELIX.html#cb247-7" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;HELIX_omics.methy_KAN&quot;</span>)</span>
+<span id="cb247-7"><a href="DNAmHELIX.html#cb247-7" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;OMICS.methy_KAN&quot;</span>)</span>
 <span id="cb247-8"><a href="DNAmHELIX.html#cb247-8" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns[<span class="dv">4</span>], <span class="st">&quot;assinged_resource_DNAm&quot;</span>, </span>
-<span id="cb247-9"><a href="DNAmHELIX.html#cb247-9" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;HELIX_omics.methy_MOB&quot;</span>)</span>
+<span id="cb247-9"><a href="DNAmHELIX.html#cb247-9" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;OMICS.methy_MOB&quot;</span>)</span>
 <span id="cb247-10"><a href="DNAmHELIX.html#cb247-10" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns[<span class="dv">5</span>], <span class="st">&quot;assinged_resource_DNAm&quot;</span>, </span>
-<span id="cb247-11"><a href="DNAmHELIX.html#cb247-11" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;HELIX_omics.methy_RHE&quot;</span>)</span>
+<span id="cb247-11"><a href="DNAmHELIX.html#cb247-11" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;OMICS.methy_RHE&quot;</span>)</span>
 <span id="cb247-12"><a href="DNAmHELIX.html#cb247-12" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.resource</span>(conns[<span class="dv">6</span>], <span class="st">&quot;assinged_resource_DNAm&quot;</span>, </span>
-<span id="cb247-13"><a href="DNAmHELIX.html#cb247-13" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;HELIX_omics.methy_SAB&quot;</span>)</span></code></pre></div>
+<span id="cb247-13"><a href="DNAmHELIX.html#cb247-13" aria-hidden="true" tabindex="-1"></a>                                <span class="st">&quot;OMICS.methy_SAB&quot;</span>)</span></code></pre></div>
 <p>Then, we have to <strong>resolve the resources</strong> and <strong>retrieve the data in the remote session (server-side)</strong>. For that, we will use the <em>DSI::datashield.assign.expr()</em> function. As a result, we will get an <strong>R object</strong> (here named <strong>“resource_DNAm”</strong>) containing the available <strong>GenomicRatioSet</strong> files for cohorts. For created objects, we can extract some useful information including the <strong>dimension</strong>, <strong>class</strong>, and the <strong>name of the CpGs analysed in the microarray</strong> and additional <strong>phenotype</strong> data available.</p>
 <div class="sourceCode" id="cb248"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb248-1"><a href="DNAmHELIX.html#cb248-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We resolve the resource</span></span>
 <span id="cb248-2"><a href="DNAmHELIX.html#cb248-2" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.assign.expr</span>(<span class="at">conns =</span> conns, <span class="at">symbol =</span> <span class="st">&quot;resource_DNAm&quot;</span>,</span>
@@ -443,8 +440,8 @@ div.csl-indent {
 <span id="cb248-18"><a href="DNAmHELIX.html#cb248-18" aria-hidden="true" tabindex="-1"></a>name.annot <span class="ot">&lt;-</span> <span class="fu">ds.fvarLabels</span>(<span class="st">&quot;resource_DNAm&quot;</span>)</span>
 <span id="cb248-19"><a href="DNAmHELIX.html#cb248-19" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(name.annot, head)[[<span class="dv">1</span>]]</span></code></pre></div>
 </div>
-<div id="DNAmHELIX_analysis3" class="section level2" number="12.3">
-<h2><span class="header-section-number">12.3</span> Full genome meta-analysis.</h2>
+<div id="DNAmHELIX_analysis3" class="section level2 hasAnchor" number="12.3">
+<h2><span class="header-section-number">12.3</span> Full genome meta-analysis.<a href="DNAmHELIX.html#DNAmHELIX_analysis3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If we want to perform a quick <strong>full EWAS</strong> analysis in <strong>DataSHIELD</strong> we must run a <strong>meta-analysis</strong> approach (analyzing each cohort separately). For that, we can use the same function than in the showcase of <strong>transcriptomic</strong> analysis (<em>ds.limma()</em>).</p>
 <div class="sourceCode" id="cb249"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb249-1"><a href="DNAmHELIX.html#cb249-1" aria-hidden="true" tabindex="-1"></a>meta.model.sex <span class="ot">&lt;-</span> <span class="fu">ds.limma</span>(<span class="at">model =</span> <span class="sc">~</span> e3_sex,</span>
 <span id="cb249-2"><a href="DNAmHELIX.html#cb249-2" aria-hidden="true" tabindex="-1"></a>                      <span class="at">Set =</span> <span class="st">&quot;resource_DNAm&quot;</span>, </span>
@@ -619,8 +616,8 @@ $INMASAB
 <p><img src="OmicSHIELD_bookdown_files/figure-html/DNAm_ewas_limma_qq-1.png" width="672" /></p>
 <p>Here, as can be observed, there is no need to remove unwanted variability (λ&lt;2). Nevertheless, we will illustrate how to proceed in case of observing <strong>inflation</strong>.</p>
 </div>
-<div id="DNAmHELIX_analysis4" class="section level2" number="12.4">
-<h2><span class="header-section-number">12.4</span> Adjusting for surrogate variables.</h2>
+<div id="DNAmHELIX_analysis4" class="section level2 hasAnchor" number="12.4">
+<h2><span class="header-section-number">12.4</span> Adjusting for surrogate variables.<a href="DNAmHELIX.html#DNAmHELIX_analysis4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The vast majority of omic studies require to control for unwanted variability. The <strong>surrogate variable analysis</strong> can address this issue by estimating some hidden covariates that capture differences across individuals due to some artifacts such as batch effects or sample quality among others. The method is implemented in <a href="https://bioconductor.org/packages/release/bioc/html/sva.html">SVA</a> package.</p>
 <p>Performing this type of analysis using the <strong>ds.lmFeature</strong> function is not allowed since estimating SVA would require to implement a non-disclosive method that computes SVA from the different servers. This will be a future topic of the <strong>dsOmicsClient</strong>. For that reason we have to adopt a compromise solution which is to perform the SVA independently at each study. We use the <strong>ds.limma</strong> function to perform the analyses adjusted for SVA at each study. Especially for the case of <strong>EWAS data</strong> this kind of analysis is important since it is usual to find important sources of unwanted variability affecting the global levels of methylation (e.g., the existence of different white-cell proportions when the sample type under analysis is whole-blood)</p>
 <div class="sourceCode" id="cb257"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb257-1"><a href="DNAmHELIX.html#cb257-1" aria-hidden="true" tabindex="-1"></a>meta.model.sex.annot.sva <span class="ot">&lt;-</span> <span class="fu">ds.limma</span>(<span class="at">model =</span> <span class="sc">~</span> e3_sex,</span>
@@ -755,8 +752,8 @@ attr(,&quot;class&quot;)
 <div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="DNAmHELIX.html#cb265-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(metaP.model.sex.annot<span class="sc">$</span>p.meta)</span></code></pre></div>
 <p><img src="OmicSHIELD_bookdown_files/figure-html/DNAm_ewas_limma_sva_meta_qq-1.png" width="672" /></p>
 </div>
-<div id="DNAmHELIXenrichment" class="section level2" number="12.5">
-<h2><span class="header-section-number">12.5</span> Enrichment analysis of functional annotations.</h2>
+<div id="DNAmHELIXenrichment" class="section level2 hasAnchor" number="12.5">
+<h2><span class="header-section-number">12.5</span> Enrichment analysis of functional annotations.<a href="DNAmHELIX.html#DNAmHELIXenrichment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Once we have obtained the top <strong>differentially methylated genes</strong> per cohort, we could extract their <strong>gene symbols</strong> or <strong>gene entrez ids</strong> directly from each output dataframe and continue with the <strong>functional annotation analysis (FEA)</strong> in our local session as usual. As presented in the showcase of <strong>gene expression analysis</strong>, we will conduct an <strong>enrichment analysis</strong> with <strong>KEGG</strong>:</p>
 <div class="sourceCode" id="cb266"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb266-1"><a href="DNAmHELIX.html#cb266-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get list of significant CpGs (checking the number).</span></span>
 <span id="cb266-2"><a href="DNAmHELIX.html#cb266-2" aria-hidden="true" tabindex="-1"></a>sigCpGs <span class="ot">&lt;-</span> <span class="fu">as.character</span>(metaP.model.sex.annot[<span class="fu">which</span>(</span>
@@ -817,12 +814,16 @@ path:hsa00561 0.044920205   1
 path:hsa04975 0.064348016   1
 path:hsa05031 0.070891671   1
 path:hsa04974 0.073866805   1</code></pre>
-<p>The FEA show that these CpGs map genes participating in processes with noticeable sex differences such is the case of bone formation regulated by endocrine factors (“Endocrine and other factor-regulated calcium reabsorption,” hsa04961).</p>
+<p>The FEA show that these CpGs map genes participating in processes with noticeable sex differences such is the case of bone formation regulated by endocrine factors (“Endocrine and other factor-regulated calcium reabsorption”, hsa04961).</p>
 <p>As always, the <strong>DataSHIELD</strong> session must be closed by:</p>
 <div class="sourceCode" id="cb272"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb272-1"><a href="DNAmHELIX.html#cb272-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.logout</span>(conns)</span></code></pre></div>
+
 </div>
 </div>
-<h3> References</h3>
+
+
+
+<h3> References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-betameta" class="csl-entry">
 Pirinen, Matti. 2020. <span>“GWAS 9: Meta-Analysis and Summary Statistics.”</span> <a href="https://www.mv.helsinki.fi/home/mjxpirin/GWAS_course/material/GWAS9.html">https://www.mv.helsinki.fi/home/mjxpirin/GWAS_course/material/GWAS9.html</a>.
@@ -834,7 +835,7 @@ Pirinen, Matti. 2020. <span>“GWAS 9: Meta-Analysis and Summary Statistics.”<
         </div>
       </div>
 <a href="TranscriptHELIX.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references..html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="fast-gwas.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -884,7 +885,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
