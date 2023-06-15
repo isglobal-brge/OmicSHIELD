@@ -27,7 +27,7 @@ knitr::opts_chunk$set(comment="", warning=FALSE, message=FALSE, cache=TRUE)
 
 This is a website for a book that serves as official documentation for OmicSHIELD. On it you will find introductory references to learn about DataSHIELD and "resources", explanation on the type of analysis that can be performed using OmicSHIELD and workflows (with reproducible code) of the main functionalities of OmicSHIELD. Use cases in which OmicSHIELD is applied to real datasets are presented for illustrating the capabilities of the software for omic analyses (GWAS, transcriptomics and EWAS). 
 
-This material is intended to be a quick reference guide for new researchers interested in this technology as well as to be an online companion for the manuscript "Privacy-protected federated omic data analysis in multi-center studies with OmicSHIELD".
+This material is intended to be a quick reference guide for new researchers interested in this technology as well as to be an online companion for the manuscript "Federated privacy-protected meta- and mega-omic data analysis in multi-centre studies with a fully open source analytic platform".
 
 All the functionalities described on this book have been developed at the Bioinformatic Research Group in Epidemiology (BRGE) of ISGlobal with external help from Yannick Marcon (Obiba); and are part of OmicSHIELD.
 
